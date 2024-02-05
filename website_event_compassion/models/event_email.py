@@ -25,6 +25,11 @@ class EventTypeMail(models.Model):
         domain=[("model_id.model", "=", "event.registration")],
         readonly=False,
     )
+    interval_type = fields.Selection(
+        selection_add=[("after_stage", "After stage")],
+        ondelete={"after_stage": "set default"},
+    )
+    stage_id = fields.Many2one("event.registration.stage", "Stage", readonly=False)
 
     @api.model
     def _get_event_mail_fields_whitelist(self):
@@ -52,9 +57,6 @@ class EventMail(models.Model):
         selection_add=[("communication", "Communication rule")],
         ondelete={"communication": "set default"},
         default="communication",
-    )
-    template_id = fields.Many2one(
-        related="communication_id.email_template_id", readonly=False
     )
     interval_type = fields.Selection(
         selection_add=[("after_stage", "After stage")],

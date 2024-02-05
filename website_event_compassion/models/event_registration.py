@@ -557,7 +557,12 @@ class EventRegistration(models.Model):
         return super()._track_subtype(init_values)
 
     def past_event_action(self):
-        stage = self.env.ref("website_event_compassion.stage_all_attended")
+        attended = self.env.ref("website_event_compassion.stage_all_attended")
+        cancel = self.env.ref("website_event_compassion.stage_all_cancelled")
         for reg in self:
             if reg.state == "open":
-                reg.write({"stage_id": stage.id})
+                reg.stage_id = attended
+            elif reg.state == "draft":
+                reg.stage_id = cancel
+        # Destroy sensitive data
+        self.mapped("medical_survey_id").unlink()

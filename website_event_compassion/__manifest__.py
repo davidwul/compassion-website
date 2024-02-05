@@ -48,7 +48,7 @@
         "security/ir.model.access.csv",
         "security/access_rules.xml",
         "data/event_registration_stage.xml",
-        "data/action_rule_past_event.xml",
+        "data/base_automation.xml",
         "data/event_message_subtype.xml",
         "data/form_data.xml",
         "views/event_compassion_open_wizard.xml",

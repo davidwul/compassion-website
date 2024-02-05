@@ -13,6 +13,9 @@
                 <field name="communication_id" attrs="{'required': [('notification_type', '=', 'communication')],
                                                         'invisible': [('notification_type', '!=', 'communication')]}"/>
             </xpath>
+            <xpath expr="//field[@name='event_type_mail_ids']//field[@name='interval_type']" position="after">
+                <field name="stage_id" domain="['|', ('event_type_ids', '=', active_id), ('event_type_ids', '=', False)]" attrs="{'required': [('interval_type', '=', 'after_stage')]}"/>
+            </xpath>
             <xpath expr="/form/sheet" position="after">
                 <div class="oe_chatter">
                     <field name="message_follower_ids" groups="base.group_user"/>
