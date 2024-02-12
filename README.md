@@ -18,7 +18,19 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[my_compassion](my_compassion/) | 14.0.1.0.0 |  | MyCompassion - Sponsor portal website
+[my_compassion_segmentation](my_compassion_segmentation/) | 14.0.1.0.0 |  | MyCompassion - Segmentation
+[theme_compassion](theme_compassion/) | 14.0.1.0.0 |  | Compassion Blue Theme
 [website_child_protection](website_child_protection/) | 14.0.1.0.0 | [![ecino](https://github.com/ecino.png?size=30px)](https://github.com/ecino) | Adds a form for letting partners agree with the child protection
+[website_event_compassion](website_event_compassion/) | 14.0.1.0.0 | [![ecino](https://github.com/ecino.png?size=30px)](https://github.com/ecino) | Public website pages for Compassion Events with registration
+[website_sponsorship](website_sponsorship/) | 14.0.1.0.0 |  | Website - Sponsor a child form
+
+
+Unported addons
+---------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[website_crm_request](website_crm_request/) | 14.0.1.0.0 (unported) |  | Website CRM Request
 
 [//]: # (end addons)
 <!-- prettier-ignore-end -->
