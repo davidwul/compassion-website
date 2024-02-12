@@ -14,17 +14,17 @@ class CompassionProject(models.Model):
 
     supported_types = ["cognitive", "physical", "socio", "spiritual"]
 
-    def get_activity_for_age(self, age, type="physical"):
-        if type and type not in self.supported_types:
+    def get_activity_for_age(self, age, activity_type="physical"):
+        if activity_type and activity_type not in self.supported_types:
             raise ValueError(
-                f"Type {type} is not supported."
+                f"Type {activity_type} is not supported."
                 f"It should be in {self.supported_types}"
             )
         if age < 0:
             raise ValueError("Age needs to be positive")
         elif age <= 5:
-            return eval(f"self.{type}_activity_babies_ids")
+            return getattr(self, f"{activity_type}_activity_babies_ids")
         elif age <= 11:
-            return eval(f"self.{type}_activity_kids_ids")
+            return getattr(self, f"{activity_type}_activity_kids_ids")
         else:
-            return eval(f"self.{type}_activity_ados_ids")
+            return getattr(self, f"{activity_type}_activity_ados_ids")

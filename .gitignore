@@ -1,8 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-/.venv
-/.pytest_cache
 
 # C extensions
 *.so
@@ -11,10 +9,10 @@ __pycache__/
 .Python
 env/
 bin/
-build/
 develop-eggs/
 dist/
 eggs/
+lib/
 lib64/
 parts/
 sdist/
@@ -22,7 +20,6 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-*.eggs
 
 # Installer logs
 pip-log.txt
@@ -39,22 +36,6 @@ coverage.xml
 # Translations
 *.mo
 
-# Pycharm
-.idea
-
-# Eclipse
-.settings
-
-# Visual Studio cache/options directory
-.vs/
-.vscode
-
-# OSX Files
-.DS_Store
-
-# Django stuff:
-*.log
-
 # Mr Developer
 .mr.developer.cfg
 .project
@@ -63,12 +44,19 @@ coverage.xml
 # Rope
 .ropeproject
 
+# Django stuff:
+*.log
+*.pot
+
 # Sphinx documentation
 docs/_build/
 
-# Backup files
-*~
-*.swp
+# Unported modules
+__unported__
 
-# OCA rules
-!static/lib/
+# React webapp
+sms_sponsorship/webapp/node_modules
+sms_sponsorship/webapp/build
+sms_sponsorship/webapp/.idea
+/sbc_compassion/FPDF/.idea/
+/sbc_compassion/FPDF/stderr.txt

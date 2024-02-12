@@ -1,4 +1,4 @@
-target-version = "py38"
+
 fix = true
 
 [lint]
@@ -7,7 +7,6 @@ extend-select = [
     "C90",
     "E501",  # line too long (default 88)
     "I",  # isort
-    "UP",  # pyupgrade
 ]
 exclude = ["setup/*"]
 

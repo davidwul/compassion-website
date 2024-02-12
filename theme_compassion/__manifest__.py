@@ -1,11 +1,11 @@
 {
     "name": "Compassion Theme",
-    "description": "Compassion Blue Theme",
     "category": "Theme/Services",
     "summary": "Compassion Blue Theme",
+    "website": "https://github.com/CompassionCH/compassion-website",
     "sequence": 260,
-    "version": "1.0.0",
-    "author": "Compassion CH",
+    "version": "14.0.1.0.0",
+    "author": "Compassion Switzerland",
     "depends": ["website"],
     "data": [
         "views/assets.xml",

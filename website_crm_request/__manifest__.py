@@ -33,7 +33,7 @@
     "category": "Website",
     "author": "Compassion CH",
     "license": "AGPL-3",
-    "website": "https://www.compassion.ch",
+    "website": "https://github.com/CompassionCH/compassion-website",
     "data": [],
     "depends": [
         "crm_request",

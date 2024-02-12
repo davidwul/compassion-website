@@ -7,9 +7,9 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="name"/>
-                        <field name="sequence"/>
-                        <field name="stage_id"/>
+                        <field name="name" />
+                        <field name="sequence" />
+                        <field name="stage_id" />
                     </group>
                 </sheet>
             </form>
@@ -20,9 +20,9 @@
         <field name="model">event.registration.task</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="sequence" widget="handle"/>
-                <field name="name"/>
-                <field name="stage_id"/>
+                <field name="sequence" widget="handle" />
+                <field name="name" />
+                <field name="stage_id" />
             </tree>
         </field>
     </record>
@@ -31,10 +31,15 @@
         <field name="model">event.registration.task</field>
         <field name="arch" type="xml">
             <search>
-                <field name="name"/>
-                <field name="stage_id"/>
+                <field name="name" />
+                <field name="stage_id" />
                 <group expand="0" string="Group By">
-                    <filter string="Registration stage" name="stage_id" domain="[]" context="{'group_by':'stage_id'}"/>
+                    <filter
+            string="Registration stage"
+            name="stage_id"
+            domain="[]"
+            context="{'group_by':'stage_id'}"
+          />
                 </group>
             </search>
         </field>
@@ -46,5 +51,11 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_registration_task" name="Registration tasks" sequence="3" action="action_registration_task" parent="event.menu_event_configuration"/>
+    <menuitem
+    id="menu_registration_task"
+    name="Registration tasks"
+    sequence="3"
+    action="action_registration_task"
+    parent="event.menu_event_configuration"
+  />
 </odoo>

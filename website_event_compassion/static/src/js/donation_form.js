@@ -1,7 +1,7 @@
 odoo.define("website_event_compassion.donation_form", function (require) {
   "use strict";
 
-  let publicWidget = require("web.public.widget");
+  const publicWidget = require("web.public.widget");
 
   publicWidget.registry.DonationForm = publicWidget.Widget.extend({
     selector: "#event_donation_form",

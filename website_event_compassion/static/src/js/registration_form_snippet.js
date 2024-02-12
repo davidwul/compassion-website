@@ -1,10 +1,10 @@
 odoo.define("website_event_compassion.form_snippet", function (require) {
   "use strict";
 
-  let core = require("web.core");
-  let FormEditorRegistry = require("website_form.form_editor_registry");
+  const core = require("web.core");
+  const FormEditorRegistry = require("website_form.form_editor_registry");
 
-  let _t = core._t;
+  const _t = core._t;
 
   FormEditorRegistry.add("event_registration", {
     formFields: [

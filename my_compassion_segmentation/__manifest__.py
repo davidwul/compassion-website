@@ -29,13 +29,11 @@
 # pylint: disable=C8101
 {
     "name": "MyCompassion - Segmentation",
-    "description": "Bridge module for inviting sponsors to fill the"
-    " segmentation survey",
     "version": "14.0.1.0.0",
     "category": "Website",
     "author": "Compassion CH",
     "license": "AGPL-3",
-    "website": "https://www.compassion.ch",
+    "website": "https://github.com/CompassionCH/compassion-website",
     "data": [
         "templates/survey_templates.xml",
         "templates/my_account.xml",

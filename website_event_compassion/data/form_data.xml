@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <record id="model_event_registration" model="ir.model">
       <field name="website_form_key">event_registration</field>
@@ -7,7 +7,8 @@
     </record>
     <function model="ir.model.fields" name="formbuilder_whitelist">
       <value>event.registration</value>
-      <value eval="[
+      <value
+      eval="[
         'partner_title',
         'partner_lastname',
         'partner_firstname',
@@ -36,10 +37,11 @@
         'passport',
         'passport_number',
         'passport_expiration_date',
-        ]"/>
+        ]"
+    />
     </function>
     <function model="ir.model.fields" name="formbuilder_whitelist">
         <value>cms.form.sponsorship</value>
-        <value eval="['registration_id']"/>
+        <value eval="['registration_id']" />
     </function>
 </odoo>

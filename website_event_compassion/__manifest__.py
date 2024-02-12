@@ -32,8 +32,8 @@
     "version": "14.0.1.0.0",
     "development_status": "Production/Stable",
     "category": "Marketing/Events",
-    "website": "https://github.com/CompassionCH/compassion-website/",
-    "author": "Compassion CH",
+    "website": "https://github.com/CompassionCH/compassion-website",
+    "author": "Compassion Switzerland",
     "maintainers": ["ecino"],
     "license": "AGPL-3",
     "depends": [

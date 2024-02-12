@@ -1,7 +1,6 @@
 odoo.define("website_sponsorship.child_search_page", function (require) {
   "use strict";
 
-  var Dialog = require("web.Dialog");
   var publicWidget = require("web.public.widget");
 
   publicWidget.registry.ChildHold = publicWidget.Widget.extend({
@@ -12,7 +11,7 @@ odoo.define("website_sponsorship.child_search_page", function (require) {
       return this._super.apply(this, arguments);
     },
 
-    hold_child: async function (recordId) {
+    hold_child: async function () {
       const urlParams = new URLSearchParams(window.location.search);
       const paramsDictionary = {};
       for (const [key, value] of urlParams.entries()) {
@@ -26,7 +25,7 @@ odoo.define("website_sponsorship.child_search_page", function (require) {
         dataType: "json",
         contentType: "application/json",
         data: JSON.stringify(paramsDictionary),
-        // processData: false,
+        // eslint-disable-next-line
         success: function (data) {
           location.reload();
         },
@@ -75,8 +74,8 @@ odoo.define("website_sponsorship.child_search_page", function (require) {
       var age_max = false;
       for (const [key, value] of urlParams.entries()) {
         $(`*[name='${key}']`).val(value);
-        if (key === "age_min") age_min = parseInt(value);
-        if (key === "age_max") age_max = parseInt(value);
+        if (key === "age_min") age_min = parseInt(value, 10);
+        if (key === "age_max") age_max = parseInt(value, 10);
       }
       if (Number.isInteger(age_min) && Number.isInteger(age_max)) {
         $("select[name='age_group']").val(`${age_min}-${age_max}`);

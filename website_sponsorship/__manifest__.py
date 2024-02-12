@@ -14,7 +14,7 @@
     "author": "Compassion CH",
     "development_status": "Beta",
     "license": "AGPL-3",
-    "website": "https://www.compassion.ch",
+    "website": "https://github.com/CompassionCH/compassion-website",
     "depends": [
         "sponsorship_compassion",
         "partner_auto_match",

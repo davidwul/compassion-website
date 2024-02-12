@@ -1,7 +1,6 @@
 odoo.define("website_sponsorship.form_page", function (require) {
   "use strict";
 
-  var Dialog = require("web.Dialog");
   var publicWidget = require("web.public.widget");
 
   publicWidget.registry.HelloWorldPopup = publicWidget.Widget.extend({
@@ -25,20 +24,26 @@ odoo.define("website_sponsorship.form_page", function (require) {
     },
 
     setup_default_values: function () {
-      let form_values = $("#form_values").data();
-      let origin = form_values["origin_id"];
+      const form_values = $("#form_values").data();
+      const origin = form_values.origin_id;
       if (origin) {
         $("select[name='origin_id']").val(origin);
-        $("input[name='Origin of my sponsorship']").val(form_values["origin_name"]);
+        $("input[name='Origin of my sponsorship']").val(
+          form_values.origin_name
+        );
       } else {
         this.show_origin_field();
       }
-      let select_fields = ["partner_title", "partner_lang", "payment_mode_id"];
+      const select_fields = [
+        "partner_title",
+        "partner_lang",
+        "payment_mode_id",
+      ];
       select_fields.forEach((s_field) => {
         if (form_values[s_field])
           $(`select[name='${s_field}']`).val(form_values[s_field]);
       });
-      let check_fields = ["partner_spoken_lang_ids"];
+      const check_fields = ["partner_spoken_lang_ids"];
       check_fields.forEach((c_field) => {
         if (form_values[c_field]) {
           form_values[c_field].forEach((check_id) => {
@@ -49,7 +54,7 @@ odoo.define("website_sponsorship.form_page", function (require) {
           });
         }
       });
-      let birthdate = form_values["partner_birthdate_date"];
+      const birthdate = form_values.partner_birthdate_date;
       if (birthdate) {
         $("input[name='partner_birthdate_date']").val(
           new Date(birthdate).toLocaleDateString()
@@ -58,7 +63,9 @@ odoo.define("website_sponsorship.form_page", function (require) {
     },
 
     show_origin_field: function () {
-      $("#origin_id,#origin_details").removeClass("s_website_form_field_hidden");
+      $("#origin_id,#origin_details").removeClass(
+        "s_website_form_field_hidden"
+      );
     },
   });
 });
