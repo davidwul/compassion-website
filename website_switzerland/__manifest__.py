@@ -19,11 +19,13 @@
         "my_compassion_segmentation",
         "theme_compassion",
         "partner_communication_switzerland",
+        "website_crm_request",
     ],
     "data": [
         "data/res_lang.xml",
         "data/website_rewrite.xml",
         "templates/footer.xml",
+        "templates/contact_us.xml",
     ],
     "installable": True,
     "auto_install": False,
