@@ -30,7 +30,7 @@ msgstr "Jetzt unterstützen"
 #. module: website_switzerland
 #: model_terms:ir.ui.view,arch_db:website_switzerland.footer
 msgid "Get involved now"
-msgstr "Engagiere dich jetzt"
+msgstr "Armut überwinden"
 
 #. module: website_switzerland
 #: model:ir.model.fields,field_description:website_switzerland.field_theme_utils__id
