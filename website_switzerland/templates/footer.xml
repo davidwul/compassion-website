@@ -30,7 +30,9 @@
               <h3
                   class="text-uppercase font-weight-bold"
                 >Compassion care funds</h3>
-              <p class="lead">Our funds help support our sponsored children, their families and their communities.</p>
+              <p
+                  class="lead"
+                >Our funds help support our sponsored children, their families and their communities.</p>
               <p class="lead">
                 <a
                     href="/donate"
@@ -40,7 +42,9 @@
             </div>
             <div class="pb24 o_colored_level col-lg-6">
               <h3 class="text-uppercase font-weight-bold">Sponsor a child</h3>
-              <p class="lead">Sponsorship is the beginning of a unique bond between you and your sponsored child. With a monthly support of CHF 42, you can begin to transform his or her life.</p>
+              <p
+                  class="lead"
+                >Sponsorship is the beginning of a unique bond between you and your sponsored child. With a monthly support of CHF 42, you can begin to transform his or her life.</p>
               <p class="lead">
                 <a
                     href="/children/"
