@@ -30,6 +30,7 @@ reload_data = [
     "templates/muskathlon_page.xml",
 ]
 
+
 def migrate(cr, version):
     # Associate prod records to XML records
     for data in module_data:
@@ -38,4 +39,4 @@ def migrate(cr, version):
         )
 
     for data in reload_data:
-        openupgrade.load_data(cr, 'muskathlon', data)
+        openupgrade.load_data(cr, "muskathlon", data)
