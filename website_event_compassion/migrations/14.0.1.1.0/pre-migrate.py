@@ -2,7 +2,7 @@ def migrate(cr, version):
     cr.execute(
         """
         UPDATE ir_model_data
-        SET module= 'website_switzerland'
+        SET module= 'website_switzerland', noupdate=FALSE
         WHERE module = 'website_event_compassion'
         AND (model IN ('mail.template', 'partner.communication.config',
                        'event.registration.task', 'event.type.mail')
@@ -19,4 +19,11 @@ def migrate(cr, version):
         SET state = 'to install'
         WHERE name = 'website_switzerland'
     """
+    )
+    cr.execute(
+        """
+            UPDATE event_type
+            SET compassion_event_type = 'tour'
+            WHERE compassion_event_type = 'group_visit'
+        """
     )
