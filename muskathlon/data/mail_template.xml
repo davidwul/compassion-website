@@ -110,7 +110,7 @@
         name="email_template_id"
         ref="ambassador_donation_confirmation_template"
       />
-            <field name="model_id" ref="model_account_move_line" />
+            <field name="model_id" ref="account.model_account_move_line" />
         </record>
 
         <!-- Registration confirmation -->
