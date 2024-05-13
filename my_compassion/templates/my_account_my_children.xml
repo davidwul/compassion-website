@@ -525,6 +525,7 @@
         <!-- Display the correspondence with the selected child -->
         <template id="my_children_letters">
             <hr />
+            <a class="btn btn-primary" href="/my/letter">Write a letter</a>
             <div id="letters_section" class="row mt-4">
                 <div class="col-md-6">
                     <t
