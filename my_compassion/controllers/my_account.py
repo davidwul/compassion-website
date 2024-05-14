@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 from os import path, remove
 from urllib.error import HTTPError
 from urllib.parse import urlencode
-from urllib.request import urlopen, urlretrieve
+from urllib.request import urlretrieve
 from zipfile import ZipFile
 
 from passlib.context import CryptContext
@@ -134,18 +134,7 @@ def _create_archive(images, archive_name):
 
 
 def _single_image_response(image):
-    ext = image.image_url.split(".")[-1]
-    host = request.httprequest.host_url
-    data = urlopen(host + IMG_URL.format(id=image.id)).read()
-    filename = f"{image.child_id.preferred_name}_{image.date}.{ext}"
-
-    return request.make_response(
-        data,
-        [
-            ("Content-Type", f"image/{ext}"),
-            ("Content-Disposition", content_disposition(filename)),
-        ],
-    )
+    return request.redirect(IMG_URL.format(id=image.id) + "?download=true")
 
 
 def _download_image(child_id, obj_id):

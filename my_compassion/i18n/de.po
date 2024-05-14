@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Compassion Odoo 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 08:28+0000\n"
+"POT-Creation-Date: 2024-05-14 07:38+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -484,6 +484,11 @@ msgstr "Betreuer"
 #: model_terms:ir.ui.view,arch_db:my_compassion.my_children_letters
 msgid "Letters from"
 msgstr "Briefe von"
+
+#. module: my_compassion
+#: model_terms:ir.ui.view,arch_db:my_compassion.my_children_letters
+msgid "Letters history"
+msgstr "Briefe"
 
 #. module: my_compassion
 #: model_terms:ir.ui.view,arch_db:my_compassion.my_children_info
