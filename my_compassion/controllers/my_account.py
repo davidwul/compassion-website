@@ -6,6 +6,7 @@
 #    The licence is in the file __manifest__.py
 #
 ##############################################################################
+import base64
 import secrets
 from datetime import datetime, timedelta
 from os import path, remove
@@ -105,17 +106,11 @@ def _create_archive(images, archive_name):
     :param archive_name: the name of the future archive
     :return: a response for the client to download the created archive
     """
-    base_url = request.httprequest.host_url
     with ZipFile(archive_name, "w") as archive:
         for img, full_path in images:
             filename = path.basename(full_path)
-
-            # Create file, write to archive and delete it from os
-            img_url = base_url + IMG_URL.format(id=img.id)
-            try:
-                urlretrieve(img_url, filename)
-            except HTTPError:
-                continue
+            with open(filename, "wb") as image_file:
+                image_file.write(base64.b64decode(img.fullshot))
             archive.write(filename, full_path)
             remove(filename)
 
