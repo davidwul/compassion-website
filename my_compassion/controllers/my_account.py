@@ -10,9 +10,7 @@ import base64
 import secrets
 from datetime import datetime, timedelta
 from os import path, remove
-from urllib.error import HTTPError
 from urllib.parse import urlencode
-from urllib.request import urlretrieve
 from zipfile import ZipFile
 
 from passlib.context import CryptContext

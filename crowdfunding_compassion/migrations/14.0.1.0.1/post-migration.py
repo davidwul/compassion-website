@@ -13,3 +13,7 @@ def migrate(env, version):
     """
     )
     env["product.template"].search([]).recompute_amount()
+    products = (
+        env["crowdfunding.project"].search([]).mapped("product_id.product_tmpl_id")
+    )
+    products.write({"website_published": True})
