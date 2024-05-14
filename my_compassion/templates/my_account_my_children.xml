@@ -525,9 +525,9 @@
         <!-- Display the correspondence with the selected child -->
         <template id="my_children_letters">
             <hr />
-            <h3>Letters history</h3>
+            <h3 id="letters_section">Letters history</h3>
             <a class="btn btn-primary mt-4" href="/my/letter">Write a letter</a>
-            <div id="letters_section" class="row mt-4">
+            <div class="row mt-4">
                 <div class="col-md-6">
                     <t
             t-set="letters_to_display"
