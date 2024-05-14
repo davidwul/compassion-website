@@ -140,7 +140,7 @@ class ProjectController(HomepageController):
                     "color": "grey",
                     "text": f"{int(quantity)} {impact_text}",
                     "image": donation.product_id.image_128,
-                    "benefactor": donation.move_id.partner_id.preferred_name,
+                    "benefactor": donation.move_id.partner_id.sudo().preferred_name,
                     "date": donation.move_id.create_date,
                     "time_ago": self.get_time_ago(donation.move_id.create_date),
                     "anonymous": donation.is_anonymous,

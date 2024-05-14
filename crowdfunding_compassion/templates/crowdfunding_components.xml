@@ -197,7 +197,7 @@
                         <h4 class="participants__name">
                             <a t-attf-href="/participant/#{participant.id}">
                                 <t
-                  t-esc="participant.nickname or participant.partner_id.preferred_name"
+                  t-esc="participant.nickname or participant.partner_id.sudo().preferred_name"
                 />
                             </a>
                         </h4>
@@ -354,7 +354,7 @@
 
                     <h6 class="text-center text-uppercase mt-3">
                         <t
-              t-esc="participant.nickname or participant.partner_id.preferred_name"
+              t-esc="participant.nickname or participant.partner_id.sudo().preferred_name"
             />
                     </h6>
                 </div>

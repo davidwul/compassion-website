@@ -53,7 +53,7 @@ class DonationController(Controller):
                 "page": page,
                 "skip_type_selection": skip_type_selection,
                 "participant_name": participant.nickname
-                or participant.partner_id.preferred_name,
+                or participant.partner_id.sudo().preferred_name,
                 "action_url": action_url,
             },
         )

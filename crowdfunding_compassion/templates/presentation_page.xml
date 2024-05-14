@@ -38,7 +38,7 @@
                     >
                                             <span>Support </span>
                                             <t
-                        t-esc="participant.nickname or participant.partner_id.preferred_name"
+                        t-esc="participant.nickname or participant.partner_id.sudo().preferred_name"
                       />
                                         </h3>
                                         <div class="project-hero__card-content">
@@ -265,7 +265,7 @@
                       t-if="model == 'project'"
                     />
                                         <t
-                      t-esc="participant.nickname or participant.partner_id.preferred_name"
+                      t-esc="participant.nickname or participant.partner_id.sudo().preferred_name"
                       t-else=""
                     />
                                     </h5>
