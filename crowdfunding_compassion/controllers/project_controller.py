@@ -64,8 +64,6 @@ class ProjectController(HomepageController):
         sitemap=sitemap_participant,
     )
     def participant(self, participant=None, **kwargs):
-        if not participant.can_access_from_current_website():
-            raise werkzeug.exceptions.NotFound()
         project = participant.project_id.sudo()
         if not project.website_published and not request.env.user.has_group(
             "website.group_website_designer"

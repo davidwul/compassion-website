@@ -22,94 +22,21 @@ $primary: $blue-compassion !default;
 $secondary: #fff !default;
 $success: $blue-compassion !default;
 
-// Typography
-
-//font sizes
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-
-$h1-font-size: $font-size-base * 2.6; //41.6px
-$h2-font-size: $font-size-base * 2.15; //34.4px
-$h3-font-size: $font-size-base * 1.7; //27.2px
-$h4-font-size: $font-size-base * 1.25; //20px
-$h5-font-size: $font-size-base;
-$h6-font-size: $font-size-base * 0.85; //13.6px
-
-$display1-size: 4.0625rem; //65px
-$display2-size: 3.4375rem; //55px
-$display3-size: 2.8125rem; //45px
-$display4-size: 2.5rem; //40px
-
-$font-size-sm: $font-size-base * 0.75;
-
-$font-family-base: "Montserrat", sans-serif;
-$body-color: #333;
-
-body {
-  font-family: $font-family-base;
-  color: #212529;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  font-family: $font-family-base;
-  line-height: 1.2;
-  color: #707070;
-}
-
-@media (max-width: 768px) {
-  .display-1 {
-    font-size: 4rem;
-  }
-
-  .display-2 {
-    font-size: 2.4375rem;
-  }
-
-  .display-4 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 425px) {
-  .display-1 {
-    font-size: 3rem;
-  }
-
-  .display-4 {
-    font-size: 2rem;
-  }
-}
-
 .bg-compassion {
   background-color: $blue-compassion;
 }
 
 section {
   .subheading {
-    font-size: $display4-size;
     font-weight: 600;
   }
 
   .count {
-    font-size: $font-size-base * 4.81;
     font-weight: 700;
     color: $blue-compassion;
   }
 
   .count-text {
-    font-size: $h3-font-size;
     color: $blue-compassion;
     // 		font-weight: 700;
   }
@@ -250,10 +177,6 @@ $enable-rounded: false;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
-
-      h5 {
-        font-size: 0.95rem;
-      }
     }
   }
   &__body {
@@ -452,11 +375,6 @@ footer {
     text-transform: uppercase;
   }
 
-  &:hover {
-    color: $white !important;
-    text-transform: uppercase;
-  }
-
   &:active {
     color: $white !important;
     text-transform: uppercase;
@@ -466,7 +384,6 @@ footer {
     text-transform: uppercase;
   }
 
-  font-size: 1.125rem;
   line-height: normal;
 }
 
@@ -479,7 +396,6 @@ footer {
     margin-bottom: 0;
   }
   .card-text {
-    font-size: $font-size-sm;
     color: $gray-700;
   }
 }
@@ -495,7 +411,6 @@ footer {
   .fab,
   .far,
   .fas {
-    // 	font-size: $h2-font-size;
     margin-right: 0.2rem !important;
   }
 
@@ -534,7 +449,6 @@ footer {
   }
 
   &__card-share-text {
-    font-size: 0.85rem;
     color: $blue-compassion;
   }
 
@@ -547,7 +461,6 @@ footer {
 }
 
 .hero-title {
-  font-size: $display2-size;
   font-weight: 700;
   color: $white;
 
@@ -750,13 +663,11 @@ footer {
   &--bold {
     color: $gray-700;
     font-weight: 700;
-    font-size: 0.9rem;
   }
 
   &--faded {
     color: $gray-600;
     font-weight: 400;
-    font-size: 0.8rem;
   }
 }
 

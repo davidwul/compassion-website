@@ -72,7 +72,7 @@ odoo.define("crowdfunding_compassion.form_snippet", function (require) {
         type: "url",
         modelRequired: false,
         name: "twitter_url",
-        string: _t("Twitter link"),
+        string: _t("X link"),
       },
       {
         type: "url",
@@ -276,7 +276,7 @@ odoo.define("crowdfunding_compassion.form_snippet", function (require) {
         type: "url",
         modelRequired: false,
         name: "twitter_url",
-        string: _t("Twitter link"),
+        string: _t("X link"),
       },
       {
         type: "url",
@@ -329,7 +329,7 @@ odoo.define("crowdfunding_compassion.form_snippet", function (require) {
         type: "url",
         modelRequired: false,
         name: "twitter_url",
-        string: _t("Twitter link"),
+        string: _t("X link"),
       },
       {
         type: "url",

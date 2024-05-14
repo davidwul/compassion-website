@@ -64,7 +64,7 @@ class CrowdfundingProject(models.Model):
     )
     presentation_video_embed = fields.Char(compute="_compute_presentation_video_embed")
     facebook_url = fields.Char("Facebook link")
-    twitter_url = fields.Char("Twitter link")
+    twitter_url = fields.Char("X link")
     instagram_url = fields.Char("Instagram link")
     personal_web_page_url = fields.Char("Personal web page")
     product_id = fields.Many2one(

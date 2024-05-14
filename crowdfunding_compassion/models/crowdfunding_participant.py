@@ -52,7 +52,7 @@ class CrowdfundingParticipant(models.Model):
         "utm.source", "UTM Source", required=True, ondelete="cascade"
     )
     facebook_url = fields.Char(string="Facebook link")
-    twitter_url = fields.Char(string="Twitter link")
+    twitter_url = fields.Char(string="X link")
     instagram_url = fields.Char(string="Instagram link")
     personal_web_page_url = fields.Char(string="Personal web page")
     profile_photo = fields.Image(related="partner_id.image_512")

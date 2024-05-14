@@ -37,7 +37,7 @@
 
                 <div class="container w-100" t-if="participating_projects">
                     <h3
-            class="text-primary my-2 text-center text-uppercase"
+            class="text-primary mt-4 mb-2 text-center text-uppercase"
           >Projects you participate to</h3>
                     <section class="projects no-padding-top center">
                         <t
@@ -427,7 +427,7 @@
                     >
                                             <span
                         class="s_website_form_label_content"
-                      >Twitter link</span>
+                      >X link</span>
                                         </label>
                                         <div class="col-sm">
                                             <input
@@ -747,7 +747,7 @@
                     >
                                             <span
                         class="s_website_form_label_content"
-                      >Twitter link</span>
+                      >X link</span>
                                         </label>
                                         <div class="col-sm">
                                             <input

@@ -24,7 +24,7 @@ class CrowdfundingParticipatUpdateForm(models.TransientModel):
         required=True,
     )
     facebook_url = fields.Char("Facebook link")
-    twitter_url = fields.Char("Twitter link")
+    twitter_url = fields.Char("X link")
     instagram_url = fields.Char("Instagram link")
     personal_web_page_url = fields.Char("Personal web page")
     nickname = fields.Char(

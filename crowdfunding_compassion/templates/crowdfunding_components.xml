@@ -5,7 +5,7 @@
         <!-- This is a progress bar and related text for a goal (fund or sponsorships) -->
         <!-- [goal_reached], [goal_objective], [goal_image] and [goal_name] must be set before calling this template -->
         <template id="goal_progress" name="Goal progress">
-            <div class="goal-progress__text-tile">
+            <div class="goal-progress__text-tile h6">
                 <img
           class="goal-progress__icon"
           t-attf-src="data:image/png;base64, #{ goal_image }"
@@ -54,7 +54,7 @@
             aria-valuemax="100"
           />
                 </div>
-                <span class="text--faded">
+                <span class="text--faded h6">
                     <t t-esc="progress_percentage" />
                     %
                 </span>
@@ -155,7 +155,7 @@
         </template>
 
         <template id="project_deadline_widget">
-            <span class="text--faded">
+            <span class="text--faded h6">
                 <t t-if="datetime.date.today() == project.deadline">
                     <i class="fa fa-clock-o" />
                     ends today
@@ -391,14 +391,14 @@
                     <div class="card-header">
                         <div class="project-card__header">
                             <div class="project-card__header-title">
-                                <h5 class="card-title">
+                                <h6 class="card-title">
                                     <a
                     t-attf-href="/project/#{project.id}"
                     style="color: white"
                   >
                                         <t t-esc="project.name" />
                                     </a>
-                                </h5>
+                                </h6>
                             </div>
                             <div class="project-card__header-icons">
                                 <t t-if="project.type == 'collective'">
@@ -566,7 +566,7 @@
               src="/crowdfunding_compassion/static/src/img/icn_children.png"
               t-else=""
             />
-                        <h3 class="text-primary">
+                        <h4 class="text-primary">
                             <t t-esc="current_default_quantity" />
                             <t
                 t-esc="product.crowdfunding_quantity_plural if plural else product.crowdfunding_quantity_singular"
@@ -574,7 +574,7 @@
                             <br />
                             CHF
                             <t t-esc="str(int(current_value)) + '.-'" />
-                        </h3>
+                        </h4>
                     </div>
                 </label>
             </div>
@@ -748,15 +748,11 @@
   color: #c0c0c0 !important;
   font-size: small;
 }
-
-.social-title {
-  text-transform: text-uppercase;
-}
                 </style>
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a
-                      class="nav-link social-title"
+                      class="nav-link social-title text-uppercase"
                     >Follow us</a>
                                     </li>
 
@@ -810,6 +806,13 @@
                       href="https://www.instagram.com/compassionswiss/"
                       target="_blank"
                     >Instagram</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                      class="nav-link social-link"
+                      href="https://www.linkedin.com/company/compassion-schweiz-suisse-svizzera"
+                      target="_blank"
+                    >Linkedin</a>
                                     </li>
 
                                     <li class="nav-item" style="display: none;">

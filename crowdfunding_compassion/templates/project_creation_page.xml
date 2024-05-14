@@ -25,17 +25,17 @@
                             </div>
                         </div>
                         <t t-if="not project">
-                            <h1
-                class="text-primary text-uppercase text-center"
-              >Create a new project</h1>
                             <h2
-                class="text-center"
+                class="text-primary text-uppercase text-center"
+              >Create a new project</h2>
+                            <h3
+                class="text-center text-secondary"
               >You are only 3 steps away from releasing children from extreme
                                 poverty thanks to your project!
-                            </h2>
+                            </h3>
                         </t>
                         <t t-else="">
-                            <h1
+                            <h3
                 class="text-primary text-uppercase text-center"
                 t-esc="title"
               />

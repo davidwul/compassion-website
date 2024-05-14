@@ -59,7 +59,7 @@
                   >
                                     <a
                       class="nav-link"
-                      t-attf-href="/projects?type=collective#{'&amp;status='+status if status else ''}"
+                      t-attf-href="/projects?project_type=collective#{'&amp;status='+status if status else ''}"
                       t-att-style="'color: #005EB8 !important' if type == 'collective'else 'color: #707070 !important'"
                     >Collective</a>
                                   </li>
@@ -68,7 +68,7 @@
                   >
                                     <a
                       class="nav-link"
-                      t-attf-href="/projects?type=individual#{'&amp;status='+status if status else ''}"
+                      t-attf-href="/projects?project_type=individual#{'&amp;status='+status if status else ''}"
                       t-att-style="'color: #005EB8 !important' if type == 'individual' else 'color: #707070 !important'"
                     >Individual</a>
                                   </li>
@@ -113,7 +113,7 @@
                             </t>
                         </div>
                     </div>
-                    <div class="projects_pager">
+                    <div class="projects_pager mt-2 mb-5">
                         <t t-call="website.pager" />
                     </div>
 <!--                TODO CO-3212 -->

@@ -45,7 +45,7 @@ class PartnerCoordinatesForm(models.TransientModel):
         default="individual",
     )
     facebook_url = fields.Char("Facebook link")
-    twitter_url = fields.Char("Twitter link")
+    twitter_url = fields.Char("X link")
     instagram_url = fields.Char("Instagram link")
     personal_web_page_url = fields.Char("Personal web page")
     project_id = fields.Many2one("crowdfunding.project", required=True)

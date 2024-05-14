@@ -31,11 +31,13 @@
                                     </t>
                                 </div>
                             </div>
-                            <h1
-                class="text-primary text-uppercase text-center"
+                            <h3
+                class="text-primary text-uppercase text-center font-weight-bold"
                 t-esc="project.name"
               />
-                            <h2 class="text-center">Make your donation</h2>
+                            <h4
+                class="text-center text-secondary"
+              >Make your donation</h4>
                             <div class="row justify-content-center">
                                 <div class="col-11">
                                     <ul class="stepper stepper-horizontal">
@@ -137,18 +139,18 @@
 
                     <!-- Title section -->
                     <section class="bg-primary py-3 text-center">
-                        <h1
+                        <h2
               class="text-center text-uppercase py-2"
               t-if="int(page) == 1"
-            >Choose which fundraiser you want to support</h1>
-                        <h1
+            >Choose which fundraiser you want to support</h2>
+                        <h2
               class="text-center text-uppercase py-2"
               t-if="int(page) == 2 and not skip_type_selection"
-            >Select your type of support</h1>
-                        <h1
+            >Select your type of support</h2>
+                        <h2
               class="text-center text-uppercase py-2"
               t-if="int(page) == 3 or (skip_type_selection and int(page) == 2)"
-            >Choose your donation amount</h1>
+            >Choose your donation amount</h2>
                     </section>
 
                     <!-- PAGE 1 - Participant selection-->
@@ -396,7 +398,7 @@
             t-if="int(page) == 3 or (skip_type_selection and int(page) == 2)"
           >
                             <form
-              t-attf-action="donation/submit"
+              t-attf-action="/project/#{slug(project)}/#{slug(selected_participant)}/donation/submit"
               method="post"
               enctype="multipart/form-data"
             >
@@ -444,9 +446,9 @@
                                                         <div
                             class="card h-100 d-flex justify-content-around align-items-center text-center"
                           >
-                                                            <h3
+                                                            <h4
                               class="text-primary"
-                            >Another amount</h3>
+                            >Another amount</h4>
                                                             <input
                               type="number"
                               id="custom-amount-field"

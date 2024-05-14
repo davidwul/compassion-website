@@ -19,6 +19,13 @@ $o-color-palettes: (
 // Fonts
 //------------------------------------------------------------------------------
 
+$o-theme-h1-font-size-multiplier: (36 / 14);
+$o-theme-h2-font-size-multiplier: (34 / 14);
+$o-theme-h3-font-size-multiplier: (24 / 14);
+$o-theme-h4-font-size-multiplier: (20 / 14);
+$o-theme-h5-font-size-multiplier: (14 / 14);
+$o-theme-h6-font-size-multiplier: (12 / 14);
+
 $o-theme-font-configs: (
   "Montserrat": (
     "family": (
@@ -35,7 +42,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
   (
-    "font": "Roboto",
+    "font": "Montserrat",
     "headings-font": "Montserrat",
     "navbar-font": "Montserrat",
     "buttons-font": "Montserrat",

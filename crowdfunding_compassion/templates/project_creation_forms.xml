@@ -184,66 +184,32 @@
               data-type="selection"
               data-name="Field"
             >
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <label
+  <div class="row s_col_no_resize s_col_no_bgcolor">
+    <label
                   class=" col-sm-auto s_website_form_label "
                   style="width: 200px"
-                  for="ocb80vx9lsm4"
+                  for="projectType"
                 >
-                                    <span
-                    class="s_website_form_label_content"
-                  >My project is</span>
-                                    <span class="s_website_form_mark"> *</span>
-                                </label>
-                                <div class="col-sm">
-                                    <div
-                    class="row s_col_no_resize s_col_no_bgcolor s_website_form_multiple"
+      <span class="s_website_form_label_content">My project is</span>
+      <span class="s_website_form_mark"> *</span>
+    </label>
+    <div class="col-sm">
+      <select
+                    class="s_website_form_select_item form-select form-control"
+                    id="projectType"
+                    name="type"
                     data-name="type"
-                    data-display="vertical"
+                    required="true"
                   >
-                                        <div class="radio col-12">
-                                            <div class="form-check">
-                                                <input
-                          type="radio"
-                          class="s_website_form_input form-check-input"
-                          id="ocb80vx9lsm40"
-                          name="type"
-                          value="individual"
-                          required="true"
-                        />
-                                                <label
-                          class="form-check-label s_website_form_check_label"
-                          for="ocb80vx9lsm40"
-                        >
-                                                    Individual
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="radio col-12">
-                                            <div class="form-check">
-                                                <input
-                          type="radio"
-                          class="s_website_form_input form-check-input"
-                          id="ocb80vx9lsm41"
-                          name="type"
-                          value="collective"
-                          required="true"
-                        />
-                                                <label
-                          class="form-check-label s_website_form_check_label"
-                          for="ocb80vx9lsm41"
-                        >
-                                                    Collective
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <small class="form-text text-muted">
-                                        Choose if you are doing your project alone, or if you want to open it to other fundraisers (ie: collective sport projects)
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
+        <option value="individual">Individual</option>
+        <option value="collective">Collective</option>
+      </select>
+      <small class="form-text text-muted">
+        Choose if you are doing your project alone, or if you want to open it to other fundraisers (ie: collective sport projects)
+      </small>
+    </div>
+  </div>
+</div>
                         <div
               class="form-group s_website_form_field col-12    "
               data-type="url"
@@ -284,7 +250,7 @@
                 >
                                     <span
                     class="s_website_form_label_content"
-                  >Twitter link</span>
+                  >X link</span>
                                 </label>
                                 <div class="col-sm">
                                     <input

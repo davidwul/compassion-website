@@ -342,7 +342,7 @@
                                         <a
                       t-att-href="project.twitter_url"
                       target="_blank"
-                    >Twitter</a>
+                    >X</a>
                                         <br />
                                     </t>
 
@@ -383,7 +383,7 @@
                                         <a
                       t-att-href="participant.twitter_url"
                       target="_blank"
-                    >Twitter</a>
+                    >X</a>
                                         <br />
                                     </t>
 
