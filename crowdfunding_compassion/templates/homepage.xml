@@ -64,9 +64,9 @@
                                         <t t-esc="impact[fund]['value']" />
                                     </h4>
 
-                                    <p class="count-text">
+                                    <h5 class="text-primary">
                                         <t t-esc="impact[fund]['text']" />
-                                    </p>
+                                    </h5>
                                 </div>
                             </t>
                         </div>
