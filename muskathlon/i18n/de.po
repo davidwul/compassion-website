@@ -1,242 +1,230 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: Compassion Odoo 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-21 08:34+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: POEditor.com\n"
-"Project-Id-Version: Compassion Odoo 14\n"
-"Language: de\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__ambassador_id
-#: model_terms:ir.ui.view,arch_db:muskathlon.view_muskathlon_search
-msgid "Ambassador"
-msgstr "Botschafter"
+#. module: muskathlon
+#: model:mail.template,body_html:muskathlon.sponsorship_invitation_template
+msgid ""
+"\n"
+"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   % set partner = object.partner_id\n"
+"\n"
+"% set event = object.get_objects().compassion_event_id\n"
+"\n"
+"% set country = event.country_id.in_preposition + ' ' + event.country_id."
+"name\n"
+"  </div>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   ${partner.informal_salutation}\n"
+"   <br>\n"
+"   <br>\n"
+"   Hast du schon ein Patenkind ${country}&nbsp;?\n"
+"   <br>\n"
+"   Falls du dich entschliesst Pate eines Kindes zu werden, besteht für dich "
+"die einzigartige Möglichkeit dein Patenkind ${country} zu treffen. Diese "
+"Begegnung prägt nicht nur das unterstützte Kind, sondern ist auch ein tief "
+"bewegendes Erlebnis für dich! In den Kinderzentren, die wir am Muskathlon "
+"besuchen werden, gibt es noch einige Kinder, für die wir dringend einen "
+"Paten suchen. Bitte melde dich, dann werden wir dir konkrete Vorschläge "
+"senden.\n"
+"   <br>\n"
+"   Diese Patenschaft wird dann auch mit CHF 1000 auf deinem Barometer "
+"gutgeschrieben.\n"
+"   <br>\n"
+"   <br>\n"
+"   Falls du bereits ein Patenkind in Ghana hast, welches aber in einer "
+"anderen Region lebt, ist wahrscheinlich auch ein Treffen während des "
+"Muskathlons möglich. Bitte nimm hierzu so früh wie möglich Kontakt mit "
+"Compassion auf.\n"
+"   <br>\n"
+"   <br>\n"
+"   Herzliche Grüsse\n"
+"   <br>\n"
+"   Merve von Compassion Schweiz\n"
+"  </p>\n"
+" "
+msgstr ""
+"\n"
+"<div>\n"
+"   % set partner = object.partner_id\n"
+"\n"
+"% set event = object.get_objects().compassion_event_id\n"
+"\n"
+"% set country = event.country_id.in_preposition + ' ' + event.country_id."
+"name\n"
+"  </div>\n"
+"  <p>\n"
+"   ${partner.informal_salutation}\n"
+"   <br>\n"
+"   <br>\n"
+"   Hast du schon ein Patenkind ${country}?\n"
+"   <br>\n"
+"   <br>\n"
+"   Falls du dich entschliesst Pate eines Kindes zu werden, besteht für dich "
+"die einzigartige Möglichkeit dein Patenkind ${country} zu treffen. Diese "
+"Begegnung prägt nicht nur das unterstützte Kind, sondern ist auch ein tief "
+"bewegendes Erlebnis für dich! In den Kinderzentren, die wir am Muskathlon "
+"besuchen werden, gibt es noch einige Kinder, für die wir dringend einen "
+"Paten suchen. Bitte melde dich, dann werden wir dir konkrete Vorschläge "
+"senden.\n"
+"   <br>\n"
+"   <br>\n"
+"   Diese Patenschaft wird dann auch mit CHF 1000 auf deinem Barometer "
+"gutgeschrieben.\n"
+"   <br>\n"
+"   <br>\n"
+"   Falls du bereits ein Patenkind ${country} hast, welches aber in einer "
+"anderen Region lebt, ist wahrscheinlich auch ein Treffen während des "
+"Muskathlons möglich. Bitte nimm hierzu so früh wie möglich Kontakt mit "
+"Compassion auf.\n"
+"   <br>\n"
+"   <br>\n"
+"   Herzliche Grüsse,\n"
+"   <br>\n"
+"   Merve von Compassion Schweiz\n"
+"  </p>\n"
+" "
 
-#. module: child_compassion
-#: model:survey.question.answer,value:muskathlon.muskathlon_asthma
-msgid "Asthma"
-msgstr "Asma"
+#. module: muskathlon
+#: model:mail.template,body_html:muskathlon.child_protection_template
+#: model:mail.template,body_html:muskathlon.medical_reminder_template
+#: model:mail.template,body_html:muskathlon.visa_reminder_template
+msgid ""
+"\n"
+"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   % set partner = object.partner_id\n"
+"\n"
+"% set event = object.get_objects().compassion_event_id\n"
+"\n"
+"% set country = event.country_id.preposition + ' ' + event.country_id.name\n"
+"  </div>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   ${partner.informal_salutation}\n"
+"   <br>\n"
+"   <br>\n"
+"   Hast du schon ein Patenkind ${country}&nbsp;?\n"
+"   <br>\n"
+"   Falls du dich entschliesst Pate eines Kindes zu werden, besteht für dich "
+"die einzigartige Möglichkeit dein Patenkind ${country} zu treffen. Diese "
+"Begegnung prägt nicht nur das unterstützte Kind, sondern ist auch ein tief "
+"bewegendes Erlebnis für dich! In den Kinderzentren, die wir am Muskathlon "
+"besuchen werden, gibt es noch einige Kinder, für die wir dringend einen "
+"Paten suchen. Bitte melde dich, dann werden wir dir konkrete Vorschläge "
+"senden.\n"
+"   <br>\n"
+"   Diese Patenschaft wird dann auch mit CHF 1000 auf deinem Barometer "
+"gutgeschrieben.\n"
+"   <br>\n"
+"   <br>\n"
+"   Falls du bereits ein Patenkind in Ghana hast, welches aber in einer "
+"anderen Region lebt, ist wahrscheinlich auch ein Treffen während des "
+"Muskathlons möglich. Bitte nimm hierzu so früh wie möglich Kontakt mit "
+"Compassion auf.\n"
+"   <br>\n"
+"   <br>\n"
+"   Herzliche Grüsse,\n"
+"   <br>\n"
+"   Merve von Compassion Schweiz\n"
+"  </p>\n"
+" "
+msgstr ""
+"\n"
+"<div>\n"
+"   % set partner = object.partner_id\n"
+"\n"
+"% set event = object.get_objects().compassion_event_id\n"
+"\n"
+"% set country = event.country_id.in_preposition + ' ' + event.country_id."
+"name\n"
+"  </div>\n"
+"  <p>\n"
+"   ${partner.informal_salutation}\n"
+"   <br>\n"
+"   <br>\n"
+"   Hast du schon ein Patenkind ${country}?\n"
+"   <br>\n"
+"   <br>\n"
+"   Falls du dich entschliesst Pate eines Kindes zu werden, besteht für dich "
+"die einzigartige Möglichkeit dein Patenkind ${country} zu treffen. Diese "
+"Begegnung prägt nicht nur das unterstützte Kind, sondern ist auch ein tief "
+"bewegendes Erlebnis für dich! In den Kinderzentren, die wir am Muskathlon "
+"besuchen werden, gibt es noch einige Kinder, für die wir dringend einen "
+"Paten suchen. Bitte melde dich, dann werden wir dir konkrete Vorschläge "
+"senden.\n"
+"   <br>\n"
+"   <br>\n"
+"   Diese Patenschaft wird dann auch mit CHF 1000 auf deinem Barometer "
+"gutgeschrieben.\n"
+"   <br>\n"
+"   <br>\n"
+"   Falls du bereits ein Patenkind ${country} hast, welches aber in einer "
+"anderen Region lebt, ist wahrscheinlich auch ein Treffen während des "
+"Muskathlons möglich. Bitte nimm hierzu so früh wie möglich Kontakt mit "
+"Compassion auf.\n"
+"   <br>\n"
+"   <br>\n"
+"   Herzliche Grüsse,\n"
+"   <br>\n"
+"   Merve von Compassion Schweiz\n"
+"  </p>\n"
+" "
 
-#. module: child_compassion
-#: code:addons/muskathlon/models/event_compassion.py:0
-msgid "Average"
-msgstr "Durchschnittlich"
+#. module: muskathlon
+#: model:mail.template,subject:muskathlon.child_protection_template
+#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
+msgid "${object.get_objects().event_id.name} - Child protection"
+msgstr ""
 
-#. module: child_compassion
-#: model:ir.model,name:muskathlon.model_res_config_settings
-msgid "Config Settings"
-msgstr "Konfig-Einstellungen"
+#. module: muskathlon
+#: model:mail.template,subject:muskathlon.medical_reminder_template
+#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
+msgid "${object.get_objects().event_id.name} - Medical reminder"
+msgstr ""
 
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__create_uid
-msgid "Created by"
-msgstr "Angelegt von"
+#. module: muskathlon
+#: model:mail.template,subject:muskathlon.passport_and_flight_template
+#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
+msgid "${object.get_objects().event_id.name} - Passport and flight"
+msgstr ""
 
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__create_date
-msgid "Created on"
-msgstr "Angelegt am"
+#. module: muskathlon
+#: model:mail.template,subject:muskathlon.vaccinations_template
+#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
+msgid "${object.get_objects().event_id.name} - Vaccinations"
+msgstr ""
 
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_account_move_line__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_event_flight__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_event_registration__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_event_registration_task_rel__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__partner_name
-#: model:ir.model.fields,field_description:muskathlon.field_recurring_contract__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_res_config_settings__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_res_partner__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_res_users__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__display_name
-#: model:ir.model.fields,field_description:muskathlon.field_survey_user_input__display_name
-msgid "Display Name"
-msgstr "Anzeigename"
+#. module: muskathlon
+#: model:mail.template,subject:muskathlon.visa_reminder_template
+#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
+msgid "${object.get_objects().event_id.name} - Visa reminder"
+msgstr ""
 
-#. module: child_compassion
-#: model:survey.question.answer,value:muskathlon.muskathlon_epilepsy
-msgid "Epilepsy"
-msgstr "Epilepsie"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__event_id
-msgid "Event"
-msgstr "Anlass"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_event_registration_partner_firstname
-msgid "Firstname"
-msgstr "Vorname"
-
-#. module: child_compassion
-#: model:survey.question.answer,value:muskathlon.muskathlon_hepatitis
-msgid "Hepatitis"
-msgstr "Hepatitis"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_account_move_line__id
-#: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion__id
-#: model:ir.model.fields,field_description:muskathlon.field_event_flight__id
-#: model:ir.model.fields,field_description:muskathlon.field_event_registration__id
-#: model:ir.model.fields,field_description:muskathlon.field_event_registration_task_rel__id
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__id
-#: model:ir.model.fields,field_description:muskathlon.field_recurring_contract__id
-#: model:ir.model.fields,field_description:muskathlon.field_res_config_settings__id
-#: model:ir.model.fields,field_description:muskathlon.field_res_partner__id
-#: model:ir.model.fields,field_description:muskathlon.field_res_users__id
-#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__id
-#: model:ir.model.fields,field_description:muskathlon.field_survey_user_input__id
-msgid "ID"
-msgstr "ID"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_account_move_line____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_event_flight____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_event_registration____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_event_registration_task_rel____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_recurring_contract____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_res_config_settings____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_res_partner____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_res_users____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline____last_update
-#: model:ir.model.fields,field_description:muskathlon.field_survey_user_input____last_update
-msgid "Last Modified on"
-msgstr "Zuletzt geändert am"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__write_uid
-msgid "Last Updated by"
-msgstr "Zuletzt aktualisiert durch"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__write_date
-msgid "Last Updated on"
-msgstr "Zuletzt aktualisiert am"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_event_registration_partner_lastname
-msgid "Lastname"
-msgstr "Nachname"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__name
-msgid "Name"
-msgstr "Bezeichnung"
-
-#. module: child_compassion
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_04_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_06_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_08_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_09_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_10_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_12_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_14_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_16_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_18_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_20_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_22_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_24_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_25_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_27_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_29_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_31_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_33_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_35_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_37_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_39_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_40_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_41_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_43_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_45_0
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_47_0
-msgid "No"
-msgstr "Nein"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__partner_id
-msgid "Partner"
-msgstr "Partner"
-
-#. module: child_compassion
-#: model_terms:ir.ui.view,arch_db:muskathlon.view_muskathlon_events_thank_donation
-msgid "Registration"
-msgstr "Anmeldung"
-
-#. module: child_compassion
-#: model:sport.discipline,sport:muskathlon.run_21
-#: model:sport.discipline,sport:muskathlon.run_42
-#: model:sport.discipline,sport:muskathlon.run_60
-msgid "Running"
-msgstr "In Betrieb"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__contract_id
-#: model:ir.model.fields.selection,name:muskathlon.selection__muskathlon_report__donation_type__sponsorship
-msgid "Sponsorship"
-msgstr "Patenschaft"
-
-#. module: child_compassion
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_details
-msgid "Sports"
-msgstr "Sport"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__status
-msgid "Status"
-msgstr "Status"
-
-#. module: child_compassion
-#: model:survey.question.answer,value:muskathlon.muskathlon_tuberculosis
-msgid "Tuberculosis"
-msgstr "Tuberkulose"
-
-#. module: child_compassion
-#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__type
-msgid "Type"
-msgstr "Typ"
-
-#. module: child_compassion
-#: model:sport.discipline,sport:muskathlon.walk_60
-msgid "Walking"
-msgstr "Spazierengehen"
-
-#. module: child_compassion
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_04_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_06_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_08_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_09_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_10_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_12_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_14_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_16_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_18_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_20_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_3_22_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_24_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_25_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_27_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_29_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_4_31_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_33_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_35_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_37_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_39_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_40_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_41_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_43_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_45_1
-#: model:survey.question.answer,value:muskathlon.muskathlon_5_47_1
-msgid "Yes"
-msgstr "Ja."
+#. module: muskathlon
+#: model:mail.template,subject:muskathlon.sponsorship_invitation_template
+msgid "${object.get_objects().event_id.name} - your sponsored child"
+msgstr "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
 
 #. module: muskathlon
 #: model:mail.template,subject:muskathlon.order_material_mail_template
-msgid "${object.partner_id.name} has made an order for ${object.event_ids.name}"
-msgstr "${object.partner_id.name} hat eine Bestellung für ${object.event_ids.name} aufgegeben"
+msgid ""
+"${object.partner_id.name} has made an order for ${object.event_ids.name}"
+msgstr ""
+"${object.partner_id.name} hat eine Bestellung für ${object.event_ids.name} "
+"aufgegeben"
 
 #. module: muskathlon
 #: model:mail.template,report_name:muskathlon.medical_survey_to_doctor_template
@@ -245,6 +233,7 @@ msgstr "${object.partner_id.name} medizinische Untersuchung"
 
 #. module: muskathlon
 #: code:addons/muskathlon/models/event_registration.py:0
+#, python-format
 msgid "%s - New Muskathlon registration"
 msgstr "%s - Neue Muskathlon-Anmeldung"
 
@@ -257,85 +246,404 @@ msgstr "*Geben Sie hier weitere Details an:"
 
 #. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
-msgid "<b>The seven childpacks are reserved for you. When someone decides to sponsor one of the children who has been your delegate, and sends the completed form to our office, the sponsorship will be credited to you.</b>"
-msgstr "<b>Die Dossiers sind auf deinen Namen reserviert. Wenn jemand die Patenschaft für ein Kind übernimmt und das Formular ausgefüllt an unser Büro sendet wird dir diese Patenschaft auf dem Barometer gutgeschrieben.</b>"
+msgid ""
+"<b>The seven childpacks are reserved for you. When someone decides to "
+"sponsor one of the children who has been your delegate, and sends the "
+"completed form to our office, the sponsorship will be credited to you.</b>"
+msgstr ""
+"<b>Die Dossiers sind auf deinen Namen reserviert. Wenn jemand die "
+"Patenschaft für ein Kind übernimmt und das Formular ausgefüllt an unser Büro "
+"sendet wird dir diese Patenschaft auf dem Barometer gutgeschrieben.</b>"
 
-#. module: partner_communication_switzerland
-#: model:mail.template,body_html:muskathlon.registration_confirmation_template
-msgid "<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+#. module: muskathlon
+#: model:mail.template,body_html:muskathlon.passport_and_flight_template
+msgid ""
+"<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
 "   % set partner = object.partner_id\n"
-"                    \n"
-"% set user = object.get_objects()\n"
 "\n"
-"% set user = object.get_objects()\n"
-"    \n"
-"% set registration = partner.registration_ids[:1]\n"
-"    \n"
-"% set event = registration.event_id.compassion_event_id\n"
-"    \n"
-"% set country = event.country_id\n"
+"% set event = object.get_objects().compassion_event_id\n"
+"\n"
 "  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   ${partner.informal_salutation},\n"
-"   <br>\n"
-"   <br>\n"
-"   WELCOME to the Muskathlon  ${event.name} from&nbsp;${event.get_date('start_date', '%d')}&nbsp;until&nbsp;${event.get_date('end_date', 'date_full')} - your extreme commitment against extreme poverty!\n"
-"   <br>\n"
-"   <br>\n"
-"   The Muskathlon is organized by 4M Switzerland and 4M Germany in cooperation with the Christian charity for children, Compassion, and offers you the extraordinary opportunity to take part in the fight against child poverty and its consequences and at the same time take part in a sporting challenge on another continent.\n"
-"   <br>\n"
-"   <br>\n"
-"   You will make the difference and experience that hope is stronger than poverty!\n"
-"   <br>\n"
-"   <br>\n"
-"   With your registration a very special and great adventure has begun for you. We want to give you the best possible support and give you all the information and tips you need for your muskathlon. Start with the preparation and read the \"Information Letter\" which is deposited on your profile. In the following months, we will provide you with more information material and remind you when to do what.\n"
-"   <br>\n"
-"   <br>\n"
-"   Soon you will receive mail from us with the invoice for the travel costs, various flyers and your training shirt.\n"
-"   <br>\n"
-"   <br>\n"
-"   Please activate your account and setup your password by clicking on this button:\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   ${partner.informal_salutation}\n"
+"   </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Um den Flug zu buchen und das Einchecken der Gruppe in den Hotels zu "
+"vereinfachen brauchen wir einen\n"
+"   <b style=\"font-weight:bolder;\">\n"
+"    Scan/Foto deines Passes.\n"
+"   </b>\n"
+"   Bitte lade die Hauptseite deines Passes (mit deinem Bild)\n"
+"   <a href=\"https://muskathlon-kilimanjaro.ch/my/muskathlon\" title=\"\" "
+"style=\"text-decoration:none;background-color:transparent;color:rgb(124, "
+"123, 173);\">\n"
+"    hier hoch\n"
+"   </a>\n"
+"   .\n"
+"   </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Bald geht die Reise los – viel Spass bei den letzten Vorbereitungen!\n"
+"   </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Sara, 4M Switzerland\n"
 "  </p>\n"
-"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;margin:0 auto; text-align: center;\">\n"
-"   <a href=\"${user.signup_url + '&amp;redirect=/my/muskathlon'}\" style=\"text-decoration:none;background-color:transparent;color:rgb(124, 123, 173);padding: 12px 18px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#0054A6; text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #0054A6; border: 1px solid #0054A6; border-radius:3px\">\n"
+" "
+msgstr ""
+"<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   % set partner = object.partner_id\n"
+"\n"
+"% set event = object.get_objects().compassion_event_id\n"
+"\n"
+"  </div>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   ${partner.informal_salutation}\n"
+"   </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Um den Flug zu buchen und das Einchecken der Gruppe in den Hotels zu "
+"vereinfachen, brauchen wir einen\n"
+"   <b style=\"font-weight:bolder;\">\n"
+"    Scan/Foto deines Passes.\n"
+"   </b>\n"
+"   Bitte lade die Hauptseite deines Passes (mit deinem Bild)\n"
+"   <a href=\"https://muskathlon-kilimanjaro.ch/my/muskathlon\" title=\"\" "
+"style=\"text-decoration:none;background-color:transparent;color:rgb(124, "
+"123, 173);\">\n"
+"    hier hoch\n"
+"   </a>\n"
+"   .\n"
+"   </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Bald geht die Reise los - viel Spass bei den letzten Vorbereitungen!\n"
+"   </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Sara, 4M Schweiz\n"
+"  </p>\n"
+" "
+
+#. module: muskathlon
+#: model:mail.template,body_html:muskathlon.vaccinations_template
+msgid ""
+"<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   % set partner = object.partner_id\n"
+"\n"
+"% set event = object.get_objects().compassion_event_id\n"
+"\n"
+"  </div>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   ${partner.informal_salutation}\n"
+"   <br>\n"
+"   <br>\n"
+"   Hast du deinen Impfstatus überprüfen lassen? Nimm dir in den nächsten "
+"Tagen Zeit um dies zu erledigen.\n"
+"   <br>\n"
+"   <br>\n"
+"  </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Bist du ausreichend versichert? Bei deiner Kranken-/Unfallversicherung "
+"kannst du dich über die Kostendeckung/-leistung im Ausland informieren. "
+"Schliesse allenfalls eine entsprechende Versicherung ab.\n"
+"  </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Wir legen dir Nahe Gönner der Rega zu werden. Im Falle einer "
+"Repatriierung organisiert die Rega diese und kommt für die ungedeckten "
+"Kosten auf. Hier der Link zum Antragsformular der Rega-Gönnerschaft https://"
+"www.rega.ch/rega-goenner/goenner-werden?rnw-widget=goenner-"
+"werden#goennerschaft-auswaehlen\n"
+"  </p>\n"
+"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"    Reise-, Annullations- und Auslandkrankenversicherung ist Sache des "
+"Teilnehmenden.\n"
+"   </div>\n"
+"  </div>\n"
+"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   <br>\n"
+"  </div>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   <br>\n"
+"   Möge Gott deine Gesundheit stärken und segnen!\n"
+"   <br>\n"
+"   <br>\n"
+"   Sara, 4M Switzerland\n"
+"  </p>\n"
+" "
+msgstr ""
+"<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   % set partner = object.partner_id\n"
+"\n"
+"% set event = object.get_objects().compassion_event_id\n"
+"\n"
+"  </div>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   ${partner.informal_salutation}\n"
+"   <br>\n"
+"   <br>\n"
+"   Hast du deinen Impfstatus überprüfen lassen? Nimm dir in den nächsten "
+"Tagen Zeit, um dies zu erledigen.\n"
+"   <br>\n"
+"   <br>\n"
+"  </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Bist du ausreichend versichert? Bei deiner Kranken-/Unfallversicherung "
+"kannst du dich über die Kostendeckung/-leistung im Ausland informieren. "
+"Schließe allenfalls eine entsprechende Versicherung ab.\n"
+"  </p>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   Wir legen dir Nahe Gönner der Rega zu werden. Im Falle einer "
+"Repatriierung organisiert die Rega diese und kommt für die nicht gedeckten "
+"Kosten auf. Hier der Link zum Antragsformular der Rega-Gönnerschaft https://"
+"www.rega.ch/rega-goenner/goenner-werden?rnw-widget=goenner-"
+"werden#goennerschaft-auswaehlen\n"
+"  </p>\n"
+"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"    Reise-, Annullations- und Auslandskrankenversicherung ist Sache des "
+"Teilnehmenden.\n"
+"   </div>\n"
+"  </div>\n"
+"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, "
+"Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   <br>\n"
+"  </div>\n"
+"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"   <br>\n"
+"   Möge Gott deine Gesundheit stärken und segnen!\n"
+"   <br>\n"
+"   <br>\n"
+"   Sara, 4M Schweiz\n"
+"  </p>\n"
+" "
+
+#. module: muskathlon
+#: model:mail.template,body_html:muskathlon.ambassador_donation_confirmation_template
+msgid ""
+"<div>\n"
+"                    % set invoice_lines = object.get_objects()\n"
+"                    % set donations = invoice_lines.get_donations()\n"
+"                    % set partner = object.partner_id\n"
+"                    % set donors = invoice_lines.mapped('partner_id')\n"
+"                    % set muskathlon = partner.registration_ids[:1]\n"
+"                </div>\n"
+"                <div>\n"
+"                    ${partner.salutation},\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    Compassion is glad to inform you that you just received "
+"a donation of ${object.user_id.company_id.currency_id.symbol} "
+"${donations[0]}.-\n"
+"                    % if donations[1]:\n"
+"                        for the ${donations[1]}.\n"
+"                    % endif\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    % if len(donors) == 1:\n"
+"                        Your donor is ${donors.preferred_name} from ${donors."
+"city}.\n"
+"                        % if donors.email and donors.thankyou_preference != "
+"'none':\n"
+"                    You can personally thank ${donors.get('him')} if you "
+"wish by sending ${donors.get('him')} an e-mail at <a href=\"mailto:${donors."
+"email}\">${donors.email}</a>. In any case, ${donors.get('he')} will receive "
+"a thank you letter from us.\n"
+"                        % endif\n"
+"                    % else:\n"
+"                        You received this from the following people. You may "
+"contact them by e-mail if you wish to thank them personally.\n"
+"                        <ul>\n"
+"                            % for donor in donors:\n"
+"                            <li>${donor.preferred_name} from ${donor.city} "
+"${'(<a href=\"{}\">{}</a>)'.format(donor.email, donor.email) if donor.email "
+"and donor.thankyou_preference != 'none' else ''}</li>\n"
+"                            % endfor\n"
+"                        </ul>\n"
+"                    % endif\n"
+"                    % if muskathlon:\n"
+"                        You currently have raised ${object.user_id."
+"company_id.currency_id.symbol} ${muskathlon.amount_raised}.- You can check "
+"your barometer at anytime\n"
+"                        <a href=\"${muskathlon.website_url}\">on your sport "
+"profile page</a>.\n"
+"                    % endif\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    Yours sincerely\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div>\n"
+"    % set invoice_lines = object.get_objects()\n"
+"    % set donations = invoice_lines.get_donations()\n"
+"    % set partner = object.partner_id\n"
+"    % set plural = partner.title.plural or partner.title.id == 29\n"
+"    % set du = 'ihr' if plural else 'du'\n"
+"    % set dir = 'euch' if plural else 'dir'\n"
+"    % set dich = 'euch' if plural else 'dich'\n"
+"    % set dein = 'euer' if plural else 'dein'\n"
+"    % set deine = 'eure' if plural else 'deine'\n"
+"    % set donors = invoice_lines.mapped('partner_id')\n"
+"    % set muskathlon = partner.registration_ids[:1]\n"
+"    % set url = 'http://www.muskathlon-kilimanjaro.ch' + (muskathlon."
+"website_url or '')\n"
+"</div>\n"
+"<p>\n"
+"    ${partner.salutation}\n"
+"</p>\n"
+"<p>\n"
+"    Wir freuen uns, ${dir} mitzuteilen, dass ${du} gerade eine Spende von "
+"CHF ${donations[0]} erhalten ${\"habt\" if plural else \"hast\"}.\n"
+"</p>\n"
+"<p>\n"
+"    % if len(donors) == 1:\n"
+"        ${donors.preferred_name} aus ${donors.city} ${donors.get('has')} für "
+"${dich} gespendet.\n"
+"        % if donors.email and donors.thankyou_letter != 'no':\n"
+"            ${\"Ihr könnt\" if plural else \"Du kannst\"} ${donors."
+"get('ihm')} persönlich danken (${donors.email}). ${donors.get('he').title()} "
+"${donors.get('will be')} auch von Compassion einen Dankesbrief erhalten.\n"
+"        % endif\n"
+"    % else:\n"
+"        <ul>\n"
+"            % for donor in donors:\n"
+"% set email = donor.thankyou_letter != 'no' and donor.email\n"
+"            <li>\n"
+"                ${donor.preferred_name} aus ${donor.city}\n"
+"% if email:\n"
+"(<a href=\"mailto:${donor.email}\">${donor.email}</a>)\n"
+"% endif\n"
+"            </li>\n"
+"            % endfor\n"
+"        </ul>\n"
+"    % endif\n"
+"</p>\n"
+"    % if muskathlon:\n"
+"        <p>\n"
+"        ${\"Ihr habt\" if plural else \"Du hast\"} bereits CHF ${muskathlon."
+"amount_raised} gesammelt. ${dein.title()} Barometer ${\"könnt ihr\" if "
+"plural else \"kannst du\"} jederzeit in\n"
+"        <a href=\"${url}\">\n"
+"            ${deine}m Profil einsehen.\n"
+"        </a>\n"
+"        </p>\n"
+"        <p>\n"
+"            Wir wünschen ${dir} alles Gute bei den weiteren Vorbereitungen "
+"und beim Training für den Muskathlon. Danke für ${deine}n extremen Einsatz "
+"gegen extreme Armut!\n"
+"        </p>\n"
+"    % endif\n"
+"<p>\n"
+"    Herzliche Grüsse vom Compassion Team\n"
+"</p>\n"
+" "
+
+#. module: muskathlon
+#: model:mail.template,body_html:muskathlon.registration_confirmation_template
+msgid ""
+"<div>\n"
+"                % set partner = object.partner_id\n"
+"% set registration = object.get_objects()\n"
+"% set user = partner.user_ids[:1]\n"
+"% set event = registration.event_id.compassion_event_id\n"
+"% set country = event.country_id\n"
+"   </div>\n"
+"  <p>\n"
+"   ${partner.salutation},\n"
+"    <br/>\n"
+"    <br/>\n"
+"   WELCOME to the ${event.name} from ${event.get_date('start_date', 'd')} "
+"until ${event.get_date('end_date', 'date_full')} - your extreme commitment "
+"against extreme poverty!\n"
+"    <br/>\n"
+"    <br/>\n"
+"   The Muskathlon is organized by 4M Switzerland and 4M Germany in "
+"cooperation with the Christian charity for children, Compassion, and offers "
+"you the extraordinary opportunity to take part in the fight against child "
+"poverty and its consequences and at the same time take part in a sporting "
+"challenge on another continent.\n"
+"    <br/>\n"
+"    <br/>\n"
+"   You will make the difference and experience that hope is stronger than "
+"poverty!\n"
+"    <br/>\n"
+"    <br/>\n"
+"   With your registration a very special and great adventure has begun for "
+"you. We want to give you the best possible support and give you all the "
+"information and tips you need for your muskathlon. Start with the "
+"preparation and read the \"Information Letter\" which is deposited on your "
+"profile. In the following months, we will provide you with more information "
+"material and remind you when to do what.\n"
+"    <br/>\n"
+"    <br/>\n"
+"   Soon you will receive mail from us with the invoice for the travel costs, "
+"various flyers and your training shirt.\n"
+"    <br/>\n"
+"    <br/>\n"
+"      % if user.signup_valid:\n"
+"   Please activate your account and setup your password by clicking on this "
+"button:\n"
+"  </p>\n"
+"\n"
+"                <div style=\"margin-top: 20px; margin-bottom: 20px\">\n"
+"   <a href=\"${user.signup_url + '&amp;redirect=/my/events'}\" style=\"text-"
+"transform:uppercase;text-decoration:none;background-color:#cd171e;padding: "
+"12px 18px; color: #FFFFFF; display: inline-block; font-weight: 400; text-"
+"align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; "
+"border: 1px solid #cd171e; border-radius:10px\">\n"
 "    Activate my account\n"
 "   </a>\n"
+"\n"
 "  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Here are your access data:\n"
-"   <br>\n"
-"   <br>\n"
+"  <p>\n"
+"                  % endif\n"
+"   Here is your access data:\n"
+"    <br/>\n"
+"    <br/>\n"
 "  </p>\n"
-"  <ul style=\"margin:0px 0 1rem 0;\">\n"
+"  <ul>\n"
 "   <li>\n"
 "    Username: ${user.login or ''}\n"
 "   </li>\n"
 "   <li>\n"
 "    Access link:\n"
-"    <a href=\"https://my.compassion.ch/my/muskathlon\" style=\"text-decoration:none;background-color:transparent;color:rgb(124, 123, 173);\">\n"
+"    <a href=\"https://my.compassion.ch/my/muskathlon\">\n"
 "     https://my.compassion.ch/my/muskathlon\n"
 "    </a>\n"
 "   </li>\n"
 "  </ul>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"  <p>\n"
 "   If any questions arise, please do not hesitate to contact us.\n"
-"   <br>\n"
-"   <br>\n"
-"   For questions about organization and travel: Sara Badertscher, s.badertscher@4m-switzerland.ch, 079 565 07 65\n"
-"   <br>\n"
-"   <br>\n"
-"   For questions about Compassion and sponsorships: Merve Rugenstein Itona, mrugensteinitona@compassion.ch, 076 23 25 766\n"
-"   <br>\n"
-"   <br>\n"
+"    <br/>\n"
+"    <br/>\n"
 "   Cordially\n"
-"   <br>\n"
-"   <br>\n"
-"   Sara, 4M Switzerland\n"
-"   <br>\n"
-"   Merve, Compassion Switzerland\n"
 "  </p>\n"
-" "
-msgstr "<div>\n"
+"\n"
+"            "
+msgstr ""
+"<div>\n"
 "   % set partner = object.partner_id\n"
 "    \n"
 "% set user = object.get_objects()\n"
@@ -352,32 +660,53 @@ msgstr "<div>\n"
 "   <br>\n"
 "   WILLKOMMEN beim\n"
 "   <b>\n"
-"    ${event.name} vom ${event.get_date('start_date', 'd')}. bis ${event.get_date('end_date', 'date_full')}\n"
+"    ${event.name} vom ${event.get_date('start_date', 'd')}. bis ${event."
+"get_date('end_date', 'date_full')}\n"
 "   </b>\n"
 "   - dein sportlicher Einsatz gegen extreme Armut!\n"
 "   <br>\n"
 "   <br>\n"
-"   Hättest du gedacht, dass du eines Tages einen Sportevent unter der Sonne Afrikas, nahe dem Äquator laufen würdest?\n"
+"   Hättest du gedacht, dass du eines Tages einen Sportevent unter der Sonne "
+"Afrikas, nahe dem Äquator laufen würdest?\n"
 "   <br>\n"
 "   <br>\n"
 "  </p>\n"
 "  <p>\n"
-"   Der Muskathlon wird von 4M Switzerland und 4M Deutschland in Zusammenarbeit mit dem christlichen Kinderhilfswerk Compassion organisiert und bietet dir die aussergewöhnliche Gelegenheit, dich am Kampf gegen Kinderarmut und deren Folgen zu beteiligen und gleichzeitig eine sportliche Herausforderung auf einem anderen Kontinent zu bestreiten.\n"
+"   Der Muskathlon wird von 4M Switzerland und 4M Deutschland in "
+"Zusammenarbeit mit dem christlichen Kinderhilfswerk Compassion organisiert "
+"und bietet dir die aussergewöhnliche Gelegenheit, dich am Kampf gegen "
+"Kinderarmut und deren Folgen zu beteiligen und gleichzeitig eine sportliche "
+"Herausforderung auf einem anderen Kontinent zu bestreiten.\n"
 "  </p>\n"
 "  <p>\n"
 "   <br>\n"
-"   Du machst den Unterschied und wirst erleben, dass Hoffnung stärker als Armut ist! Wir können einen Unterschied machen!\n"
+"   Du machst den Unterschied und wirst erleben, dass Hoffnung stärker als "
+"Armut ist! Wir können einen Unterschied machen!\n"
 "   <br>\n"
 "   <br>\n"
-"   Mit deiner Anmeldung hat für dich ein ganz besonderes und grosses Abenteuer begonnen. Wir wollen dich bestmöglich unterstützen und dir alle Informationen und Tipps geben, die du für deinen Muskathlon brauchst. Fange mit der Vorbereitung an und lies den „Informationsbrief“, welcher auf deinem Profil hinterlegt ist. Im Verlaufe der Monate versorgen wir dich mit weiterem Info-Material und erinnern dich, wann was gemacht oder erledigt werden muss.\n"
+"   Mit deiner Anmeldung hat für dich ein ganz besonderes und grosses "
+"Abenteuer begonnen. Wir wollen dich bestmöglich unterstützen und dir alle "
+"Informationen und Tipps geben, die du für deinen Muskathlon brauchst. Fange "
+"mit der Vorbereitung an und lies den „Informationsbrief“, welcher auf deinem "
+"Profil hinterlegt ist. Im Verlaufe der Monate versorgen wir dich mit "
+"weiterem Info-Material und erinnern dich, wann was gemacht oder erledigt "
+"werden muss.\n"
 "   <br>\n"
-"   In den nächsten Tagen bekommst du von uns Post mit der Rechnung für die Reisekosten, diversen Flyern und deinem Trainingsshirt.\n"
+"   In den nächsten Tagen bekommst du von uns Post mit der Rechnung für die "
+"Reisekosten, diversen Flyern und deinem Trainingsshirt.\n"
 "   <br>\n"
 "   <br>\n"
-"   Bitte aktiviere deinen persönlichen Teilnehmer-Account, füge ein Passwort hinzu und fülle die restlichen Informationen aus.\n"
+"   Bitte aktiviere deinen persönlichen Teilnehmer-Account, füge ein Passwort "
+"hinzu und fülle die restlichen Informationen aus.\n"
 "  </p>\n"
 "  <div style=\"margin:0 auto; text-align: center;\">\n"
-"   <a href=\"${user.signup_url.replace('erp.compassion', 'muskathlon-kilimanjaro') + '&redirect=/my/muskathlon'}\" style=\"padding: 12px 18px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#0054A6; text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #0054A6; border: 1px solid #0054A6; border-radius:3px\">\n"
+"   <a href=\"${user.signup_url.replace('erp.compassion', 'muskathlon-"
+"kilimanjaro') + '&redirect=/my/muskathlon'}\" style=\"padding: 12px 18px; "
+"font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#0054A6; "
+"text-decoration: none; display: inline-block; margin-bottom: 0px; font-"
+"weight: 400; text-align: center; vertical-align: middle; cursor: pointer; "
+"white-space: nowrap; background-image: none; background-color: #0054A6; "
+"border: 1px solid #0054A6; border-radius:3px\">\n"
 "    Account aktivieren\n"
 "   </a>\n"
 "  </div>\n"
@@ -396,11 +725,14 @@ msgstr "<div>\n"
 "   </li>\n"
 "  </ul>\n"
 "  <p>\n"
-"   Wenn Fragen auftauchen, zögere nicht, dich mit uns in Verbindung zu setzen.\n"
+"   Wenn Fragen auftauchen, zögere nicht, dich mit uns in Verbindung zu "
+"setzen.\n"
 "   <br>\n"
-"   Für Fragen zu Organisation und Reise: Sara Badertscher, s.badertscher@4m-switzerland.ch, 078 712 43 48\n"
+"   Für Fragen zu Organisation und Reise: Sara Badertscher, s.badertscher@4m-"
+"switzerland.ch, 078 712 43 48\n"
 "   <br>\n"
-"   Für Fragen zu Compassion und Patenschaften: Merve Rugenstein Itona, mrugensteinitona@compassion.ch, 076 23 25 766\n"
+"   Für Fragen zu Compassion und Patenschaften: Merve Rugenstein Itona, "
+"mrugensteinitona@compassion.ch, 076 23 25 766\n"
 "   <br>\n"
 "   <br>\n"
 "   Herzlich\n"
@@ -413,129 +745,44 @@ msgstr "<div>\n"
 " "
 
 #. module: muskathlon
-#: model:mail.template,body_html:muskathlon.ambassador_donation_confirmation_template
-msgid "<div>\n"
-"                    % set invoice_lines = object.get_objects()\n"
-"                    % set donations = invoice_lines.get_donations()\n"
-"                    % set partner = object.partner_id\n"
-"                    % set donors = invoice_lines.mapped('partner_id')\n"
-"                    % set muskathlon = partner.registration_ids[:1]\n"
-"% set url = 'http://www.muskathlon-kilimanjaro.ch/en_US' + muskathlon.website_url\n"
-"                </div>\n"
-"                <div>\n"
-"                    ${partner.salutation},\n"
-"                    <br/>\n"
-"                    <br/>\n"
-"                    Compassion Switzerland is glad to inform you that you just received a donation of CHF ${donations[0]}\n"
-"                    % if donations[1]:\n"
-"                        for the ${donations[1]}.\n"
-"                    % endif\n"
-"                    <br/>\n"
-"                    <br/>\n"
-"                    % if len(donors) == 1:\n"
-"                        Your donor is ${donors.preferred_name} from ${donors.city}.\n"
-"                        % if donors.email and donors.thankyou_letter != 'no':\n"
-"                    You can personally thank ${donors.get('him')} if you wish by sending ${donors.get('him')} an e-mail at <a href=\"mailto:${donors.email}\" style=\"color: skyblue; text-decoration: underline;\">${donors.email}</a>. In any case, ${donors.get('he')} will receive a thank you letter from us.\n"
-"                        % endif\n"
-"                    % else:\n"
-"                        You received this from the following people. You may contact them by e-mail if you wish to thank them personally.\n"
-"                        <ul>\n"
-"                            % for donor in donors:\n"
-"                            <li>${donor.preferred_name} from ${donor.city} ${'(<a href=\"{}\" style=\"color: skyblue; text-decoration: underline;\">{}</a>)'.format(donor.email, donor.email) if donor.email and donor.thankyou_letter != 'no' else '' |safe}</li>\n"
-"                            % endfor\n"
-"                        </ul>\n"
-"                    % endif\n"
-"                    % if muskathlon:\n"
-"                        You currently have raised CHF ${muskathlon.amount_raised}.- You can check your barometer at anytime\n"
-"                        <a href=\"${url}\" style=\"color: skyblue; text-decoration: underline;\">on your sport profile page</a>.\n"
-"                    % endif\n"
-"                    <br/>\n"
-"                    <br/>\n"
-"                    Yours sincerely\n"
-"% if object.send_mode == 'digital':\n"
-"   <br/>\n"
-"   <br/>\n"
-"    Rachel Maglo\n"
-"    <br/>\n"
-"    Donors relation\n"
-"    <br/>\n"
-"    Compassion Switzerland\n"
-"% endif\n"
-"                </div>\n"
-"            "
-msgstr "<div>\n"
-"    % set invoice_lines = object.get_objects()\n"
-"    % set donations = invoice_lines.get_donations()\n"
-"    % set partner = object.partner_id\n"
-"    % set plural = partner.title.plural or partner.title.id == 29\n"
-"    % set du = 'ihr' if plural else 'du'\n"
-"    % set dir = 'euch' if plural else 'dir'\n"
-"    % set dich = 'euch' if plural else 'dich'\n"
-"    % set dein = 'euer' if plural else 'dein'\n"
-"    % set deine = 'eure' if plural else 'deine'\n"
-"    % set donors = invoice_lines.mapped('partner_id')\n"
-"    % set muskathlon = partner.registration_ids[:1]\n"
-"    % set url = 'http://www.muskathlon-kilimanjaro.ch' + (muskathlon.website_url or '')\n"
-"</div>\n"
-"<p>\n"
-"    ${partner.salutation}\n"
-"</p>\n"
-"<p>\n"
-"    Wir freuen uns, ${dir} mitzuteilen, dass ${du} gerade eine Spende von CHF ${donations[0]} erhalten ${\"habt\" if plural else \"hast\"}.\n"
-"</p>\n"
-"<p>\n"
-"    % if len(donors) == 1:\n"
-"        ${donors.preferred_name} aus ${donors.city} ${donors.get('has')} für ${dich} gespendet.\n"
-"        % if donors.email and donors.thankyou_letter != 'no':\n"
-"            ${\"Ihr könnt\" if plural else \"Du kannst\"} ${donors.get('ihm')} persönlich danken (${donors.email}). ${donors.get('he').title()} ${donors.get('will be')} auch von Compassion einen Dankesbrief erhalten.\n"
-"        % endif\n"
-"    % else:\n"
-"        <ul>\n"
-"            % for donor in donors:\n"
-"% set email = donor.thankyou_letter != 'no' and donor.email\n"
-"            <li>\n"
-"                ${donor.preferred_name} aus ${donor.city}\n"
-"% if email:\n"
-"(<a href=\"mailto:${donor.email}\">${donor.email}</a>)\n"
-"% endif\n"
-"            </li>\n"
-"            % endfor\n"
-"        </ul>\n"
-"    % endif\n"
-"</p>\n"
-"    % if muskathlon:\n"
-"        <p>\n"
-"        ${\"Ihr habt\" if plural else \"Du hast\"} bereits CHF ${muskathlon.amount_raised} gesammelt. ${dein.title()} Barometer ${\"könnt ihr\" if plural else \"kannst du\"} jederzeit in\n"
-"        <a href=\"${url}\">\n"
-"            ${deine}m Profil einsehen.\n"
-"        </a>\n"
-"        </p>\n"
-"        <p>\n"
-"            Wir wünschen ${dir} alles Gute bei den weiteren Vorbereitungen und beim Training für den Muskathlon. Danke für ${deine}n extremen Einsatz gegen extreme Armut!\n"
-"        </p>\n"
-"    % endif\n"
-"<p>\n"
-"    Herzliche Grüsse vom Compassion Team\n"
-"</p>\n"
-" "
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
+msgid ""
+"<option value=\"0\">0</option>\n"
+"                                        <option value=\"5\">5</option>\n"
+"                                        <option value=\"10\">10</option>\n"
+"                                        <option value=\"15\">15</option>\n"
+"                                        <option value=\"20\">20</option>\n"
+"                                        <option value=\"30\">30</option>"
+msgstr ""
+"<option value=\"0\">0</option>\n"
+"                                        <option value=\"5\">5</option>\n"
+"                                        <option value=\"10\">10</option>\n"
+"                                        <option value=\"15\">15</option>\n"
+"                                        <option value=\"20\">20</option>\n"
+"                                        <option value=\"30\">30</option>"
 
 #. module: muskathlon
 #: model:mail.template,body_html:muskathlon.medical_survey_to_doctor_template
-msgid "<p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+msgid ""
+"<p>\n"
 "                    Dear Doctor,\n"
-"                    <br>\n"
-"                    <br>\n"
-"                    Please find attached the pdf containing the medical survey from participant ${object.partner_id.name}.\n"
-"                    <br>\n"
-"                    <br>\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    Please find attached the pdf containing the medical "
+"survey from participant ${object.partner_id.name}.\n"
+"                    <br/>\n"
+"                    <br/>\n"
 "                    Yours sincerely.\n"
 "                </p>\n"
 "            "
-msgstr "<p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+msgstr ""
+"<p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida "
+"Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
 "                    Lieber Doktor,\n"
 "                    <br>\n"
 "                    <br>\n"
-"                    Im Anhang findest du das pdf mit der medizinischen Umfrage von Teilnehmer ${object.partner_id.name}.\n"
+"                    Im Anhang findest du das pdf mit der medizinischen "
+"Umfrage von Teilnehmer ${object.partner_id.name}.\n"
 "                    <br>\n"
 "                    <br>\n"
 "                    Mit freundlichen Grüßen.\n"
@@ -544,11 +791,14 @@ msgstr "<p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida G
 
 #. module: muskathlon
 #: model:mail.template,body_html:muskathlon.order_material_mail_template
-msgid "<p>\n"
+msgid ""
+"<p>\n"
 "                Hello ${object.user_id.partner_id.preferred_name}\n"
 "                <br/>\n"
 "                <br/>\n"
-"                <a href=\"/web#id=${object.partner_id.id}&amp;model=res.partner&amp;view_type=form\" style=\"text-decoration:none;background-color:transparent;color:rgb(124, 123, 173);\">\n"
+"                <a href=\"/web#id=${object.partner_id.id}&amp;model=res."
+"partner&amp;view_type=form\" style=\"text-decoration:none;background-color:"
+"transparent;color:rgb(124, 123, 173);\">\n"
 "                    ${object.partner_id.name}\n"
 "                </a> &lt;${object.partner_id.email}&gt; ordered :\n"
 "                <br/>\n"
@@ -559,17 +809,21 @@ msgid "<p>\n"
 "                ${object.partner_id.street} <br/>\n"
 "                ${object.partner_id.zip} ${object.partner_id.city}\n"
 "                ${object.partner_id.country_id.name}\n"
-"                The profile picture of the participant is in the attachment files, in case you need it.\n"
+"                The profile picture of the participant is in the attachment "
+"files, in case you need it.\n"
 "                <br/>\n"
 "                <br/>\n"
 "                Thank you\n"
 "            </p>\n"
 "        "
-msgstr "<p>\n"
+msgstr ""
+"<p>\n"
 "                Hallo ${object.user_id.partner_id.preferred_name}\n"
 "                <br/>\n"
 "                <br/>\n"
-"                <a href=\"/web#id=${object.partner_id.id}&amp;model=res.partner&amp;view_type=form\" style=\"text-decoration:none;background-color:transparent;color:rgb(124, 123, 173);\">\n"
+"                <a href=\"/web#id=${object.partner_id.id}&amp;model=res."
+"partner&amp;view_type=form\" style=\"text-decoration:none;background-color:"
+"transparent;color:rgb(124, 123, 173);\">\n"
 "                    ${object.partner_id.name}\n"
 "                </a> &lt;${object.partner_id.email}&gt; bestellt:\n"
 "                <br/>\n"
@@ -580,7 +834,8 @@ msgstr "<p>\n"
 "                ${object.partner_id.street} <br/>\n"
 "                ${object.partner_id.zip} ${object.partner_id.city}\n"
 "                ${object.partner_id.country_id.name}\n"
-"                Das Profilbild des Teilnehmers befindet sich in den Anhangsdateien, falls du es brauchst.\n"
+"                Das Profilbild des Teilnehmers befindet sich in den "
+"Anhangsdateien, falls du es brauchst.\n"
 "                <br/>\n"
 "                <br/>\n"
 "                Vielen Dank!\n"
@@ -588,9 +843,176 @@ msgstr "<p>\n"
 "        "
 
 #. module: muskathlon
+#: model:survey.question,description:muskathlon.muskathlon_1
+#: model:survey.question,description:muskathlon.muskathlon_2
+#: model:survey.question,description:muskathlon.muskathlon_3
+#: model:survey.question,description:muskathlon.muskathlon_4
+#: model:survey.question,description:muskathlon.muskathlon_5
+msgid "<p></p>"
+msgstr "<p></p>"
+
+#. module: muskathlon
+#: model:survey.survey,description:muskathlon.muskathlon_form
+msgid ""
+"<p>The medical form has several reasons to be. First, it allows the "
+"Muskathlon doctor to assess and apprehend the risks in the context of the "
+"sport challenge undertaken. Then, it can be useful in the case of a medical "
+"incident, in order to react in the best and most effective way possible on "
+"the spot. We therefore ask you to fill in this form carefully, to bring the "
+"required medical documents (eg: allergy certificate, implant certificate, "
+"cardiac simulator certificate), and to give them to our doctor on site. As "
+"in any medical information sharing, the 4Medic team is also subject to "
+"professional secrecy. All shared information will be deleted after the "
+"Muskathlon. Thank you so much !</p>"
+msgstr ""
+"<p>Der medizinische Fragebogen erfüllt verschiedene Aufgaben. Zum einen "
+"dient er der Risikobewertung- und Einschätzung bezüglich der vorgenommenen "
+"sportlichen Herausforderung durch den begleitenden Muskathlon-Arzt. Zum "
+"anderen ist er Grundlage im Falle eines medizinischen Zwischenfalles, um "
+"eine reibungslose und effiziente Versorgung vor Ort gewährleisten zu können. "
+"Wir bitten daher, den Fragebogen gründlich vorher auszufüllen und relevante "
+"medizinische Dokumente, falls vorhanden (z.B. Allergiepass, "
+"Implantatausweis, Schrittmacherausweis,...), als Kopie mitzubringen und "
+"unserem Arzt vor Ort auszuhändigen. Wie für alle medizinischen Informationen "
+"gilt auch für das 4Medic-Team die Wahrung der ärztlichen Schweigepflicht. "
+"Alle vorliegenden Daten werden nach dem Muskathlon vernichtet. Vielen Dank!</"
+"p>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
+msgid ""
+"<span class=\"fa fa-check-circle\"/>\n"
+"                                    Thank You For Your Order"
+msgstr ""
+"<span class=\"fa fa-check-circle\"/>\n"
+"                                    Vielen Dank für deine Bestellung"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
+msgid "<span class=\"s_website_form_label_content\">Arrival</span>"
+msgstr "<span class=\"s_website_form_label_content\">Ankunft</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.passport_form
+msgid "<span class=\"s_website_form_label_content\">Comments</span>"
+msgstr "<span class=\"s_website_form_label_content\">Kommentare</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
+msgid "<span class=\"s_website_form_label_content\">Departure</span>"
+msgstr "<span class=\"s_website_form_label_content\">Abreise</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
+msgid ""
+"<span class=\"s_website_form_label_content\">Describe your sport experience</"
+"span>\n"
+"                            <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Beschreibe deine "
+"Sporterfahrung</span>\n"
+"                            <span class=\"s_website_form_mark\"> *</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
+msgid ""
+"<span class=\"s_website_form_label_content\">Flight number</span>\n"
+"                                    <span class=\"s_website_form_mark\"> *</"
+"span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Flugnummer</span>\n"
+"                                    <span class=\"s_website_form_mark\"> *</"
+"span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
+msgid "<span class=\"s_website_form_label_content\">Flight type</span>"
+msgstr "<span class=\"s_website_form_label_content\">Flugtyp</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
+msgid ""
+"<span class=\"s_website_form_label_content\">Flying company</span>\n"
+"                                    <span class=\"s_website_form_mark\"> *</"
+"span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Fliegendes Unternehmen</span>\n"
+"                                    <span class=\"s_website_form_mark\"> *</"
+"span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
+msgid ""
+"<span class=\"s_website_form_label_content\">Number of French flyers</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Anzahl der französischen "
+"Flugblätter</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
+msgid ""
+"<span class=\"s_website_form_label_content\">Number of German flyers</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Anzahl der deutschen "
+"Flugblätter</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.passport_form
+msgid "<span class=\"s_website_form_label_content\">Passport Scan:</span>"
+msgstr "<span class=\"s_website_form_label_content\">Pass-Scan:</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
+msgid "<span class=\"s_website_form_label_content\">Registration</span>"
+msgstr "<span class=\"s_website_form_label_content\">Anmeldung</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.passport_form
+msgid ""
+"<span class=\"s_website_form_label_content\">Registration</span>\n"
+"                                    <span class=\"s_website_form_mark\"> *</"
+"span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Anmeldung</span>\n"
+"                                    <span class=\"s_website_form_mark\"> *</"
+"span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
+msgid ""
+"<span class=\"s_website_form_label_content\">Sport discipline</span>\n"
+"                            <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Sportdisziplin</span>\n"
+"                            <span class=\"s_website_form_mark\"> *</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
+msgid ""
+"<span class=\"s_website_form_label_content\">Sport level</span>\n"
+"                            <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Dein Sport Level</span>\n"
+"                            <span class=\"s_website_form_mark\"> *</span>"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
+msgid ""
+"<span class=\"s_website_form_label_content\">T-shirt size</span>\n"
+"                            <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">T-Shirtgrösse</span>\n"
+"                            <span class=\"s_website_form_mark\"> *</span>"
+
+#. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
-msgid "A warm thank you for committing yourself with Compassion to release children from poverty through sponsorship!"
-msgstr "<span style=\"background-color: transparent;color: rgb(58, 58, 58)\">Schön, dass du dich für Compassion engagierst, um Kinder durch Patenschaften aus Armut zu befreien. Herzlichen Dank!</span>"
+msgid ""
+"A warm thank you for committing yourself with Compassion to release children "
+"from poverty through sponsorship!"
+msgstr ""
+"<span style=\"background-color: transparent;color: rgb(58, 58, 58)\">Schön, "
+"dass du dich für Compassion engagierst, um Kinder durch Patenschaften aus "
+"Armut zu befreien. Herzlichen Dank!</span>"
 
 #. module: muskathlon
 #: model:survey.question.answer,value:muskathlon.muskathlon_2_06_2
@@ -603,8 +1025,9 @@ msgstr "AB"
 msgid "Activate account"
 msgstr "Konto aktivieren"
 
-#. modules: mail, muskathlon, fetchmail
+#. module: muskathlon
 #: code:addons/muskathlon/models/event_compassion.py:0
+#, python-format
 msgid "Advanced"
 msgstr "Erweitert"
 
@@ -613,8 +1036,18 @@ msgstr "Erweitert"
 msgid "Age (years)"
 msgstr "Alter (Jahre)"
 
-#. modules: payment, report_compassion, gift_compassion, account_payment_return, account_voucher, crowdfunding_compassion, account, hr_payroll, muskathlon, account_asset_management, sale, mis_builder, payment_postfinance_flex, thankyou_letters, mis_builder_budget, analytic, account_payment_order, l10n_ch_hr_payroll
-#. openerp-web
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__ambassador_id
+#: model_terms:ir.ui.view,arch_db:muskathlon.view_muskathlon_search
+msgid "Ambassador"
+msgstr "Botschafter"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_event_registration_ambassador_quote
+msgid "Ambassador Quote"
+msgstr "Botschafter Zitat"
+
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__amount
 msgid "Amount"
 msgstr "Betrag"
@@ -624,13 +1057,13 @@ msgstr "Betrag"
 msgid "Amount Objective"
 msgstr "Betrag Zielsetzung"
 
-#. modules: website_event_compassion, muskathlon
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion_amount_raised
 #: model:ir.model.fields,field_description:muskathlon.field_event_registration_amount_raised
 msgid "Amount Raised"
 msgstr "Erhobener Betrag"
 
-#. modules: website_event_compassion, muskathlon
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion_amount_raised_percents
 #: model:ir.model.fields,field_description:muskathlon.field_event_registration_amount_raised_percents
 msgid "Amount Raised Percents"
@@ -666,14 +1099,26 @@ msgstr "Arterielle Durchblutungsstörung (pAVK)"
 msgid "Arterial fibrillation"
 msgstr "Arterielles Vorhofflimmern"
 
-#. modules: gift_compassion, partner_communication_revision, muskathlon, partner_compassion, thankyou_letters, mis_builder, mobile_app_connector, base_automation, queue_job, sbc_switzerland, base_report_to_printer, cleanup_switzerland, account_mass_reconcile, partner_communication_switzerland, account_banking_sepa_direct_debit, sms_sponsorship, hr_attendance_management, mass_mailing, recurring_contract, auditlog, child_sync_wp, base, sponsorship_compassion, child_compassion, l10n_ch_fds_postfinance, mail
+#. module: muskathlon
+#: model:survey.question.answer,value:muskathlon.muskathlon_asthma
+msgid "Asthma"
+msgstr "Asma"
+
+#. module: muskathlon
+#: code:addons/muskathlon/models/event_compassion.py:0
+#, python-format
+msgid "Average"
+msgstr "Durchschnittlich"
+
+#. module: muskathlon
 #: model:ir.cron,cron_name:muskathlon.ir_cron_compute_annual_balance
 #: model:ir.cron,cron_name:muskathlon.ir_cron_send_ambassador_donation_receipt
 msgid "Base: Auto-vacuum internal data"
 msgstr "Basis: Auto-Vacuum für interne Daten"
 
-#. modules: muskathlon, website
+#. module: muskathlon
 #: code:addons/muskathlon/models/event_compassion.py:0
+#, python-format
 msgid "Beginner"
 msgstr "Anfänger"
 
@@ -724,12 +1169,17 @@ msgstr "Klettern"
 msgid "Climbing"
 msgstr "Klettern"
 
-#. modules: crm_compassion, crowdfunding_compassion, website_event_compassion, muskathlon, thankyou_letters, mass_mailing_switzerland, partner_communication_switzerland, sms_sponsorship
+#. module: muskathlon
 #: model:ir.model,name:muskathlon.model_crm_event_compassion
 msgid "Compassion event"
 msgstr "Barmherzigkeitsveranstaltung"
 
-#. modules: report_compassion, sbc_translation, crowdfunding_compassion, website_event_compassion, muskathlon, partner_compassion, website_sale, thankyou_letters, mass_mailing_switzerland, product, project, mobile_app_connector, partner_contact_in_several_companies, auth_signup, geoengine_base_geolocalize, theme_compassion, snailmail, sbc_switzerland, account, sponsorship_switzerland, sms, sbc_compassion, portal, sale, base_address_city, partner_multi_relation, partner_contact_birthdate, bus, message_center_compassion, partner_firstname, crm_switzerland, hr, mail_bot, payment, asterisk_click2dial, crm_compassion, crm_phone_validation, mail_tracking, hr_timesheet, website_mass_mailing, sms_939, base_location, firebase_connector, geoengine_partner, sales_team, crm_phone, stock, website, partner_communication_switzerland, base_geolocalize, mail, mailchimp, sms_sponsorship, event, crm, mass_mailing, partner_communication, recurring_contract, partner_autocomplete, sponsorship_compassion, base, crm_phonecall, account_payment_partner, account_banking_mandate, base_phone, partner_email_check, calendar, crm_claim
+#. module: muskathlon
+#: model:ir.model,name:muskathlon.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfig-Einstellungen"
+
+#. module: muskathlon
 #: model:ir.model,name:muskathlon.model_res_partner
 msgid "Contact"
 msgstr "Kontakt"
@@ -738,6 +1188,16 @@ msgstr "Kontakt"
 #: model:survey.question.answer,value:muskathlon.muskathlon_coronary_disease
 msgid "Coronary heart disease"
 msgstr "Koronare Herzkrankheit"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__create_uid
+msgid "Created by"
+msgstr "Angelegt von"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__create_date
+msgid "Created on"
+msgstr "Angelegt am"
 
 #. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__date_display
@@ -773,6 +1233,23 @@ msgstr "Beschreibe deine Sporterfahrung"
 #: model:survey.question.answer,value:muskathlon.muskathlon_difficult_breathing
 msgid "Difficulty breathing when climbing stairs"
 msgstr "Atemprobleme beim Treppensteigen"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_event_flight__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_event_registration__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_event_registration_task_rel__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__partner_name
+#: model:ir.model.fields,field_description:muskathlon.field_recurring_contract__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_res_partner__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_res_users__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__display_name
+#: model:ir.model.fields,field_description:muskathlon.field_survey_user_input__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
 
 #. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__distance
@@ -846,8 +1323,12 @@ msgstr "Haben Sie ein Wirbelsäulen-, Gelenk- und/oder Muskelleiden?"
 
 #. module: muskathlon
 #: model:survey.question,title:muskathlon.muskathlon_2_10
-msgid "Do you take any anticoagulent medication (for instance ASS, Marcoumar, Heparine, Clopidogrel, Ticagrelor, Eliquis, Xarelto)?"
-msgstr "Nehmen Sie blutverdünnende Medikamente ein? (z.B. ASS, Marcumar, Heparin, Clopidogrel, Ticagrelor, Eliquis, Xarelto,...)"
+msgid ""
+"Do you take any anticoagulent medication (for instance ASS, Marcoumar, "
+"Heparine, Clopidogrel, Ticagrelor, Eliquis, Xarelto)?"
+msgstr ""
+"Nehmen Sie blutverdünnende Medikamente ein? (z.B. ASS, Marcumar, Heparin, "
+"Clopidogrel, Ticagrelor, Eliquis, Xarelto,...)"
 
 #. module: muskathlon
 #: model:survey.question,title:muskathlon.muskathlon_5_45
@@ -857,19 +1338,31 @@ msgstr "Konsumieren Sie Drogen oder haben Sie Drogen konsumiert?"
 #. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
 msgid "Don't hesitate to order new childpacks."
-msgstr "<span style=\"background-color: transparent;color: rgb(58, 58, 58)\">Gerne kannst du mehrmals Dossiers von Kindern bestellen</span>."
+msgstr ""
+"<span style=\"background-color: transparent;color: rgb(58, 58, 58)\">Gerne "
+"kannst du mehrmals Dossiers von Kindern bestellen</span>."
 
-#. modules: mobile_app_connector, muskathlon, website_event_compassion
+#. module: muskathlon
 #: model:ir.model.fields.selection,name:muskathlon.selection__muskathlon_report__donation_type__donation
 msgid "Donation"
 msgstr "Spenden"
 
-#. modules: muskathlon, mass_mailing_switzerland
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__donation_type
 msgid "Donation Type"
 msgstr "Art der Spende"
 
-#. modules: event_sale, event
+#. module: muskathlon
+#: model:survey.question.answer,value:muskathlon.muskathlon_epilepsy
+msgid "Epilepsy"
+msgstr "Epilepsie"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__event_id
+msgid "Event"
+msgstr "Anlass"
+
+#. module: muskathlon
 #: model:ir.model,name:muskathlon.model_event_registration
 msgid "Event Registration"
 msgstr "Veranstaltungsanmeldung"
@@ -879,30 +1372,30 @@ msgstr "Veranstaltungsanmeldung"
 msgid "Event information"
 msgstr "Informationen zur Veranstaltung"
 
-#. module: website_event_compassion
+#. module: muskathlon
 #: model:ir.model,name:muskathlon.model_event_flight
 msgid "Event participant flight"
 msgstr "Flug der Veranstaltungsteilnehmer"
 
-#. modules: website_event_compassion, muskathlon, partner_communication_switzerland
+#. module: muskathlon
+#: model:ir.model,name:muskathlon.model_event_registration_task_rel
+msgid "Event registration task relation"
+msgstr "Aufgabenbeziehung bei der Veranstaltungsanmeldung"
+
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_res_users_registration_ids
 msgid "Event registrations"
 msgstr "Anmeldungen für Veranstaltungen"
 
-#. modules: website_event_compassion, muskathlon
+#. module: muskathlon
 #: model:event.registration.task,name:muskathlon.task_medical
 msgid "Fill medical survey"
 msgstr "Medizinische Umfrage ausfüllen"
 
 #. module: muskathlon
-#: model:event.registration.task,name:muskathlon.task_passport
-msgid "Fill passport"
-msgstr "Reisepass ausfüllen"
-
-#. module: muskathlon
-#: model:event.registration.stage,name:muskathlon.stage_fill_profile
-msgid "Fill profile"
-msgstr "Profil befüllen"
+#: model:ir.model.fields,field_description:muskathlon.field_event_registration_partner_firstname
+msgid "Firstname"
+msgstr "Vorname"
 
 #. module: muskathlon
 #: model:survey.question,title:muskathlon.muskathlon_5_40
@@ -910,7 +1403,7 @@ msgstr "Profil befüllen"
 msgid "For women: are you pregnant?"
 msgstr "Für Frauen: Bist du schwanger?"
 
-#. modules: website_event_compassion, muskathlon
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion__website_my_fundraising
 #: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
 msgid "Fundraising"
@@ -977,9 +1470,23 @@ msgid "Height (m)"
 msgstr "Größe (m)"
 
 #. module: muskathlon
+#: model:survey.question.answer,value:muskathlon.muskathlon_hepatitis
+msgid "Hepatitis"
+msgstr "Hepatitis"
+
+#. module: muskathlon
 #: model:survey.question.answer,value:muskathlon.muskathlon_hepatitisABC
 msgid "Hepatitis A B C"
 msgstr "Hepatitis A B C"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
+msgid ""
+"Hereby you can order personalized support flyers to distribute to your "
+"relatives (family, friends, colleagues...)."
+msgstr ""
+"Hier kannst du personalisierte Unterstützungsflyer bestellen, die du an "
+"deine Angehörigen (Familie, Freunde, Kollegen...) verteilen kannst."
 
 #. module: muskathlon
 #: model:survey.question.answer,value:muskathlon.muskathlon_herniated_disc
@@ -996,6 +1503,16 @@ msgstr "Bluthochdruck"
 #: model:survey.question.answer,value:muskathlon.muskathlon_hypothyroidism
 msgid "Hyperthyroidism"
 msgstr "Überfunktion"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
+msgid "I accept the legal terms of the Muskathlon."
+msgstr "Ich akzeptiere die rechtlichen Bedingungen des Muskathlons."
+
+#. module: muskathlon
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_06_4
+msgid "I don't know"
+msgstr "Ich weiss es nicht"
 
 #. module: muskathlon
 #: model:sport.discipline,page_title:muskathlon.bike_120
@@ -1017,7 +1534,23 @@ msgstr "Ich werde für Kinder in extremer Armut rennen"
 msgid "I will go walking for children in extreme poverty"
 msgstr "Ich werde für Kinder in extremer Armut wandern"
 
-#. modules: website_event_compassion, muskathlon, partner_compassion, partner_communication_switzerland, survey
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_account_move_line__id
+#: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion__id
+#: model:ir.model.fields,field_description:muskathlon.field_event_flight__id
+#: model:ir.model.fields,field_description:muskathlon.field_event_registration__id
+#: model:ir.model.fields,field_description:muskathlon.field_event_registration_task_rel__id
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__id
+#: model:ir.model.fields,field_description:muskathlon.field_recurring_contract__id
+#: model:ir.model.fields,field_description:muskathlon.field_res_config_settings__id
+#: model:ir.model.fields,field_description:muskathlon.field_res_partner__id
+#: model:ir.model.fields,field_description:muskathlon.field_res_users__id
+#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__id
+#: model:ir.model.fields,field_description:muskathlon.field_survey_user_input__id
+msgid "ID"
+msgstr "ID"
+
+#. module: muskathlon
 #: model:survey.question,comments_message:muskathlon.muskathlon_1_01
 #: model:survey.question,comments_message:muskathlon.muskathlon_1_02
 #: model:survey.question,comments_message:muskathlon.muskathlon_1_03
@@ -1131,7 +1664,14 @@ msgid "If yes, which:"
 msgstr "Falls ja, bitte Nennung:"
 
 #. module: muskathlon
+#: model:event.registration.stage,name:muskathlon.stage_fill_profile
+#| msgid "Event registrations"
+msgid "In Preparation"
+msgstr ""
+
+#. module: muskathlon
 #: code:addons/muskathlon/models/event_registration.py:0
+#, python-format
 msgid "Invalid sport"
 msgstr "Ungültige Sportart"
 
@@ -1168,13 +1708,12 @@ msgstr "Gelbsucht"
 msgid "Joint pathology, artificial joint prosthesis*:"
 msgstr "Gelenkbeschwerden, künstlicher Gelenkersatz*:"
 
-#. modules: account_voucher, muskathlon, account_payment_return_import, account_payment_mode, account_statement_completion, account, hr_expense, account_bank_statement_import, account_payment_order, l10n_multilang, account_financial_report, account_asset_management, account_mass_reconcile, account_bank_statement_import_online, account_bank_statement_import_camt_oca, account_payment_return, l10n_ch, account_reconcile_compassion, mis_builder_unpaid_invoice, sponsorship_compassion
-#. openerp-web
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__journal_id
 msgid "Journal"
 msgstr "Sezionale"
 
-#. modules: l10n_ch_pain_direct_debit, account, account_analytic_required, hr_expense, l10n_ch_pain_base, account_payment_order, account_analytic_compassion, crm_compassion, account_analytic_distribution_required, l10n_ch_payment_slip, account_financial_report, account_asset_management, recurring_contract, account_payment_return, base_transaction_id, l10n_ch_import_camt054, account_reconcile_compassion, sponsorship_compassion, account_payment_partner, account_banking_mandate
+#. module: muskathlon
 #: model:ir.model,name:muskathlon.model_account_move_line
 msgid "Journal Item"
 msgstr "Journalbuchung"
@@ -1190,6 +1729,37 @@ msgid "La réponse n'est pas valide."
 msgstr "La réponse n'est pas valide."
 
 #. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_event_flight____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_event_registration____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_event_registration_task_rel____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_recurring_contract____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_res_partner____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_res_users____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline____last_update
+#: model:ir.model.fields,field_description:muskathlon.field_survey_user_input____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert durch"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_event_registration_partner_lastname
+msgid "Lastname"
+msgstr "Nachname"
+
+#. module: muskathlon
 #: model:survey.question.answer,value:muskathlon.muskathlon_cirrhosis
 msgid "Liver Cirrhosis"
 msgstr "Leberzirrhose"
@@ -1199,17 +1769,12 @@ msgstr "Leberzirrhose"
 msgid "Muscle weaknesses*:"
 msgstr "Muskelschwächen*:"
 
-#. modules: muskathlon, base, crm_claim
+#. module: muskathlon
 #: model:event.type,name:muskathlon.event_type_muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
 #: model_terms:ir.ui.view,arch_db:muskathlon.view_notification_settings_muskathlon_form
 msgid "Muskathlon"
 msgstr "Muskathlon"
-
-#. modules: muskathlon, partner_communication_switzerland
-#: model:partner.communication.config,name:muskathlon.ambassador_donation_confirmation_config
-msgid "Muskathlon Donation Confirmation"
-msgstr "Muskathlon-Spendenbestätigung"
 
 #. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_res_config_settings__muskathlon_order_notify_id
@@ -1241,11 +1806,6 @@ msgstr "Medizinischer Fragebogen"
 msgid "Muskathlon medical survey from ${object.partner_id.name}"
 msgstr "Muskathlon medizinische Umfrage von ${object.partner_id.name}"
 
-#. modules: website_event_compassion, muskathlon, sponsorship_compassion, partner_communication_switzerland, mobile_app_connector, sms_sponsorship
-#: model:mail.template,subject:muskathlon.registration_confirmation_template
-msgid "Muskathlon registration"
-msgstr "Anmeldebestätigung ${object.get_objects().partner_id.registration_ids[:1].compassion_event_id.name}"
-
 #. module: muskathlon
 #: model:ir.model,name:muskathlon.model_muskathlon_report
 #: model:ir.ui.menu,name:muskathlon.menu_muskathlon_report
@@ -1263,15 +1823,89 @@ msgid "Muskathlon website/portal"
 msgstr "Muskathlon Website/Portal"
 
 #. module: muskathlon
+#: model:partner.communication.config,name:muskathlon.child_protection_config
+msgid "Muskathlon: Child protection"
+msgstr "Muskathlon - Kinderschutz"
+
+#. module: muskathlon
+#: model:partner.communication.config,name:muskathlon.medical_reminder_config
+msgid "Muskathlon: Medical reminder"
+msgstr "Muskathlon - medizinische Erinnerung"
+
+#. module: muskathlon
+#: model:partner.communication.config,name:muskathlon.ambassador_donation_confirmation_config
+msgid "Muskathlon: Muskathlete Donation Notification"
+msgstr "Muskathlon-Spendenbestätigung"
+
+#. module: muskathlon
+#: model:partner.communication.config,name:muskathlon.passport_and_flight_config
+msgid "Muskathlon: Passport and flight"
+msgstr "Muskathlon - Reisepass und Flug"
+
+#. module: muskathlon
+#: model:partner.communication.config,name:muskathlon.registration_confirmation_config
+msgid "Muskathlon: Registration Confirmation"
+msgstr ""
+
+#. module: muskathlon
+#: model:partner.communication.config,name:muskathlon.vaccinations_config
+msgid "Muskathlon: Vaccinations"
+msgstr "Muskathlon - Impfungen"
+
+#. module: muskathlon
+#: model:partner.communication.config,name:muskathlon.visa_reminder_config
+msgid "Muskathlon: Visa reminder"
+msgstr "Muskathlon - Erinnerung an das Visum"
+
+#. module: muskathlon
+#: model:partner.communication.config,name:muskathlon.sponsorship_invitation_config
+msgid "Muskathlon: invitation to sponsorship"
+msgstr "Muskathlon - Einladung zum Sponsoring"
+
+#. module: muskathlon
 #: model:ir.actions.act_window,name:muskathlon.action_muskathlons_report
 #: model:ir.ui.menu,name:muskathlon.menu_label_muskathlons
 msgid "Muskathlons"
 msgstr "Muskathlons"
 
-#. module: event
+#. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
 msgid "My Events"
 msgstr "Meine Veranstaltungen"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__name
+msgid "Name"
+msgstr "Bezeichnung"
+
+#. module: muskathlon
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_04_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_06_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_08_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_09_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_10_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_12_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_14_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_16_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_18_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_20_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_22_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_24_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_25_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_27_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_29_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_31_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_33_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_35_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_37_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_39_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_40_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_41_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_43_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_45_0
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_47_0
+msgid "No"
+msgstr "Nein"
 
 #. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.view_muskathlon_search
@@ -1291,20 +1925,30 @@ msgstr "Es ist nur eine Anmeldung pro Teilnehmer/in/Veranstaltung erlaubt!"
 #. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
 msgid "Order free personalized Muskathlon flyers"
-msgstr "<span style=\"background-color: transparent;font-weight: 400\">GRATIS PERSONALISIERTEN MUSKATHLON-SPENDENFLYER BESTELLEN</span>"
+msgstr ""
+"<span style=\"background-color: transparent;font-weight: 400\">GRATIS "
+"PERSONALISIERTEN MUSKATHLON-SPENDENFLYER BESTELLEN</span>"
 
 #. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.view_muskathlon_events_thank_donation
 msgid "Order material page"
 msgstr "Seite Material bestellen"
 
-#. modules: website_event_compassion, muskathlon
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
+msgid ""
+"Our team will prepare the material for you and it will be sent to you by "
+"postal mail wiithin the following days.<br/>"
+msgstr ""
+"Unser Team bereitet das Material für dich vor und schickt es dir innerhalb "
+"der nächsten Tage per Post zu.<br/>"
+
+#. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.flight_form
 msgid "Outbound flight"
 msgstr "Hinflug"
 
-#. modules: muskathlon, link_tracker, website, survey
-#. openerp-web
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__page_title
 msgid "Page Title"
 msgstr "Seitentitel"
@@ -1319,12 +1963,17 @@ msgstr "Lähmungen*:"
 msgid "Parkinson"
 msgstr "Morbus Parkinson"
 
-#. modules: website_event_compassion, muskathlon
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.passport_form
 msgid "Passport"
 msgstr "Reisepass"
 
-#. modules: recurring_contract, sponsorship_switzerland, account_reconcile_compassion, muskathlon, sms_939, partner_communication_switzerland, website_compassion
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__payment_mode_id
 msgid "Payment mode"
 msgstr "Spendenmethode"
@@ -1337,9 +1986,11 @@ msgstr "Zahlungsmethode"
 #. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_crm_event_compassion__website_my_press_material
 msgid "Press material"
-msgstr "<span style=\"background-color: transparent;color: rgb(0, 72, 151);font-weight: 400;line-height: 42px\">PRESSEMATERIAL</span>"
+msgstr ""
+"<span style=\"background-color: transparent;color: rgb(0, 72, 151);font-"
+"weight: 400;line-height: 42px\">PRESSEMATERIAL</span>"
 
-#. modules: muskathlon, partner_communication_switzerland
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_account_move_line__price_cents
 msgid "Price Cents"
 msgstr "Preis Cents"
@@ -1354,7 +2005,25 @@ msgstr "Lungenemphysem"
 msgid "Pulmonary embolism"
 msgstr "Stattgehabte Lungenembolie"
 
-#. modules: report_compassion, sponsorship_tracking, gift_compassion, crm_compassion, recurring_contract, sponsorship_switzerland, sms_939, child_sync_wp, muskathlon, sponsorship_compassion, sbc_compassion, survival_sponsorship_compassion, mass_mailing_switzerland, partner_communication_switzerland, wordpress_connector, mobile_app_connector, message_center_compassion, sms_sponsorship
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
+msgid ""
+"Put a custom introduction block here. Video, images, etc... It will be "
+"displayed on every Muskathlon event"
+msgstr ""
+"Füge hier einen eigenen Einführungsblock ein. Video, Bilder, etc... Er wird "
+"bei jeder Muskathlon-Veranstaltung angezeigt"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
+msgid ""
+"Put a custom resources block here. Video, images, documents, etc... It will "
+"be displayed on every Muskathlon event"
+msgstr ""
+"Füge hier einen eigenen Ressourcenblock ein. Video, Bilder, Dokumente, "
+"etc... Er wird bei jedem Muskathlon-Event angezeigt"
+
+#. module: muskathlon
 #: model:ir.model,name:muskathlon.model_recurring_contract
 msgid "Recurring contract"
 msgstr "Wiederkehrender Vertrag"
@@ -1364,7 +2033,12 @@ msgstr "Wiederkehrender Vertrag"
 msgid "Reduced renal function (renal failure)"
 msgstr "Eingeschränkte Nierenfunktion (Nierenversagen)"
 
-#. modules: website_event_compassion, muskathlon
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.view_muskathlon_events_thank_donation
+msgid "Registration"
+msgstr "Anmeldung"
+
+#. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.flight_form
 msgid "Return flight"
 msgstr "Rückflug"
@@ -1385,6 +2059,13 @@ msgid "Run 63km"
 msgstr "63km laufen"
 
 #. module: muskathlon
+#: model:sport.discipline,sport:muskathlon.run_21
+#: model:sport.discipline,sport:muskathlon.run_42
+#: model:sport.discipline,sport:muskathlon.run_60
+msgid "Running"
+msgstr "In Betrieb"
+
+#. module: muskathlon
 #: model:ir.cron,name:muskathlon.ir_cron_send_ambassador_donation_receipt
 msgid "Send donation receipts to ambassadors"
 msgstr "Spendenbescheinigungen an Botschafter/innen senden"
@@ -1396,7 +2077,7 @@ msgstr "Spendenbescheinigungen an Botschafter/innen senden"
 msgid "Send to 4M"
 msgstr "Senden an 4M"
 
-#. modules: muskathlon, partner_communication_switzerland
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_account_move_line__sent_to_4m
 #: model:ir.model.fields,field_description:muskathlon.field_recurring_contract__sent_to_4m
 msgid "Sent to 4M"
@@ -1407,7 +2088,7 @@ msgstr "Gesendet an 4M"
 msgid "Si autre, merci de préciser :"
 msgstr "etwas anderes:"
 
-#. modules: website_event_compassion, muskathlon
+#. module: muskathlon
 #: model:event.registration.task,name:muskathlon.task_sign_child_protection
 msgid "Sign child protection agreement"
 msgstr "Kinderschutzvereinbarung unterschreiben"
@@ -1418,6 +2099,12 @@ msgid "Spondylarthrite"
 msgstr "Spondylarthrit"
 
 #. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__contract_id
+#: model:ir.model.fields.selection,name:muskathlon.selection__muskathlon_report__donation_type__sponsorship
+msgid "Sponsorship"
+msgstr "Patenschaft"
+
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__sponsorship_name
 msgid "Sponsorship name"
 msgstr "Name der Patenschaft"
@@ -1425,12 +2112,17 @@ msgstr "Name der Patenschaft"
 #. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
 msgid "Sponsorships - Order Childpacks"
-msgstr "<span style=\"background-color: transparent;color: rgb(0, 72, 151);font-weight: 400;line-height: 42px\">FÜR PATENSCHAFTEN SORGEN – DOSSIERS VON KINDERN BESTELLEN</span>"
+msgstr ""
+"<span style=\"background-color: transparent;color: rgb(0, 72, 151);font-"
+"weight: 400;line-height: 42px\">FÜR PATENSCHAFTEN SORGEN – DOSSIERS VON "
+"KINDERN BESTELLEN</span>"
 
-#. modules: website_event_compassion, muskathlon, partner_compassion
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_sport_discipline__sport
 msgid "Sport"
-msgstr "<span style=\"background-color: transparent;color: rgb(0, 72, 151);font-weight: 400;line-height: 42px\">SPORT</span>"
+msgstr ""
+"<span style=\"background-color: transparent;color: rgb(0, 72, 151);font-"
+"weight: 400;line-height: 42px\">SPORT</span>"
 
 #. module: muskathlon
 #: model:ir.model,name:muskathlon.model_sport_discipline
@@ -1463,6 +2155,16 @@ msgid "Sport profile"
 msgstr "Sportliches Profil"
 
 #. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_details
+msgid "Sports"
+msgstr "Sport"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__status
+msgid "Status"
+msgstr "Status"
+
+#. module: muskathlon
 #: model:survey.question.answer,value:muskathlon.muskathlon_stomach_small_intestine
 msgid "Stomach/small intestine"
 msgstr "Magen-/Dünndarmgeschwür(e)"
@@ -1477,29 +2179,33 @@ msgstr "Engstelle(n) im Verdauungstrakt"
 msgid "Stroke"
 msgstr "Stattgehabter Schlaganfall"
 
-#. modules: hr_attendance_management, cms_form, cms_form_compassion, website_compassion, mobile_app_connector, date_range, crm
+#. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
 #: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
 #: model_terms:ir.ui.view,arch_db:muskathlon.passport_form
 msgid "Submit"
 msgstr "Senden"
 
-#. modules: website_event_compassion, muskathlon, partner_compassion, survey_phone, survey
+#. module: muskathlon
 #: model:ir.model,name:muskathlon.model_survey_user_input
 msgid "Survey User Input"
 msgstr "Benutzereingaben"
 
-#. modules: muskathlon, partner_compassion
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_event_registration__t_shirt_size
 msgid "T Shirt Size"
 msgstr "T Shirt Grösse"
 
 #. module: muskathlon
 #: model_terms:survey.survey,description_done:muskathlon.muskathlon_form
-msgid "Thank you very much on behalf of the entire 4Medic team! We look forward to meeting you and wish you a blessed and guarded stay!"
-msgstr "Vielen Dank im Namen des 4Medic-Teams! Wir freuen uns auf Euch und wünschen Euch einen gesunden und gesegneten Aufenthalt!"
+msgid ""
+"Thank you very much on behalf of the entire 4Medic team! We look forward to "
+"meeting you and wish you a blessed and guarded stay!"
+msgstr ""
+"Vielen Dank im Namen des 4Medic-Teams! Wir freuen uns auf Euch und wünschen "
+"Euch einen gesunden und gesegneten Aufenthalt!"
 
-#. modules: website_event_compassion, muskathlon, partner_compassion, partner_communication_switzerland, survey
+#. module: muskathlon
 #: model:survey.question,validation_error_msg:muskathlon.muskathlon_1_01
 #: model:survey.question,validation_error_msg:muskathlon.muskathlon_1_02
 #: model:survey.question,validation_error_msg:muskathlon.muskathlon_1_03
@@ -1552,17 +2258,19 @@ msgstr "Vielen Dank im Namen des 4Medic-Teams! Wir freuen uns auf Euch und wüns
 msgid "The answer you entered has an invalid format."
 msgstr "Ihre Antwort hat ein ungültiges Format."
 
-#. modules: crowdfunding_compassion, website_event_compassion, muskathlon, website, partner_communication_switzerland
+#. module: muskathlon
 #: model:ir.model.fields,help:muskathlon.field_event_registration_website_url
 msgid "The full URL to access the document through the website."
-msgstr "Die vollständige URL mit der das Dokument überall aufgerufen werden kann."
+msgstr ""
+"Die vollständige URL mit der das Dokument überall aufgerufen werden kann."
 
 #. module: muskathlon
 #: code:addons/muskathlon/models/event_registration.py:0
+#, python-format
 msgid "The participant registered through the Muskathlon website."
 msgstr "Der Teilnehmer hat sich über die Muskathlon-Website angemeldet."
 
-#. modules: website_event_compassion, muskathlon, partner_compassion, partner_communication_switzerland, survey
+#. module: muskathlon
 #: model:survey.question,constr_error_msg:muskathlon.muskathlon_1_01
 #: model:survey.question,constr_error_msg:muskathlon.muskathlon_1_02
 #: model:survey.question,constr_error_msg:muskathlon.muskathlon_1_03
@@ -1617,6 +2325,7 @@ msgstr "Diese Frage muss beantwortet werden"
 
 #. module: muskathlon
 #: code:addons/muskathlon/models/event_registration.py:0
+#, python-format
 msgid "This sport is not in muskathlon"
 msgstr "Diese Sportdisziplin ist nicht im Muskathlon"
 
@@ -1625,15 +2334,30 @@ msgstr "Diese Sportdisziplin ist nicht im Muskathlon"
 msgid "Thrombosis"
 msgstr "Stattgehabte Thrombose"
 
-#. modules: calendar, website_event_compassion, event
+#. module: muskathlon
+#: model:survey.question.answer,value:muskathlon.muskathlon_tuberculosis
+msgid "Tuberculosis"
+msgstr "Tuberkulose"
+
+#. module: muskathlon
+#: model:ir.model.fields,field_description:muskathlon.field_muskathlon_report__type
+msgid "Type"
+msgstr "Typ"
+
+#. module: muskathlon
 #: model:event.registration.stage,name:muskathlon.stage_unconfirmed
 msgid "Unconfirmed"
 msgstr "Nicht bestätigte Anmeldungen"
 
-#. modules: base_geoengine, uom
+#. module: muskathlon
 #: model:product.template,uom_name:muskathlon.product_registration
 msgid "Units"
 msgstr "Einheiten"
+
+#. module: muskathlon
+#: model:event.registration.task,name:muskathlon.task_passport
+msgid "Upload Passport Scan"
+msgstr "Reisepass-Scan hochladen"
 
 #. module: muskathlon
 #: model:event.registration.task,name:muskathlon.task_picture
@@ -1645,8 +2369,7 @@ msgstr "Grosses Bild hochladen"
 msgid "Upload passport scan"
 msgstr "Reisepass-Scan hochladen"
 
-#. modules: sbc_translation, web_notify, muskathlon, partner_compassion, thankyou_letters, password_security, mass_mailing_switzerland, mobile_app_connector, auth_signup, resource, auth_password_policy, account, base_report_to_printer, web, portal, hr_switzerland, base_technical_features, website_compassion, im_livechat_mail_bot, bus, partner_firstname, hr, mail_bot, asterisk_click2dial, sales_team, web_widget_digitized_signature, note, crm_phone, website, partner_communication_switzerland, web_responsive, mail, crm, digest, base_import, auditlog, web_unsplash, base, sale_crm, calendar, contacts, google_calendar, web_settings_dashboard, base_setup
-#. openerp-web
+#. module: muskathlon
 #: model:ir.model,name:muskathlon.model_res_users
 msgid "Users"
 msgstr "Benutzer"
@@ -1661,7 +2384,12 @@ msgstr "Video Einführung"
 msgid "Walk 63km"
 msgstr "Wandern"
 
-#. modules: crowdfunding_compassion, website_event_compassion, muskathlon, website, partner_communication_switzerland
+#. module: muskathlon
+#: model:sport.discipline,sport:muskathlon.walk_60
+msgid "Walking"
+msgstr "Spazierengehen"
+
+#. module: muskathlon
 #: model:ir.model.fields,field_description:muskathlon.field_event_registration_website_url
 msgid "Website URL"
 msgstr "Website-URL"
@@ -1671,491 +2399,58 @@ msgstr "Website-URL"
 msgid "Weight (kg)"
 msgstr "Gewicht (kg)"
 
-#. modules: muskathlon, partner_compassion
+#. module: muskathlon
 #: code:addons/muskathlon/models/event_compassion.py:0
+#, python-format
 msgid "XL"
 msgstr "XL"
 
-#. modules: muskathlon, partner_compassion
+#. module: muskathlon
 #: code:addons/muskathlon/models/event_compassion.py:0
+#, python-format
 msgid "XXL"
 msgstr "XXL"
 
 #. module: muskathlon
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_04_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_06_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_08_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_09_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_10_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_2_12_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_14_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_16_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_18_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_20_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_3_22_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_24_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_25_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_27_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_29_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_4_31_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_33_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_35_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_37_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_39_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_40_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_41_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_43_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_45_1
+#: model:survey.question.answer,value:muskathlon.muskathlon_5_47_1
+msgid "Yes"
+msgstr "Ja."
+
+#. module: muskathlon
+#: model:mail.template,subject:muskathlon.registration_confirmation_template
+msgid "You are registered to ${object.get_objects().event_id.name}!"
+msgstr ""
+
+#. module: muskathlon
 #: model:mail.template,subject:muskathlon.ambassador_donation_confirmation_template
 msgid "You received a donation!"
-msgstr "Muskathlon: ${\"Ihr habt\" if object.partner_id.title.plural or object.partner_id.title.id == 29 else \"Du hast\"} eine Spende bekommen!"
-
-#. modules: muskathlon, uom
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_details
-msgid "km"
-msgstr "km"
-
-#. module: muskathlon
-#: model:ir.model.fields,help:muskathlon.field_res_partner__is_muskathlon
-#: model:ir.model.fields,help:muskathlon.field_res_users__is_muskathlon
-msgid "tells if it's a Muskathlon participant"
-msgstr "sagt, ob es ein Muskathlon-Teilnehmer ist"
-
-#. module: muskathlon
-#: model:mail.template,body_html:muskathlon.sponsorship_invitation_template
-msgid "\n"
-"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   % set partner = object.partner_id\n"
-"\n"
-"% set event = object.get_objects().compassion_event_id\n"
-"\n"
-"% set country = event.country_id.in_preposition + ' ' + event.country_id.name\n"
-"  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   ${partner.informal_salutation}\n"
-"   <br>\n"
-"   <br>\n"
-"   Hast du schon ein Patenkind ${country}&nbsp;?\n"
-"   <br>\n"
-"   Falls du dich entschliesst Pate eines Kindes zu werden, besteht für dich die einzigartige Möglichkeit dein Patenkind ${country} zu treffen. Diese Begegnung prägt nicht nur das unterstützte Kind, sondern ist auch ein tief bewegendes Erlebnis für dich! In den Kinderzentren, die wir am Muskathlon besuchen werden, gibt es noch einige Kinder, für die wir dringend einen Paten suchen. Bitte melde dich, dann werden wir dir konkrete Vorschläge senden.\n"
-"   <br>\n"
-"   Diese Patenschaft wird dann auch mit CHF 1000 auf deinem Barometer gutgeschrieben.\n"
-"   <br>\n"
-"   <br>\n"
-"   Falls du bereits ein Patenkind in Ghana hast, welches aber in einer anderen Region lebt, ist wahrscheinlich auch ein Treffen während des Muskathlons möglich. Bitte nimm hierzu so früh wie möglich Kontakt mit Compassion auf.\n"
-"   <br>\n"
-"   <br>\n"
-"   Herzliche Grüsse\n"
-"   <br>\n"
-"   Merve von Compassion Schweiz\n"
-"  </p>\n"
-" "
-msgstr "<div>\n"
-"   % set partner = object.partner_id\n"
-"\n"
-"% set event = object.get_objects().compassion_event_id\n"
-"\n"
-"% set country = event.country_id.in_preposition + ' ' + event.country_id.name\n"
-"  </div>\n"
-"  <p>\n"
-"   ${partner.informal_salutation}\n"
-"   <br>\n"
-"   <br>\n"
-"   Hast du schon ein Patenkind ${country}?\n"
-"   <br>\n"
-"   <br>\n"
-"   Falls du dich entschliesst Pate eines Kindes zu werden, besteht für dich die einzigartige Möglichkeit dein Patenkind ${country} zu treffen. Diese Begegnung prägt nicht nur das unterstützte Kind, sondern ist auch ein tief bewegendes Erlebnis für dich! In den Kinderzentren, die wir am Muskathlon besuchen werden, gibt es noch einige Kinder, für die wir dringend einen Paten suchen. Bitte melde dich, dann werden wir dir konkrete Vorschläge senden.\n"
-"   <br>\n"
-"   <br>\n"
-"   Diese Patenschaft wird dann auch mit CHF 1000 auf deinem Barometer gutgeschrieben.\n"
-"   <br>\n"
-"   <br>\n"
-"   Falls du bereits ein Patenkind ${country} hast, welches aber in einer anderen Region lebt, ist wahrscheinlich auch ein Treffen während des Muskathlons möglich. Bitte nimm hierzu so früh wie möglich Kontakt mit Compassion auf.\n"
-"   <br>\n"
-"   <br>\n"
-"   Herzliche Grüsse,\n"
-"   <br>\n"
-"   Merve von Compassion Schweiz\n"
-"  </p>\n"
-" "
-
-#. module: muskathlon
-#: model:mail.template,body_html:muskathlon.child_protection_template
-#: model:mail.template,body_html:muskathlon.medical_reminder_template
-#: model:mail.template,body_html:muskathlon.visa_reminder_template
-msgid "\n"
-"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   % set partner = object.partner_id\n"
-"\n"
-"% set event = object.get_objects().compassion_event_id\n"
-"\n"
-"% set country = event.country_id.preposition + ' ' + event.country_id.name\n"
-"  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   ${partner.informal_salutation}\n"
-"   <br>\n"
-"   <br>\n"
-"   Hast du schon ein Patenkind ${country}&nbsp;?\n"
-"   <br>\n"
-"   Falls du dich entschliesst Pate eines Kindes zu werden, besteht für dich die einzigartige Möglichkeit dein Patenkind ${country} zu treffen. Diese Begegnung prägt nicht nur das unterstützte Kind, sondern ist auch ein tief bewegendes Erlebnis für dich! In den Kinderzentren, die wir am Muskathlon besuchen werden, gibt es noch einige Kinder, für die wir dringend einen Paten suchen. Bitte melde dich, dann werden wir dir konkrete Vorschläge senden.\n"
-"   <br>\n"
-"   Diese Patenschaft wird dann auch mit CHF 1000 auf deinem Barometer gutgeschrieben.\n"
-"   <br>\n"
-"   <br>\n"
-"   Falls du bereits ein Patenkind in Ghana hast, welches aber in einer anderen Region lebt, ist wahrscheinlich auch ein Treffen während des Muskathlons möglich. Bitte nimm hierzu so früh wie möglich Kontakt mit Compassion auf.\n"
-"   <br>\n"
-"   <br>\n"
-"   Herzliche Grüsse,\n"
-"   <br>\n"
-"   Merve von Compassion Schweiz\n"
-"  </p>\n"
-" "
-msgstr "<div>\n"
-"   % set partner = object.partner_id\n"
-"\n"
-"% set event = object.get_objects().compassion_event_id\n"
-"\n"
-"% set country = event.country_id.in_preposition + ' ' + event.country_id.name\n"
-"  </div>\n"
-"  <p>\n"
-"   ${partner.informal_salutation}\n"
-"   <br>\n"
-"   <br>\n"
-"   Hast du schon ein Patenkind ${country}?\n"
-"   <br>\n"
-"   <br>\n"
-"   Falls du dich entschliesst Pate eines Kindes zu werden, besteht für dich die einzigartige Möglichkeit dein Patenkind ${country} zu treffen. Diese Begegnung prägt nicht nur das unterstützte Kind, sondern ist auch ein tief bewegendes Erlebnis für dich! In den Kinderzentren, die wir am Muskathlon besuchen werden, gibt es noch einige Kinder, für die wir dringend einen Paten suchen. Bitte melde dich, dann werden wir dir konkrete Vorschläge senden.\n"
-"   <br>\n"
-"   <br>\n"
-"   Diese Patenschaft wird dann auch mit CHF 1000 auf deinem Barometer gutgeschrieben.\n"
-"   <br>\n"
-"   <br>\n"
-"   Falls du bereits ein Patenkind ${country} hast, welches aber in einer anderen Region lebt, ist wahrscheinlich auch ein Treffen während des Muskathlons möglich. Bitte nimm hierzu so früh wie möglich Kontakt mit Compassion auf.\n"
-"   <br>\n"
-"   <br>\n"
-"   Herzliche Grüsse,\n"
-"   <br>\n"
-"   Merve von Compassion Schweiz\n"
-"  </p>\n"
-" "
-
-#. module: muskathlon
-#: model:mail.template,subject:muskathlon.child_protection_template
-#: model:mail.template,subject:muskathlon.medical_reminder_template
-#: model:mail.template,subject:muskathlon.passport_and_flight_template
-#: model:mail.template,subject:muskathlon.sponsorship_invitation_template
-#: model:mail.template,subject:muskathlon.vaccinations_template
-#: model:mail.template,subject:muskathlon.visa_reminder_template
-msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
-msgstr "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
-
-#. module: muskathlon
-#: model:mail.template,body_html:muskathlon.passport_and_flight_template
-msgid "<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   % set partner = object.partner_id\n"
-"\n"
-"% set event = object.get_objects().compassion_event_id\n"
-"\n"
-"  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   ${partner.informal_salutation}\n"
-"   </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Um den Flug zu buchen und das Einchecken der Gruppe in den Hotels zu vereinfachen brauchen wir einen\n"
-"   <b style=\"font-weight:bolder;\">\n"
-"    Scan/Foto deines Passes.\n"
-"   </b>\n"
-"   Bitte lade die Hauptseite deines Passes (mit deinem Bild)\n"
-"   <a href=\"https://muskathlon-kilimanjaro.ch/my/muskathlon\" title=\"\" style=\"text-decoration:none;background-color:transparent;color:rgb(124, 123, 173);\">\n"
-"    hier hoch\n"
-"   </a>\n"
-"   .\n"
-"   </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Bald geht die Reise los – viel Spass bei den letzten Vorbereitungen!\n"
-"   </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Sara, 4M Switzerland\n"
-"  </p>\n"
-" "
-msgstr "<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   % set partner = object.partner_id\n"
-"\n"
-"% set event = object.get_objects().compassion_event_id\n"
-"\n"
-"  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   ${partner.informal_salutation}\n"
-"   </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Um den Flug zu buchen und das Einchecken der Gruppe in den Hotels zu vereinfachen, brauchen wir einen\n"
-"   <b style=\"font-weight:bolder;\">\n"
-"    Scan/Foto deines Passes.\n"
-"   </b>\n"
-"   Bitte lade die Hauptseite deines Passes (mit deinem Bild)\n"
-"   <a href=\"https://muskathlon-kilimanjaro.ch/my/muskathlon\" title=\"\" style=\"text-decoration:none;background-color:transparent;color:rgb(124, 123, 173);\">\n"
-"    hier hoch\n"
-"   </a>\n"
-"   .\n"
-"   </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Bald geht die Reise los - viel Spass bei den letzten Vorbereitungen!\n"
-"   </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Sara, 4M Schweiz\n"
-"  </p>\n"
-" "
-
-#. module: muskathlon
-#: model:mail.template,body_html:muskathlon.vaccinations_template
-msgid "<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   % set partner = object.partner_id\n"
-"\n"
-"% set event = object.get_objects().compassion_event_id\n"
-"\n"
-"  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   ${partner.informal_salutation}\n"
-"   <br>\n"
-"   <br>\n"
-"   Hast du deinen Impfstatus überprüfen lassen? Nimm dir in den nächsten Tagen Zeit um dies zu erledigen.\n"
-"   <br>\n"
-"   <br>\n"
-"  </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Bist du ausreichend versichert? Bei deiner Kranken-/Unfallversicherung kannst du dich über die Kostendeckung/-leistung im Ausland informieren. Schliesse allenfalls eine entsprechende Versicherung ab.\n"
-"  </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Wir legen dir Nahe Gönner der Rega zu werden. Im Falle einer Repatriierung organisiert die Rega diese und kommt für die ungedeckten Kosten auf. Hier der Link zum Antragsformular der Rega-Gönnerschaft https://www.rega.ch/rega-goenner/goenner-werden?rnw-widget=goenner-werden#goennerschaft-auswaehlen\n"
-"  </p>\n"
-"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"    Reise-, Annullations- und Auslandkrankenversicherung ist Sache des Teilnehmenden.\n"
-"   </div>\n"
-"  </div>\n"
-"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   <br>\n"
-"  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   <br>\n"
-"   Möge Gott deine Gesundheit stärken und segnen!\n"
-"   <br>\n"
-"   <br>\n"
-"   Sara, 4M Switzerland\n"
-"  </p>\n"
-" "
-msgstr "<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   % set partner = object.partner_id\n"
-"\n"
-"% set event = object.get_objects().compassion_event_id\n"
-"\n"
-"  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   ${partner.informal_salutation}\n"
-"   <br>\n"
-"   <br>\n"
-"   Hast du deinen Impfstatus überprüfen lassen? Nimm dir in den nächsten Tagen Zeit, um dies zu erledigen.\n"
-"   <br>\n"
-"   <br>\n"
-"  </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Bist du ausreichend versichert? Bei deiner Kranken-/Unfallversicherung kannst du dich über die Kostendeckung/-leistung im Ausland informieren. Schließe allenfalls eine entsprechende Versicherung ab.\n"
-"  </p>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   Wir legen dir Nahe Gönner der Rega zu werden. Im Falle einer Repatriierung organisiert die Rega diese und kommt für die nicht gedeckten Kosten auf. Hier der Link zum Antragsformular der Rega-Gönnerschaft https://www.rega.ch/rega-goenner/goenner-werden?rnw-widget=goenner-werden#goennerschaft-auswaehlen\n"
-"  </p>\n"
-"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"    Reise-, Annullations- und Auslandskrankenversicherung ist Sache des Teilnehmenden.\n"
-"   </div>\n"
-"  </div>\n"
-"  <div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   <br>\n"
-"  </div>\n"
-"  <p style=\"margin:0px 0 1rem 0;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
-"   <br>\n"
-"   Möge Gott deine Gesundheit stärken und segnen!\n"
-"   <br>\n"
-"   <br>\n"
-"   Sara, 4M Schweiz\n"
-"  </p>\n"
-" "
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
-msgid "<option value=\"0\">0</option>\n"
-"                                        <option value=\"5\">5</option>\n"
-"                                        <option value=\"10\">10</option>\n"
-"                                        <option value=\"15\">15</option>\n"
-"                                        <option value=\"20\">20</option>\n"
-"                                        <option value=\"30\">30</option>"
-msgstr "<option value=\"0\">0</option>\n"
-"                                        <option value=\"5\">5</option>\n"
-"                                        <option value=\"10\">10</option>\n"
-"                                        <option value=\"15\">15</option>\n"
-"                                        <option value=\"20\">20</option>\n"
-"                                        <option value=\"30\">30</option>"
-
-#. module: muskathlon
-#: model:survey.question,description:muskathlon.muskathlon_1
-#: model:survey.question,description:muskathlon.muskathlon_2
-#: model:survey.question,description:muskathlon.muskathlon_3
-#: model:survey.question,description:muskathlon.muskathlon_4
-#: model:survey.question,description:muskathlon.muskathlon_5
-msgid "<p></p>"
-msgstr "<p></p>"
-
-#. module: muskathlon
-#: model:survey.survey,description:muskathlon.muskathlon_form
-msgid "<p>The medical form has several reasons to be. First, it allows the Muskathlon doctor to assess and apprehend the risks in the context of the sport challenge undertaken. Then, it can be useful in the case of a medical incident, in order to react in the best and most effective way possible on the spot. We therefore ask you to fill in this form carefully, to bring the required medical documents (eg: allergy certificate, implant certificate, cardiac simulator certificate), and to give them to our doctor on site. As in any medical information sharing, the 4Medic team is also subject to professional secrecy. All shared information will be deleted after the Muskathlon. Thank you so much !</p>"
-msgstr "<p>Der medizinische Fragebogen erfüllt verschiedene Aufgaben. Zum einen dient er der Risikobewertung- und Einschätzung bezüglich der vorgenommenen sportlichen Herausforderung durch den begleitenden Muskathlon-Arzt. Zum anderen ist er Grundlage im Falle eines medizinischen Zwischenfalles, um eine reibungslose und effiziente Versorgung vor Ort gewährleisten zu können. Wir bitten daher, den Fragebogen gründlich vorher auszufüllen und relevante medizinische Dokumente, falls vorhanden (z.B. Allergiepass, Implantatausweis, Schrittmacherausweis,...), als Kopie mitzubringen und unserem Arzt vor Ort auszuhändigen. Wie für alle medizinischen Informationen gilt auch für das 4Medic-Team die Wahrung der ärztlichen Schweigepflicht. Alle vorliegenden Daten werden nach dem Muskathlon vernichtet. Vielen Dank!</p>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
-msgid "<span class=\"fa fa-check-circle\"/>\n"
-"                                    Thank You For Your Order"
-msgstr "<span class=\"fa fa-check-circle\"/>\n"
-"                                    Vielen Dank für deine Bestellung"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
-msgid "<span class=\"s_website_form_label_content\">Arrival</span>"
-msgstr "<span class=\"s_website_form_label_content\">Ankunft</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.passport_form
-msgid "<span class=\"s_website_form_label_content\">Comments</span>"
-msgstr "<span class=\"s_website_form_label_content\">Kommentare</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
-msgid "<span class=\"s_website_form_label_content\">Departure</span>"
-msgstr "<span class=\"s_website_form_label_content\">Abreise</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
-msgid "<span class=\"s_website_form_label_content\">Describe your sport experience</span>\n"
-"                            <span class=\"s_website_form_mark\"> *</span>"
-msgstr "<span class=\"s_website_form_label_content\">Beschreibe deine Sporterfahrung</span>\n"
-"                            <span class=\"s_website_form_mark\"> *</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
-msgid "<span class=\"s_website_form_label_content\">Flight number</span>\n"
-"                                    <span class=\"s_website_form_mark\"> *</span>"
-msgstr "<span class=\"s_website_form_label_content\">Flugnummer</span>\n"
-"                                    <span class=\"s_website_form_mark\"> *</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
-msgid "<span class=\"s_website_form_label_content\">Flight type</span>"
-msgstr "<span class=\"s_website_form_label_content\">Flugtyp</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
-msgid "<span class=\"s_website_form_label_content\">Flying company</span>\n"
-"                                    <span class=\"s_website_form_mark\"> *</span>"
-msgstr "<span class=\"s_website_form_label_content\">Fliegendes Unternehmen</span>\n"
-"                                    <span class=\"s_website_form_mark\"> *</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
-msgid "<span class=\"s_website_form_label_content\">Number of French flyers</span>"
-msgstr "<span class=\"s_website_form_label_content\">Anzahl der französischen Flugblätter</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
-msgid "<span class=\"s_website_form_label_content\">Number of German flyers</span>"
-msgstr "<span class=\"s_website_form_label_content\">Anzahl der deutschen Flugblätter</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.passport_form
-msgid "<span class=\"s_website_form_label_content\">Passport Scan:</span>"
-msgstr "<span class=\"s_website_form_label_content\">Pass-Scan:</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.flight_details
-msgid "<span class=\"s_website_form_label_content\">Registration</span>"
-msgstr "<span class=\"s_website_form_label_content\">Anmeldung</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.passport_form
-msgid "<span class=\"s_website_form_label_content\">Registration</span>\n"
-"                                    <span class=\"s_website_form_mark\"> *</span>"
-msgstr "<span class=\"s_website_form_label_content\">Anmeldung</span>\n"
-"                                    <span class=\"s_website_form_mark\"> *</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
-msgid "<span class=\"s_website_form_label_content\">Sport discipline</span>\n"
-"                            <span class=\"s_website_form_mark\"> *</span>"
-msgstr "<span class=\"s_website_form_label_content\">Sportdisziplin</span>\n"
-"                            <span class=\"s_website_form_mark\"> *</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
-msgid "<span class=\"s_website_form_label_content\">Sport level</span>\n"
-"                            <span class=\"s_website_form_mark\"> *</span>"
-msgstr "<span class=\"s_website_form_label_content\">Dein Sport Level</span>\n"
-"                            <span class=\"s_website_form_mark\"> *</span>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
-msgid "<span class=\"s_website_form_label_content\">T-shirt size</span>\n"
-"                            <span class=\"s_website_form_mark\"> *</span>"
-msgstr "<span class=\"s_website_form_label_content\">T-Shirtgrösse</span>\n"
-"                            <span class=\"s_website_form_mark\"> *</span>"
-
-#. module: muskathlon
-#: model:ir.model.fields,field_description:muskathlon.field_event_registration_ambassador_quote
-msgid "Ambassador Quote"
-msgstr "Botschafter Zitat"
-
-#. module: muskathlon
-#: model:ir.model,name:muskathlon.model_event_registration_task_rel
-msgid "Event registration task relation"
-msgstr "Aufgabenbeziehung bei der Veranstaltungsanmeldung"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
-msgid "Hereby you can order personalized support flyers to distribute to your relatives (family, friends, colleagues...)."
-msgstr "Hier kannst du personalisierte Unterstützungsflyer bestellen, die du an deine Angehörigen (Familie, Freunde, Kollegen...) verteilen kannst."
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_registration_form
-msgid "I accept the legal terms of the Muskathlon."
-msgstr "Ich akzeptiere die rechtlichen Bedingungen des Muskathlons."
-
-#. module: muskathlon
-#: model:survey.question.answer,value:muskathlon.muskathlon_2_06_4
-msgid "I don't know"
-msgstr "Ich weiss es nicht"
-
-#. module: muskathlon
-#: model:partner.communication.config,name:muskathlon.child_protection_config
-msgid "Muskathlon - child protection"
-msgstr "Muskathlon - Kinderschutz"
-
-#. module: muskathlon
-#: model:partner.communication.config,name:muskathlon.sponsorship_invitation_config
-msgid "Muskathlon - invitation to sponsorship"
-msgstr "Muskathlon - Einladung zum Sponsoring"
-
-#. module: muskathlon
-#: model:partner.communication.config,name:muskathlon.medical_reminder_config
-msgid "Muskathlon - medical reminder"
-msgstr "Muskathlon - medizinische Erinnerung"
-
-#. module: muskathlon
-#: model:partner.communication.config,name:muskathlon.passport_and_flight_config
-msgid "Muskathlon - passport and flight"
-msgstr "Muskathlon - Reisepass und Flug"
-
-#. module: muskathlon
-#: model:partner.communication.config,name:muskathlon.vaccinations_config
-msgid "Muskathlon - vaccinations"
-msgstr "Muskathlon - Impfungen"
-
-#. module: muskathlon
-#: model:partner.communication.config,name:muskathlon.visa_reminder_config
-msgid "Muskathlon - visa reminder"
-msgstr "Muskathlon - Erinnerung an das Visum"
-
-#. module: muskathlon
-#: model:partner.communication.config,name:muskathlon.registration_confirmation_config
-msgid "Muskathlon registration confirmation (existing user)"
-msgstr "Muskathlon Anmeldebestätigung (bestehender Benutzer)"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_order_generic_form
-msgid "Our team will prepare the material for you and it will be sent to you by postal mail wiithin the following days.<br/>"
-msgstr "Unser Team bereitet das Material für dich vor und schickt es dir innerhalb der nächsten Tage per Post zu.<br/>"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
-msgid "Put a custom introduction block here. Video, images, etc... It will be displayed on every Muskathlon event"
-msgstr "Füge hier einen eigenen Einführungsblock ein. Video, Bilder, etc... Er wird bei jeder Muskathlon-Veranstaltung angezeigt"
-
-#. module: muskathlon
-#: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
-msgid "Put a custom resources block here. Video, images, documents, etc... It will be displayed on every Muskathlon event"
-msgstr "Füge hier einen eigenen Ressourcenblock ein. Video, Bilder, Dokumente, etc... Er wird bei jedem Muskathlon-Event angezeigt"
+msgstr ""
+"Muskathlon: ${\"Ihr habt\" if object.partner_id.title.plural or object."
+"partner_id.title.id == 29 else \"Du hast\"} eine Spende bekommen!"
 
 #. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.my_muskathlon_order_material
@@ -2166,6 +2461,11 @@ msgstr "Brotkrümel"
 #: model_terms:ir.ui.view,arch_db:muskathlon.order_childpack_form
 msgid "childpack"
 msgstr "Kinderformular"
+
+#. module: muskathlon
+#: model_terms:ir.ui.view,arch_db:muskathlon.muskathlon_details
+msgid "km"
+msgstr "km"
 
 #. module: muskathlon
 #: model_terms:ir.ui.view,arch_db:muskathlon.order_material_form
@@ -2182,3 +2482,22 @@ msgstr "outbound_flight_form"
 msgid "return_flight_form"
 msgstr "return_flight_form"
 
+#. module: muskathlon
+#: model:ir.model.fields,help:muskathlon.field_res_partner__is_muskathlon
+#: model:ir.model.fields,help:muskathlon.field_res_users__is_muskathlon
+msgid "tells if it's a Muskathlon participant"
+msgstr "sagt, ob es ein Muskathlon-Teilnehmer ist"
+
+#~ msgid "Fill passport"
+#~ msgstr "Reisepass ausfüllen"
+
+#~ msgid "Fill profile"
+#~ msgstr "Profil befüllen"
+
+#~ msgid "Muskathlon registration"
+#~ msgstr ""
+#~ "Anmeldebestätigung ${object.get_objects().partner_id.registration_ids[:1]."
+#~ "compassion_event_id.name}"
+
+#~ msgid "Muskathlon registration confirmation (existing user)"
+#~ msgstr "Muskathlon Anmeldebestätigung (bestehender Benutzer)"
