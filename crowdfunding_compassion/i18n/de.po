@@ -131,12 +131,11 @@ msgid ""
 msgstr ""
 "<select class=\"s_website_form_select_item form-select form-control\" "
 "id=\"projectType\" name=\"type\" data-name=\"type\" required=\"true\">\n"
-"        <option value=\"individual\">Einzelperson\n"
-"</option>\n"
+"        <option value=\"individual\">Einzelperson</option>\n"
 "        <option value=\"collective\">Kollektiv</option>\n"
 "      </select>\n"
 "      <small class=\"form-text text-muted\">\n"
-"Bitte anklicken, wenn du dein Projekt für andere Teilnehmerinnen und "
+"        Bitte anklicken, wenn du dein Projekt für andere Teilnehmerinnen und "
 "Teilnehmer öffnen möchtest, damit sie sich anschliessen können.\n"
 "      </small>"
 
@@ -335,7 +334,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.edit_project_form
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.step1_form
 msgid "<span class=\"s_website_form_label_content\">Cover Photo</span>"
-msgstr "<span class=\"s_website_form_label_content\">Cover Foto</span>"
+msgstr "<span class=\"s_website_form_label_content\">Hintergrundbild</span>"
 
 #. module: crowdfunding_compassion
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.edit_project_form
@@ -344,7 +343,7 @@ msgid ""
 "                                            <span "
 "class=\"s_website_form_mark\"> *</span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Endtermin des Projekts</span>\n"
+"<span class=\"s_website_form_label_content\">Deadline des Projekts</span>\n"
 "                                            <span "
 "class=\"s_website_form_mark\"> *</span>"
 
@@ -355,7 +354,7 @@ msgid ""
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Endtermin des Projekts</span>\n"
+"<span class=\"s_website_form_label_content\">Deadline des Projekts</span>\n"
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 
@@ -428,7 +427,7 @@ msgid ""
 "<span class=\"s_website_form_label_content\">My project is</span>\n"
 "      <span class=\"s_website_form_mark\"> *</span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Typ</span>\n"
+"<span class=\"s_website_form_label_content\">Mein Projekt ist</span>\n"
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 
@@ -449,7 +448,7 @@ msgid ""
 "                                            <span "
 "class=\"s_website_form_mark\"> *</span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Name deines Projekts</span>\n"
+"<span class=\"s_website_form_label_content\">Titel deines Projekts</span>\n"
 "                                            <span "
 "class=\"s_website_form_mark\"> *</span>"
 
@@ -460,7 +459,7 @@ msgid ""
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Name deines Projekts</span>\n"
+"<span class=\"s_website_form_label_content\">Titel deines Projekts</span>\n"
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 
@@ -530,7 +529,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.edit_project_form
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.step1_form
 msgid "<span class=\"s_website_form_label_content\">Presentation Video</span>"
-msgstr "<span class=\"s_website_form_label_content\">Präsentationsvideo</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Präsentations-Video</span>"
 
 #. module: crowdfunding_compassion
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.step2_form
@@ -555,7 +555,7 @@ msgid ""
 "                                            <span "
 "class=\"s_website_form_mark\"> *</span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Projektbeschreibung</span>\n"
+"<span class=\"s_website_form_label_content\">Beschreibung</span>\n"
 "                                            <span "
 "class=\"s_website_form_mark\"> *</span>"
 
@@ -566,7 +566,7 @@ msgid ""
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Projektbeschreibung</span>\n"
+"<span class=\"s_website_form_label_content\">Beschreibung</span>\n"
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 
@@ -585,7 +585,8 @@ msgstr ""
 #. module: crowdfunding_compassion
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.step1_form
 msgid "<span class=\"s_website_form_label_content\">Project web page</span>"
-msgstr "<span class=\"s_website_form_label_content\">Projekt-Webseite</span>"
+msgstr ""
+"<span class=\"s_website_form_label_content\">Persönliche Webseite</span>"
 
 #. module: crowdfunding_compassion
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.step2_form
@@ -604,7 +605,7 @@ msgid ""
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Straße</span>\n"
+"<span class=\"s_website_form_label_content\">Strasse</span>\n"
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 
@@ -615,7 +616,7 @@ msgid ""
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Titel</span>\n"
+"<span class=\"s_website_form_label_content\">Anrede</span>\n"
 "                                    <span class=\"s_website_form_mark\"> *</"
 "span>"
 
@@ -2024,8 +2025,8 @@ msgid ""
 "If there is any social media pages for your event, you can link them on the "
 "project page."
 msgstr ""
-"Wenn es eine Social-Media-Seite für deine Veranstaltung gibt, kannst du sie "
-"auf der Projektseite verlinken."
+"Wenn du über ein Social-Media-Konto verfügst, mit dem du dein Projekt "
+"bewerben, kannst du diese mit deiner persönlichen Seite verknüpfen."
 
 #. module: crowdfunding_compassion
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.project_creation_view_template
@@ -2880,7 +2881,7 @@ msgstr "Zu aktualisierendes Projekt"
 #. module: crowdfunding_compassion
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.project_creation_view_template
 msgid "Project web page"
-msgstr "Projekt-Webseite"
+msgstr "Persönliche Webseite"
 
 #. module: crowdfunding_compassion
 #: model:ir.ui.menu,name:crowdfunding_compassion.menu_crowdfunding_project
@@ -3162,7 +3163,7 @@ msgstr "Strasse"
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.edit_project_form
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.step3_form
 msgid "Submit"
-msgstr "Senden"
+msgstr "Absenden"
 
 #. module: crowdfunding_compassion
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.crowdfunding_navbar
@@ -3298,7 +3299,7 @@ msgstr "Tempo rimanente"
 #: model:ir.model.fields,field_description:crowdfunding_compassion.field_cms_form_crowdfunding_project_step3__partner_title
 #, python-format
 msgid "Title"
-msgstr "Titel"
+msgstr "Anrede"
 
 #. module: crowdfunding_compassion
 #: model_terms:ir.ui.view,arch_db:crowdfunding_compassion.homepage_template
@@ -3339,7 +3340,7 @@ msgstr "X"
 #: model:ir.model.fields,field_description:crowdfunding_compassion.field_crowdfunding_project__twitter_url
 #, python-format
 msgid "X link"
-msgstr "X-Link"
+msgstr ""
 
 #. module: crowdfunding_compassion
 #: model:ir.model.fields,field_description:crowdfunding_compassion.field_cms_form_crowdfunding_project_step1__type
@@ -3847,3 +3848,9 @@ msgstr "| TOGETHER - Compassion Schweiz Fundraising"
 
 #~ msgid "Please set an amount"
 #~ msgstr "Bitte einen Betrag festlegen"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Twitter link"
+#~ msgstr "Twitter-Link"
