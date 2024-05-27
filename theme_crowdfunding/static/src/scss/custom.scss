@@ -32,13 +32,14 @@ section {
   }
 
   .count {
+    font-size: 4rem;
     font-weight: 700;
     color: $blue-compassion;
   }
 
   .count-text {
     color: $blue-compassion;
-    // 		font-weight: 700;
+    font-size: 1.4875rem;
   }
 
   &.blue {
