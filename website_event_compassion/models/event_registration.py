@@ -33,7 +33,12 @@ class EventRegistration(models.Model):
     ##########################################################################
     #                                 FIELDS                                 #
     ##########################################################################
-    down_payment_id = fields.Many2one('account.move', string='Down Payment', readonly=False, related='sale_order_line_id.invoice_lines.move_id')
+    down_payment_id = fields.Many2one(
+        "account.move",
+        string="Down Payment",
+        readonly=False,
+        related="sale_order_line_id.invoice_lines.move_id",
+    )
     # Change readonly attribute so that form creation is possible
     event_id = fields.Many2one(
         readonly=False,

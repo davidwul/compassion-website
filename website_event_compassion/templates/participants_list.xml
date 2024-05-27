@@ -16,7 +16,7 @@
           t-foreach="event.registration_ids.filtered('website_published')"
           t-as="registration"
         >
-                    <div class="col-6 col-xl-4 mb-4">
+                    <div class="col-12 col-sm-6 col-xl-4 mb-4">
                         <div class="card">
                             <t
                 t-set="ambassador_picture"

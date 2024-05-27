@@ -61,7 +61,7 @@
                             <figure class="figure">
                                 <img
                   t-att-src="ambassador_picture"
-                  class="figure-img img-thumbnail padding-large"
+                  class="figure-img img-thumbnail"
                   alt=""
                   loading="lazy"
                   data-original-id="140127"

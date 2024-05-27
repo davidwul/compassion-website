@@ -719,7 +719,7 @@ msgstr "Devise"
 #. module: website_event_compassion
 #: model_terms:ir.ui.view,arch_db:website_event_compassion.event_donation
 msgid "Custom amount"
-msgstr "Montant personnalisé"
+msgstr "Montant libre"
 
 #. module: website_event_compassion
 #: model_terms:ir.ui.view,arch_db:website_event_compassion.event_page

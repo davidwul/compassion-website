@@ -9,7 +9,7 @@ $o-color-palettes: (
     "o-color-2": #8b8b8b,
     "o-color-3": #f5f5f5,
     "o-color-4": #ffffff,
-    "o-color-5": #111111,
+    "o-color-5": #f5f5f5,
     "footer": 2,
     "copyright": 2,
     "menu": 4,
@@ -26,20 +26,6 @@ $o-color-palettes: (
 //------------------------------------------------------------------------------
 
 $o-theme-font-configs: (
-  "Englebert": (
-    "family": (
-      "Englebert",
-      cursive,
-    ),
-    "url": "Englebert:400",
-  ),
-  "Bebas Neue": (
-    "family": (
-      "Bebas Neue",
-      sans-serif,
-    ),
-    "url": "Bebas+Neue:400",
-  ),
   "Play": (
     "family": (
       "Play",
@@ -64,7 +50,5 @@ $o-website-values-palettes: (
     "hamburger-type": "off-canvas",
     "hamburger-position": "left",
     "footer-template": "links",
-    "btn-border-radius": 100px,
-    "input-border-radius": 100px,
   ),
 );

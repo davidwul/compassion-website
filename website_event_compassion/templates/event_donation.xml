@@ -23,47 +23,42 @@
           name="csrf_token"
           t-att-value="request.csrf_token()"
         />
-                <div class="my-3 d-flex">
-                    <button
-            class="amount_button col-2 btn btn-outline-primary btn-lg mr-3"
-            type="button"
-            data-donation-value="10"
-            t-translation="off"
-          ><t t-esc="currency" />
-                        10</button>
-                    <p class="my-auto text-muted font-italic">Impact text 1.</p>
-                </div>
-
-                <div class="d-flex my-3">
-                    <button
-            class="amount_button col-2 btn btn-outline-primary btn-lg mr-3"
-            type="button"
-            data-donation-value="25"
-            t-translation="off"
-          ><t t-esc="currency" />
-                        25</button>
-                    <p class="my-auto text-muted font-italic">Impact text 2.</p>
-                </div>
-
-                <div class="d-flex my-3">
-                    <button
-            class="amount_button col-2 btn btn-outline-primary btn-lg mr-3"
-            type="button"
-            data-donation-value="50"
-            t-translation="off"
-          ><t t-esc="currency" />
-                        50</button>
-                    <p class="my-auto text-muted font-italic">Impact text 3.</p>
-                </div>
-
-                <div class="d-flex my-3">
-                    <button
-            class="amount_button col-2 btn btn-outline-primary btn-lg mr-3"
-            type="button"
-            data-donation-value="100"
-            t-translation="off"
-          ><t t-esc="currency" /> 100</button>
-                    <p class="my-auto text-muted font-italic">Impact text 4.</p>
+                <div class="my-3 row">
+                    <div class="col-12 col-md-3 mb-2 mb-md-0">
+                        <button
+              class="amount_button btn btn-outline-primary btn-lg w-100"
+              type="button"
+              data-donation-value="10"
+              t-translation="off"
+            ><t t-esc="currency" />
+                            10</button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-2 mb-md-0">
+                        <button
+              class="amount_button btn btn-outline-primary btn-lg w-100"
+              type="button"
+              data-donation-value="25"
+              t-translation="off"
+            ><t t-esc="currency" />
+                            25</button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-2 mb-md-0">
+                        <button
+              class="amount_button btn btn-outline-primary btn-lg w-100"
+              type="button"
+              data-donation-value="50"
+              t-translation="off"
+            ><t t-esc="currency" />
+                            50</button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-2 mb-md-0">
+                        <button
+              class="amount_button btn btn-outline-primary btn-lg w-100"
+              type="button"
+              data-donation-value="100"
+              t-translation="off"
+            ><t t-esc="currency" /> 100</button>
+                    </div>
                 </div>
 
                 <div class="d-flex my-3">
