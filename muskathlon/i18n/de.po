@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Compassion Odoo 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-21 08:34+0000\n"
+"POT-Creation-Date: 2024-05-27 08:46+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #. module: muskathlon
 #: model:mail.template,body_html:muskathlon.sponsorship_invitation_template
@@ -185,31 +185,26 @@ msgstr ""
 
 #. module: muskathlon
 #: model:mail.template,subject:muskathlon.child_protection_template
-#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
 msgid "${object.get_objects().event_id.name} - Child protection"
 msgstr ""
 
 #. module: muskathlon
 #: model:mail.template,subject:muskathlon.medical_reminder_template
-#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
 msgid "${object.get_objects().event_id.name} - Medical reminder"
 msgstr ""
 
 #. module: muskathlon
 #: model:mail.template,subject:muskathlon.passport_and_flight_template
-#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
 msgid "${object.get_objects().event_id.name} - Passport and flight"
 msgstr ""
 
 #. module: muskathlon
 #: model:mail.template,subject:muskathlon.vaccinations_template
-#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
 msgid "${object.get_objects().event_id.name} - Vaccinations"
 msgstr ""
 
 #. module: muskathlon
 #: model:mail.template,subject:muskathlon.visa_reminder_template
-#| msgid "${object.get_objects().compassion_event_id.name} - (d)ein Patenkind"
 msgid "${object.get_objects().event_id.name} - Visa reminder"
 msgstr ""
 
@@ -1665,7 +1660,6 @@ msgstr "Falls ja, bitte Nennung:"
 
 #. module: muskathlon
 #: model:event.registration.stage,name:muskathlon.stage_fill_profile
-#| msgid "Event registrations"
 msgid "In Preparation"
 msgstr ""
 

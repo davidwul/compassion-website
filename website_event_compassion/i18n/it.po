@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Compassion Odoo 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-21 08:41+0000\n"
+"POT-Creation-Date: 2024-05-27 08:43+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #. module: website_event_compassion
 #: code:addons/website_event_compassion/controllers/events_controller.py:0
@@ -59,9 +59,9 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_event_compassion.event_registration_form
 msgid ""
 "<small id=\"emergencyHelpBlock\" class=\"form-text text-muted\">\n"
-"Please let us know who we can contact in case of an emergency during the "
-"trip.\n"
-"</small>"
+"                                            Please let us know who we can "
+"contact in case of an emergency during the trip.\n"
+"                                        </small>"
 msgstr ""
 "<small id=\"emergencyHelpBlock\" class=\"form-text text-muted\">\n"
 "Ti preghiamo di comunicarci chi possiamo contattare in caso di emergenza "
@@ -72,10 +72,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_event_compassion.event_registration_form
 msgid ""
 "<small id=\"mottoHelpBlock\" class=\"form-text text-muted\">\n"
-"What motivates you to take part in the project? Write a few sentences. They "
-"will be published on your profile and appear in the thank-you letters to "
-"your donors.\n"
-"</small>"
+"                                            What motivates you to take part "
+"in the project? Write a few sentences. They will be published on your "
+"profile and appear in the thank-you letters to your donors.\n"
+"                                        </small>"
 msgstr ""
 "<small id=\"mottoHelpBlock\" class=\"form-text text-muted\">\n"
 "Cosa ti spinge a partecipare al progetto? Scrivi alcune frasi. Verranno "
@@ -87,8 +87,9 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_event_compassion.event_registration_form
 msgid ""
 "<small id=\"passportHelpBlock\" class=\"form-text text-muted\">\n"
-"Your name as it appears on your passport.\n"
-"</small>"
+"                                            Your name as it appears on your "
+"passport.\n"
+"                                        </small>"
 msgstr ""
 "<small id=\"passportHelpBlock\" class=\"form-text text-muted\">\n"
 "Il tuo nome come appare sul passaporto.\n"
@@ -822,6 +823,11 @@ msgid "Donor"
 msgstr "Donatore"
 
 #. module: website_event_compassion
+#: model:ir.model.fields,field_description:website_event_compassion.field_event_registration__down_payment_id
+msgid "Down Payment"
+msgstr "Acconto"
+
+#. module: website_event_compassion
 #: model:ir.model.fields,field_description:website_event_compassion.field_event_registration_stage__duration
 msgid "Duration"
 msgstr "Durata"
@@ -1198,26 +1204,6 @@ msgid ""
 msgstr ""
 "Se impostata, questa opzione imposta automaticamente la registrazione nello "
 "stato scelto quando raggiunge questa fase."
-
-#. module: website_event_compassion
-#: model_terms:ir.ui.view,arch_db:website_event_compassion.event_donation
-msgid "Impact text 1."
-msgstr "Testo d'impatto 1."
-
-#. module: website_event_compassion
-#: model_terms:ir.ui.view,arch_db:website_event_compassion.event_donation
-msgid "Impact text 2."
-msgstr "Testo d'impatto 2."
-
-#. module: website_event_compassion
-#: model_terms:ir.ui.view,arch_db:website_event_compassion.event_donation
-msgid "Impact text 3."
-msgstr "Testo d'impatto 3."
-
-#. module: website_event_compassion
-#: model_terms:ir.ui.view,arch_db:website_event_compassion.event_donation
-msgid "Impact text 4."
-msgstr "Testo d'impatto 4."
 
 #. module: website_event_compassion
 #: model:ir.model.fields,field_description:website_event_compassion.field_event_registration__incomplete_task_count
@@ -2075,6 +2061,11 @@ msgid "The full URL to access the document through the website."
 msgstr "L'URL completo per accedere al documento attraverso il sito web."
 
 #. module: website_event_compassion
+#: model:ir.model.fields,help:website_event_compassion.field_event_registration__down_payment_id
+msgid "The move of this entry line."
+msgstr ""
+
+#. module: website_event_compassion
 #: code:addons/website_event_compassion/models/event_event.py:0
 #, python-format
 msgid "There is no feedback survey to print"
@@ -2377,6 +2368,18 @@ msgstr ""
 "Una procedura guidata che caricherà una configurazione scelta per l'invio di "
 "un'email"
 
+#~ msgid "Impact text 1."
+#~ msgstr "Testo d'impatto 1."
+
+#~ msgid "Impact text 2."
+#~ msgstr "Testo d'impatto 2."
+
+#~ msgid "Impact text 3."
+#~ msgstr "Testo d'impatto 3."
+
+#~ msgid "Impact text 4."
+#~ msgstr "Testo d'impatto 4."
+
 #~ msgid ""
 #~ "${object.get_objects().compassion_event_id.name} - Invitation to an after "
 #~ "party"
@@ -2603,9 +2606,6 @@ msgstr ""
 #~ "                    Compassion Svizzera\n"
 #~ "                \n"
 #~ "            "
-
-#~ msgid "Down payment"
-#~ msgstr "Acconto"
 
 #~ msgid "Fill medical survey"
 #~ msgstr "Compila il questionario medico"
