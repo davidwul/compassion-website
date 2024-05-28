@@ -4,7 +4,7 @@ odoo.define("crowdfunding_compassion.website_widgets", function (require) {
   const publicWidget = require("web.public.widget");
 
   // DONATION FORM
-  publicWidget.registry.DonationForm = publicWidget.Widget.extend({
+  publicWidget.registry.CrowdfundingDonationForm = publicWidget.Widget.extend({
     selector: "#project_donation_page",
 
     start: function () {

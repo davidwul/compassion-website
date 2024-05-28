@@ -253,27 +253,12 @@
                     class="col-sm-12 col-md-4 mb-3"
                   >
                                             <label class="h-100 w-100">
-                                                <!-- If there is no sponsorship, select product by default -->
-                                                <t
-                        t-if="project.number_sponsorships_goal"
-                      >
                                                     <input
-                          type="radio"
-                          name="donation-type"
-                          value="product"
-                          class="card-input-element d-none"
-                        />
-                                                </t>
-                                                <t t-else="">
-                                                    <input
-                          type="radio"
-                          name="donation-type"
-                          value="product"
-                          class="card-input-element d-none"
-                          checked="checked"
-                        />
-                                                </t>
-
+                        type="radio"
+                        name="donation-type"
+                        value="product"
+                        class="card-input-element d-none"
+                      />
                                                 <div
                         class="card h-100 card-body bg-transparent d-flex justify-content-around align-items-center"
                       >
@@ -479,11 +464,8 @@
                             >Anonymous donation</label>
                                                         </div>
                                                         <p class="small-text">
-                                                            <span
-                            >Your name will not be displayed on the website and won't be shared to </span>
-                                                            <span
-                              t-esc="participant_name"
-                            /><span t-translation="off">.</span></p>
+                                                            I want to make an anonymous donation. My name will not be displayed on the project page.
+                                                            </p>
                                                         <div
                             class="custom-control custom-switch"
                           >

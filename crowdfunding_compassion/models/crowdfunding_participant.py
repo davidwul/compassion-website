@@ -1,6 +1,6 @@
 #    Copyright (C) 2020 Compassion CH
 #    @author: Quentin Gigon
-from werkzeug.urls import url_encode
+from werkzeug.urls import url_encode, url_parse
 
 from odoo import api, fields, models
 
@@ -101,24 +101,20 @@ class CrowdfundingParticipant(models.Model):
     def _compute_sponsorship_url(self):
         wp = self.env["wordpress.configuration"].sudo().get_config()
         for participant in self:
-            query = {
-                "utm_medium": "Crowdfunding",
-                "utm_campaign": participant.project_id.name,
-                "utm_source": participant.name,
-            }
-            utm_medium = "Crowdfunding"
-            utm_campaign = participant.project_id.name
-            utm_source = participant.name
-            DEFAULT_URL = (
-                f"https://{wp.host}%s?"
-                f"utm_medium={utm_medium}"
-                f"&utm_campaign={utm_campaign}"
-                f"&utm_source={utm_source}"
+            query = url_encode(
+                {
+                    "utm_medium": "Crowdfunding",
+                    "utm_campaign": participant.project_id.name,
+                    "utm_source": participant.name,
+                }
             )
-            participant.sponsorship_url = f"/children?{url_encode(query)}"
-            participant.survival_sponsorship_url = DEFAULT_URL % getattr(
-                wp, "survival_sponsorship_url", ""
+            parsed_csp_url = url_parse(
+                f"https://{wp.host}{wp.survival_sponsorship_url}"
             )
+            participant.sponsorship_url = f"/children?{query}"
+            participant.survival_sponsorship_url = parsed_csp_url.replace(
+                query=query
+            ).to_url()
 
     def _compute_product_number_reached(self):
         for participant in self:

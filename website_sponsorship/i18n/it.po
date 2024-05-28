@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Compassion Odoo 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-21 08:42+0000\n"
+"POT-Creation-Date: 2024-05-28 11:15+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,12 +10,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.child_legend
 msgid "&amp;nbsp;"
-msgstr "&amp;nbsp;"
+msgstr ""
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.children_page_template
@@ -253,11 +253,6 @@ msgid "Available Children"
 msgstr "Bambini disponibili"
 
 #. module: website_sponsorship
-#: model_terms:ir.ui.view,arch_db:website_sponsorship.child_page_header
-msgid "Become a sponsor and change"
-msgstr "Diventa sponsor e cambia"
-
-#. module: website_sponsorship
 #: model:ir.model.fields,field_description:website_sponsorship.field_cms_form_sponsorship__partner_birthdate_date
 msgid "Birthdate"
 msgstr "Data di nascita"
@@ -273,6 +268,21 @@ msgstr "Campagna"
 #: model:ir.model.fields,field_description:website_sponsorship.field_res_partner_title__can_publish
 msgid "Can Publish"
 msgstr "Può pubblicare"
+
+#. module: website_sponsorship
+#: model_terms:ir.ui.view,arch_db:website_sponsorship.sponsorship_done
+msgid ""
+"Can you imagine the enormous joy when our local employees are able to tell "
+"the child that he or she now has a sponsor on the other side of the world?\n"
+"                        <br/>\n"
+"                        You will soon receive all documentation needed to "
+"start the sponsorship in your mailbox."
+msgstr ""
+"Puoi immaginare la sua gioia quando il nostro staff locale gli comunicherà "
+"che ora ha un sostenitore dall’altra parte del mondo?\n"
+"                        <br/>\n"
+"                        Riceverai le informazioni sull'inizio del tuo "
+"sostegno a distanza nei prossimi giorni, per email o per corriere."
 
 #. module: website_sponsorship
 #: model:ir.model.fields,field_description:website_sponsorship.field_cms_form_sponsorship__child_id
@@ -387,11 +397,8 @@ msgstr "Fornisci i dettagli se le opzioni di cui sopra non sono adatte"
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.acceptance_full
-msgid ""
-"I accept the legal terms, the privacy policy &amp; conditions of Compassion."
-msgstr ""
-"Accetto i termini legali, la politica sulla privacy e le condizioni di "
-"Compassion."
+msgid "I accept the legal terms &amp; the privacy policy conditions."
+msgstr "Accetto i termini legali e la politica sulla privacy."
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.sponsorship_done
@@ -553,7 +560,6 @@ msgstr "Partner"
 
 #. module: website_sponsorship
 #: model:ir.model,name:website_sponsorship.model_res_partner_title
-#| msgid "Partner"
 msgid "Partner Title"
 msgstr ""
 
@@ -703,7 +709,7 @@ msgstr "Invia"
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.sponsorship_done
 msgid "Thank you for sponsoring"
-msgstr "Grazie per aver sponsorizzato"
+msgstr "Grazie per il tuo sostegno a"
 
 #. module: website_sponsorship
 #: model:ir.model.fields,help:website_sponsorship.field_compassion_child__website_url
@@ -848,15 +854,6 @@ msgid "You cannot publish a child that is not available for sponsorship."
 msgstr "Non puoi pubblicare un bambino che non è disponibile per il sostegno."
 
 #. module: website_sponsorship
-#: model_terms:ir.ui.view,arch_db:website_sponsorship.sponsorship_done
-msgid ""
-"You will soon receive all documentation needed to start the sponsorship in "
-"your mailbox."
-msgstr ""
-"Riceverai presto nella tua casella di posta elettronica tutta la "
-"documentazione necessaria per avviare il sostegno."
-
-#. module: website_sponsorship
 #: model:ir.model.fields,field_description:website_sponsorship.field_cms_form_sponsorship__partner_zip
 msgid "Zip"
 msgstr "Zip"
@@ -874,11 +871,19 @@ msgid "from poverty!"
 msgstr "dalla povertà!"
 
 #. module: website_sponsorship
-#: model_terms:ir.ui.view,arch_db:website_sponsorship.child_page_header
-msgid "life today."
-msgstr "la vita di oggi."
-
-#. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.child_legend
 msgid "y/o&amp;nbsp;"
 msgstr "anni&amp;nbsp;"
+
+#~ msgid "Become a sponsor and change"
+#~ msgstr "Diventa sponsor e cambia"
+
+#~ msgid "life today."
+#~ msgstr "la vita di oggi."
+
+#~ msgid ""
+#~ "You will soon receive all documentation needed to start the sponsorship "
+#~ "in your mailbox."
+#~ msgstr ""
+#~ "Riceverai presto nella tua casella di posta elettronica tutta la "
+#~ "documentazione necessaria per avviare il sostegno."

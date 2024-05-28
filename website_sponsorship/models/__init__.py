@@ -14,4 +14,5 @@ from . import (
     res_partner,
     res_partner_match,
     res_partner_title,
+    payment_mode,
 )

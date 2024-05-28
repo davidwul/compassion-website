@@ -2265,12 +2265,12 @@ msgstr "Votre"
 #. module: website_event_compassion
 #: model_terms:ir.ui.view,arch_db:website_event_compassion.event_registration_form
 msgid "Your coordinates"
-msgstr "Your coordinates"
+msgstr "Coordonnées"
 
 #. module: website_event_compassion
 #: model_terms:ir.ui.view,arch_db:website_event_compassion.event_registration_form
 msgid "Your public profile"
-msgstr "Votre profil public"
+msgstr "Profil public"
 
 #. module: website_event_compassion
 #: model:event.type,name:website_event_compassion.event_type_youth_trip

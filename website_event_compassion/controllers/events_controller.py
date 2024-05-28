@@ -9,8 +9,6 @@
 ##############################################################################
 from datetime import datetime
 
-import werkzeug
-
 from odoo import _, fields, http
 from odoo.http import Controller, request
 
@@ -72,8 +70,10 @@ class EventsController(Controller):
         if not event.is_published and request.env.user.share:
             return request.redirect(EVENTS_URL)
 
-        if not event.can_access_from_current_website() and request.env.user.share:
-            raise werkzeug.exceptions.NotFound()
+        if not event.can_access_from_current_website():
+            website = event.website_id
+            website._force()
+            return request.redirect("/event/%s" % slug(event))
 
         values = self.get_event_page_values(event)
         return request.render("website_event_compassion.event_page", values)
@@ -119,12 +119,12 @@ class EventsController(Controller):
         :param reg_id: the registration record
         :return:the rendered page
         """
-        if (
-            not event.is_published
-            or not registration.is_published
-            or not registration.can_access_from_current_website()
-        ):
+        if not event.is_published or not registration.is_published:
             return request.redirect(EVENTS_URL)
+        if not registration.can_access_from_current_website():
+            website = registration.website_id
+            website._force()
+            return request.redirect("/event/%s/%s" % (slug(event), slug(registration)))
         values = self.get_participant_page_values(event, registration)
         return request.render(values["website_template"], values)
 

@@ -102,11 +102,7 @@ class WebsiteSponsorship(models.TransientModel):
         if self.sponsorship_amount == "regular":
             # Remove the GEN Fund
             lines.pop()
-        pricelist = (
-            self.env["product.pricelist"]
-            .sudo()
-            .search([("company_id", "=", self.env.company.id)], limit=1)
-        )
+        pricelist = self.env["product.pricelist"].sudo().search([], limit=1)
         res = {
             "partner_id": self.partner_id.id,
             # We could later implement another correspondent selection

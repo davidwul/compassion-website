@@ -1,7 +1,7 @@
 #    Copyright (C) 2020 Compassion CH
 #    @author: Quentin Gigon
 
-from odoo import api, fields, models
+from odoo import fields, models
 
 
 class ProductTemplate(models.Model):

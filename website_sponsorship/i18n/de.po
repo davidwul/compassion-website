@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Compassion Odoo 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-21 08:42+0000\n"
+"POT-Creation-Date: 2024-05-28 11:15+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,12 +10,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.child_legend
 msgid "&amp;nbsp;"
-msgstr "&amp;nbsp;"
+msgstr ""
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.children_page_template
@@ -216,7 +216,7 @@ msgstr "<span class=\"s_website_form_label_content\">Telefon</span>"
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.child_sponsorship_form
 msgid "<span class=\"s_website_form_label_content\">Street</span>"
-msgstr "<span class=\"s_website_form_label_content\">Straße</span>"
+msgstr "<span class=\"s_website_form_label_content\">Strasse</span>"
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.child_sponsorship_form
@@ -250,11 +250,6 @@ msgid "Available Children"
 msgstr "Verfügbare Kinder"
 
 #. module: website_sponsorship
-#: model_terms:ir.ui.view,arch_db:website_sponsorship.child_page_header
-msgid "Become a sponsor and change"
-msgstr "Werde Pate und verändere dich"
-
-#. module: website_sponsorship
 #: model:ir.model.fields,field_description:website_sponsorship.field_cms_form_sponsorship__partner_birthdate_date
 msgid "Birthdate"
 msgstr "Geburtsdatum"
@@ -270,6 +265,24 @@ msgstr "Kampagne"
 #: model:ir.model.fields,field_description:website_sponsorship.field_res_partner_title__can_publish
 msgid "Can Publish"
 msgstr "Kann veröffentlichen"
+
+#. module: website_sponsorship
+#: model_terms:ir.ui.view,arch_db:website_sponsorship.sponsorship_done
+msgid ""
+"Can you imagine the enormous joy when our local employees are able to tell "
+"the child that he or she now has a sponsor on the other side of the world?\n"
+"                        <br/>\n"
+"                        You will soon receive all documentation needed to "
+"start the sponsorship in your mailbox."
+msgstr ""
+"Herzlichen Dank, dass du dich entschieden hast, ein Kind in extremer Armut "
+"durch eine Patenschaft zu unterstützen! Kannst du dir die Riesenfreude "
+"vorstellen, wenn unsere Mitarbeitenden vor Ort dem Kind mitteilen können, "
+"dass es jetzt auf der anderen Seite der Welt eine Patin oder einen Paten "
+"hat?\n"
+"                        <br/>\n"
+"                        Die Informationen zum Start der Patenschaft wirst du "
+"innerhalb der nächsten Tage per E-Mail erhalten."
 
 #. module: website_sponsorship
 #: model:ir.model.fields,field_description:website_sponsorship.field_cms_form_sponsorship__child_id
@@ -290,7 +303,7 @@ msgstr "Wähle ein anderes Kind"
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.children_page_template
 msgid "Choose for me"
-msgstr "Wähle für mich"
+msgstr "Für mich auswählen"
 
 #. module: website_sponsorship
 #: model:ir.model.fields,field_description:website_sponsorship.field_cms_form_sponsorship__partner_city
@@ -385,11 +398,10 @@ msgstr "Gib Details an, wenn die oben genannten Optionen nicht passen"
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.acceptance_full
-msgid ""
-"I accept the legal terms, the privacy policy &amp; conditions of Compassion."
+msgid "I accept the legal terms &amp; the privacy policy conditions."
 msgstr ""
-"Ich akzeptiere die rechtlichen Bedingungen, die Datenschutzbestimmungen "
-"&amp; Bedingungen von Compassion."
+"Ja, ich habe die rechtlichen Bedingungen &amp; die Datenschutzbestimmungen "
+"gelesen."
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.sponsorship_done
@@ -541,7 +553,7 @@ msgstr ""
 "Die PLUS-Patenschaft ist eine <b>zusätzliche Spende von 8,00 CHF pro Monat</"
 "b>: Sie ermöglicht es Compassion, Projekte zu finanzieren, die das Umfeld "
 "der Kinder verändern. Die Gelder, die im Rahmen des Programms Patenschaft "
-"Plus eingehen, fließen in einen gemeinsamen Fonds und ermöglichen es "
+"Plus eingehen, fliessen in einen gemeinsamen Fonds und ermöglichen es "
 "Compassion, jedes Jahr mehrere Projekte zu unterstützen."
 
 #. module: website_sponsorship
@@ -599,17 +611,17 @@ msgstr "Regulär"
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.child_sponsorship_form
 msgid "Regular Sponsorship"
-msgstr "Regelmäßige Patenschaft"
+msgstr "Regelmässige Patenschaft"
 
 #. module: website_sponsorship
 #: model:ir.model.fields.selection,name:website_sponsorship.selection__cms_form_sponsorship__sponsorship_amount__regular
 msgid "Regular sponsorship"
-msgstr "Regelmäßige Patenschaft"
+msgstr "Regelmässige Patenschaft"
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.children_page_template
 msgid "Reset filters"
-msgstr "Filter zurücksetzen"
+msgstr "Suche zurücksetzen"
 
 #. module: website_sponsorship
 #: model:ir.model.fields,help:website_sponsorship.field_compassion_child__website_id
@@ -634,7 +646,7 @@ msgstr "Nach unten zum nächsten Abschnitt blättern"
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.children_page_template
 msgid "Search"
-msgstr "Suche"
+msgstr "Suchen"
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.children_page_template
@@ -665,7 +677,7 @@ msgstr "Quelle"
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.child_description
 msgid "Sponsor"
-msgstr "Sponsor"
+msgstr "Unterstützt"
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.children_page_template
@@ -700,7 +712,7 @@ msgstr "Senden"
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.sponsorship_done
 msgid "Thank you for sponsoring"
-msgstr "Danke für dein Sponsoring"
+msgstr "Herzlichen Dank für deine Unterstützung von"
 
 #. module: website_sponsorship
 #: model:ir.model.fields,help:website_sponsorship.field_compassion_child__website_url
@@ -830,7 +842,7 @@ msgid ""
 "With CHF <span id=\"sponsorship_amount\">42</span>.- per month, you will "
 "release"
 msgstr ""
-"Mit CHF <span id=\"sponsorship_amount\">42</span>.- pro Monat, befreist du"
+"Mit CHF <span id=\"sponsorship_amount\">42</span>.- pro Monat, kannst du"
 
 #. module: website_sponsorship
 #: model:ir.model.fields.selection,name:website_sponsorship.selection__cms_form_sponsorship__sponsorship_type__swp
@@ -844,15 +856,6 @@ msgid "You cannot publish a child that is not available for sponsorship."
 msgstr ""
 "Du kannst kein Kind veröffentlichen, das nicht für eine Patenschaft "
 "verfügbar ist."
-
-#. module: website_sponsorship
-#: model_terms:ir.ui.view,arch_db:website_sponsorship.sponsorship_done
-msgid ""
-"You will soon receive all documentation needed to start the sponsorship in "
-"your mailbox."
-msgstr ""
-"In Kürze erhältst du alle Unterlagen, die du für den Beginn der Patenschaft "
-"benötigst, in deinem Briefkasten."
 
 #. module: website_sponsorship
 #: model:ir.model.fields,field_description:website_sponsorship.field_cms_form_sponsorship__partner_zip
@@ -869,14 +872,22 @@ msgstr "Kinderbild"
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.child_page_template
 msgid "from poverty!"
-msgstr "aus der Armut!"
-
-#. module: website_sponsorship
-#: model_terms:ir.ui.view,arch_db:website_sponsorship.child_page_header
-msgid "life today."
-msgstr "Leben heute."
+msgstr "aus der Armut befreien!"
 
 #. module: website_sponsorship
 #: model_terms:ir.ui.view,arch_db:website_sponsorship.child_legend
 msgid "y/o&amp;nbsp;"
-msgstr "y/o&amp;nbsp;"
+msgstr "Jahre alt&amp;nbsp;"
+
+#~ msgid "Become a sponsor and change"
+#~ msgstr "Werde Pate und verändere dich"
+
+#~ msgid "life today."
+#~ msgstr "Leben heute."
+
+#~ msgid ""
+#~ "You will soon receive all documentation needed to start the sponsorship "
+#~ "in your mailbox."
+#~ msgstr ""
+#~ "Die Informationen zum Start der Patenschaft wirst du innerhalb der "
+#~ "nächsten Tage per E-Mail erhalten."

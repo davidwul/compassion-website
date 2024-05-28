@@ -151,7 +151,11 @@ class WebsiteChild(http.Controller):
             .sudo()
             .search([("translatable", "=", True)])
         )
-        payment_modes = request.env["account.payment.mode"].sudo().search([])
+        payment_modes = (
+            request.env["account.payment.mode"]
+            .sudo()
+            .search([("website_published", "=", True)])
+        )
         origins = (
             request.env["recurring.contract.origin"]
             .sudo()

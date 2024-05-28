@@ -80,7 +80,10 @@
         >
                   <div class="container s_allow_columns">
                     <p
-            >You will soon receive all documentation needed to start the sponsorship in your mailbox.</p>
+              class="text-center"
+            >Can you imagine the enormous joy when our local employees are able to tell the child that he or she now has a sponsor on the other side of the world?
+                        <br />
+                        You will soon receive all documentation needed to start the sponsorship in your mailbox.</p>
                   </div>
                 </section>
                 <t t-call="website_sponsorship.child_sponsorship_form">

@@ -106,11 +106,6 @@
               style="text-align: center; "
               t-esc="main_object.preferred_name"
             />
-                        <p
-              style="text-align: center; "
-            >Become a sponsor and change <span
-                t-esc="main_object.get('his')"
-              /> life today.</p>
                         <t t-call="website_sponsorship.child_legend">
                             <t t-set="child" t-value="main_object" />
                             <t
@@ -196,7 +191,7 @@
             <span class="fa fa-gift" />
             <figure class="figure">
                 <figcaption class="figure-caption">
-                    <font style="" t-att-class="text_class">&amp;nbsp;<span
+                    <font style="" t-att-class="text_class"> <span
               t-esc="child.age"
             /> y/o&amp;nbsp;</font>
                 </figcaption>
@@ -204,7 +199,7 @@
             <span class="fa fa-globe" />
             <figure class="figure">
                 <figcaption class="figure-caption">
-                    <font style="" t-att-class="text_class">&amp;nbsp;<span
+                    <font style="" t-att-class="text_class"> <span
               t-esc="child.field_office_id.country_id.name"
             />&amp;nbsp;</font>
                 </figcaption>

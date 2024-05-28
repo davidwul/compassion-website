@@ -36,6 +36,7 @@
         "views/contract_origin_view.xml",
         "views/partner_view.xml",
         "views/child_view.xml",
+        "views/payment_mode_view.xml",
     ],
     "installable": True,
     "auto_install": False,

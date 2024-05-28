@@ -3,22 +3,26 @@ odoo.define("website_event_compassion.donation_form", function (require) {
 
   const publicWidget = require("web.public.widget");
 
-  publicWidget.registry.DonationForm = publicWidget.Widget.extend({
+  publicWidget.registry.EventDonationForm = publicWidget.Widget.extend({
     selector: "#event_donation_form",
 
-    start: function () {
-      $(".amount_button").on("click", function () {
-        $("#input_amount").val($(this).data("donation-value"));
-      });
-      $("#amount_custom_input").on("change", function () {
-        $("#input_amount").val($(this).val());
-      });
-      this.$("form").submit(function (e) {
-        if (!$("#input_amount").val()) {
-          e.preventDefault();
-          $(".error").hide().removeClass("d-none").fadeIn();
-        }
-      });
+    events: {
+      "click .amount_button": "onAmountButtonClick",
+      "change #amount_custom_input": "onAmountCustomInputChange",
+      "submit form": "onFormSubmit",
+    },
+
+    onAmountButtonClick: function (el) {
+      $("#input_amount").val($(el.target).data("donation-value"));
+    },
+    onAmountCustomInputChange: function (el) {
+      $("#input_amount").val($(el.target).val());
+    },
+    onFormSubmit: function (el) {
+      if (!$("#input_amount").val()) {
+        el.target.preventDefault();
+        $(".error").hide().removeClass("d-none").fadeIn();
+      }
     },
   });
 });
