@@ -67,11 +67,6 @@ class ProductTemplate(models.Model):
         default=5, help="Default quantity proposition when making a donation"
     )
 
-    @api.model
-    def _auto_init(self):
-        super()._auto_init()
-        self.env["product.template"].search([]).recompute_amount()
-
     def recompute_amount(self):
         """
         This function is used to calculate the total amount of funds impacted by all the
