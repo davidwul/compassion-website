@@ -239,142 +239,140 @@
                                 }"
             />
                         <div class="container mt-3">
-                                <div
+                            <div
                 id="sponsorship_product_cards"
                 class="row pb-5"
               >
-                                    <!-- Product selectable card -->
-                                    <!-- Show product option only if one is selected -->
-                                    <t
+                                <!-- Product selectable card -->
+                                <!-- Show product option only if one is selected -->
+                                <t
                   t-if="selected_participant.product_number_goal"
                 >
-                                        <div
+                                    <div
                     id="product_card"
                     class="col-sm-12 col-md-4 mb-3"
                   >
-                                            <label class="h-100 w-100">
-                                                    <input
+                                        <label class="h-100 w-100">
+                                            <input
                         type="radio"
                         name="donation-type"
                         value="product"
                         class="card-input-element d-none"
                       />
-                                                <div
+                                            <div
                         class="card h-100 card-body bg-transparent d-flex justify-content-around align-items-center"
                       >
-                                                    <img
+                                                <img
                           class="donation-type__card-icon"
                           t-attf-src="data:image/png;base64, #{ project.product_id.image_512 }"
                           t-if="isinstance(project.product_id.image_512, bytes)"
                         />
-                                                    <img
+                                                <img
                           class="donation-type__card-icon"
                           src="/crowdfunding_compassion/static/src/img/icn_children.png"
                           t-else=""
                         />
-                                                    <h4
+                                                <h4
                           class="text-primary text-center text-uppercase"
                         >
-                                                        <t
+                                                    <t
                             t-esc="project.product_id.crowdfunding_impact_text_active"
                           />
-                                                    </h4>
-                                                    <span
+                                                </h4>
+                                                <span
                           class="fake-btn my-3 text-uppercase"
                         >Select</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </t>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </t>
 
-                                    <!-- Sponsorship selectable card -->
-                                    <t
+                                <!-- Sponsorship selectable card -->
+                                <t
                   t-if="selected_participant.number_sponsorships_goal"
                 >
-                                        <div
+                                    <div
                     id="sponsorship_card"
                     class="col-sm-12 col-md-4 mb-3"
                   >
-                                            <label class="h-100 w-100">
-                                                <!-- If there is no product id, select sponsorship by default -->
-                                                <t t-if="project.product_id">
-                                                    <input
+                                        <label class="h-100 w-100">
+                                            <!-- If there is no product id, select sponsorship by default -->
+                                            <t t-if="project.product_id">
+                                                <input
                           type="radio"
                           name="donation-type"
                           value="sponsorship"
                           class="card-input-element d-none"
                         />
-                                                </t>
-                                                <t t-else="">
-                                                    <input
+                                            </t>
+                                            <t t-else="">
+                                                <input
                           type="radio"
                           name="donation-type"
                           value="sponsorship"
                           class="card-input-element d-none"
                           checked="checked"
                         />
-                                                </t>
+                                            </t>
 
-                                                <div
+                                            <div
                         class="card h-100 card-body d-flex justify-content-around align-items-center"
                       >
-                                                    <img
+                                                <img
                           class="donation-type__card-icon"
                           src="/crowdfunding_compassion/static/src/img/icn_children.png"
                         />
-                                                    <h4
+                                                <h4
                           class="text-primary text-center text-uppercase"
                         >Sponsor a child</h4>
 
-                                                    <!-- Show the select button also if there is a product option-->
-                                                    <t
+                                                <!-- Show the select button also if there is a product option-->
+                                                <t
                           t-if="project.product_id or project.number_csp_goal"
                         >
-                                                        <span
+                                                    <span
                             class="fake-btn my-3 text-uppercase"
                           >Select</span>
-                                                    </t>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </t>
+                                                </t>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </t>
 
-                                    <!-- Sponsorship selectable card -->
-                                    <t
-                  t-if="selected_participant.number_csp_goal"
-                >
-                                        <div
+                                <!-- Sponsorship selectable card -->
+                                <t t-if="selected_participant.number_csp_goal">
+                                    <div
                     id="csp_card"
                     class="col-sm-12 col-md-4 mb-3"
                   >
-                                            <label class="h-100 w-100">
-                                                <input
+                                        <label class="h-100 w-100">
+                                            <input
                         type="radio"
                         name="donation-type"
                         value="csp"
                         class="card-input-element d-none"
                       />
 
-                                                <div
+                                            <div
                         class="card h-100 card-body d-flex justify-content-around align-items-center"
                       >
-                                                    <img
+                                                <img
                           class="donation-type__card-icon"
                           src="/crowdfunding_compassion/static/src/img/icn_csp.png"
                         />
-                                                    <h4
+                                                <h4
                           class="text-primary text-center text-uppercase"
                         >Sponsor a mum and her baby</h4>
-                                                    <span
+                                                <span
                           class="fake-btn my-3 text-uppercase"
                         >Select</span>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </t>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </t>
 
-                                </div>
                             </div>
+                        </div>
                     </section>
 
                     <!-- PAGE 3 - Choose donation amount -->
@@ -382,154 +380,131 @@
             class="donation-form-amount pt-1 pb-3"
             t-if="int(page) == 3 or (skip_type_selection and int(page) == 2)"
           >
-                            <form
+                        <form
               t-attf-action="/project/#{slug(project)}/#{slug(selected_participant)}/donation/submit"
               method="post"
               enctype="multipart/form-data"
             >
-                                <input
+                            <input
                 type="hidden"
                 name="csrf_token"
                 t-att-value="request.csrf_token()"
               />
-                                <div class="container">
+                            <div class="container">
 
-                                    <div class="row mb-5">
-                                        <!-- Amount selector -->
-                                        <div class="col-sm-12 col-md-8">
-                                            <div class="row">
-                                                <!-- Three example quantities are displayed, set the 3 default number of product for each here -->
-                                                <t
+                                <div class="row mb-5">
+                                    <!-- Amount selector -->
+                                    <div class="col-sm-12 col-md-8">
+                                        <div class="row">
+                                            <!-- Three example quantities are displayed, set the 3 default number of product for each here -->
+                                            <t
                         t-set="product"
                         t-value="project.product_id"
                       />
-                                                <t
+                                            <t
                         t-set="fund_default_quantities"
                         t-value="[product.crowdfunding_donation_quantity_1, product.crowdfunding_donation_quantity_2, product.crowdfunding_donation_quantity_3]"
                       />
-                                                <t
+                                            <t
                         t-foreach="fund_default_quantities"
                         t-as="current_default_quantity"
                       >
-                                                    <t
+                                                <t
                           t-call="crowdfunding_compassion.fund_amount_example"
                         />
-                                                </t>
+                                            </t>
 
-                                                <!-- Custom amount -->
-                                                <div
-                        class="col-6 col-lg-6 mb-3"
-                      >
-                                                    <label class="h-100 w-100">
-                                                        <input
+                                            <!-- Custom amount -->
+                                            <div class="col-6 col-lg-6 mb-3">
+                                                <label class="h-100 w-100">
+                                                    <input
                             type="radio"
                             name="amount"
                             value=""
                             class="card-input-element d-none"
                             id="custom-amount-card"
                           />
-                                                        <div
+                                                    <div
                             class="card h-100 d-flex justify-content-around align-items-center text-center"
                           >
-                                                            <h4
+                                                        <h4
                               class="text-primary"
                             >Another amount</h4>
-                                                            <input
+                                                        <input
                               type="number"
                               id="custom-amount-field"
                             />
-                                                            <h3
+                                                        <h3
                               class="text-primary"
                             >CHF</h3>
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <div class=" bg-white p-4">
-                                                        <h4
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class=" bg-white p-4">
+                                                    <h4
                             class="text-uppercase"
                           >Options</h4>
-                                                        <div
+                                                    <div
                             class="custom-control custom-switch"
                           >
-                                                            <input
+                                                        <input
                               type="checkbox"
                               class="custom-control-input"
                               name="is_anonymous"
                               id="is_anonymous"
                             />
-                                                            <label
+                                                        <label
                               class="custom-control-label"
                               for="is_anonymous"
                             >Anonymous donation</label>
-                                                        </div>
-                                                        <p class="small-text">
-                                                            I want to make an anonymous donation. My name will not be displayed on the project page.
-                                                            </p>
-                                                        <div
+                                                    </div>
+                                                    <p class="small-text">
+                                                        I want to make an anonymous donation. My name will not be displayed on the project page.
+                                                    </p>
+                                                    <div
                             class="custom-control custom-switch"
                           >
-                                                            <input
+                                                        <input
                               type="checkbox"
                               class="custom-control-input"
                               name="opt_out"
                               id="opt_out"
                             />
-                                                            <label
+                                                        <label
                               class="custom-control-label"
                               for="opt_out"
                             >Unsubscribe from e-mails</label>
-                                                        </div>
-                                                        <p class="small-text">
-                                                            I don't want to receive emails about the impact of my donation and the work of Compassion.
-                                                        </p>
-                                                        <div
-                            class="custom-control custom-switch"
-                          >
-                                                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              name="gtc"
-                              id="gtc"
-                              required="true"
-                              checked="checked"
-                            />
-                                                            <label
-                              class="custom-control-label"
-                              for="gtc"
-                            >I accept the legal terms</label>
-                                                        </div>
-                                                        <p class="small-text">
-                                                            <t
-                              t-call="website_sponsorship.acceptance_full"
-                            />
-                                                        </p>
                                                     </div>
-
+                                                    <p class="small-text">
+                                                        I don't want to receive emails about the impact of my donation and the work of Compassion.
+                                                    </p>
                                                 </div>
-                                                <div class="col-12">
-                                                    <button
+
+                                            </div>
+                                            <div class="col-12">
+                                                <button
                           type="submit"
                           class="btn btn-white font-weight-bold btn-lg mb-2 w-100"
                         >Donate Now</button>
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <!-- Project card -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <t
+                                    <!-- Project card -->
+                                    <div class="col-sm-12 col-md-4">
+                                        <t
                       t-set="display_impact"
                       t-value="True"
                     />
-                                            <t
+                                        <t
                       t-call="crowdfunding_compassion.project_impact_card"
                     />
-                                        </div>
                                     </div>
                                 </div>
-                            </form>
-                        </section>
+                            </div>
+                        </form>
+                    </section>
 
                     <!-- Pagination -->
                     <div class="container" t-if="int(page) != 3">

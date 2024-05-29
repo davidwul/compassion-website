@@ -152,7 +152,7 @@
                     class="o_no_style"
                   ><img
                       t-att-src="child.website_image"
-                      class="figure-img rounded-circle"
+                      class="w-50 mx-auto my-auto"
                       alt="child picture"
                       loading="lazy"
                       data-original-title=""

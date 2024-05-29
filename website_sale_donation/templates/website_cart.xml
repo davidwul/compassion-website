@@ -50,7 +50,18 @@
         </xpath>
     </template>
 
-    <template id="payment" inherit_id="website_sale.payment">
+    <template id="checkout" inherit_id="website_sale.checkout">
+        <xpath
+      expr="//a[@role='button'][@href='/shop/cart']"
+      position="attributes"
+    >
+            <attribute name="class">d-none</attribute>
+        </xpath>
+    </template>
 
+    <template id="payment" inherit_id="website_sale.payment">
+        <xpath expr="//t[@t-set='back_button_txt']" position="replace">
+            <t t-set="back_button_txt">Back to summary</t>
+        </xpath>
     </template>
 </odoo>

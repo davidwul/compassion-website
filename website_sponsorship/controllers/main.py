@@ -1,3 +1,4 @@
+import uuid
 from datetime import datetime
 from random import randint
 
@@ -120,7 +121,8 @@ class WebsiteChild(http.Controller):
         sitemap=False,
     )
     def child_sponsor_form(self, child, **kwargs):
-        if not child.reserve_for_web_sponsorship(request.session.session_token):
+        reservation_uuid = self._get_reservation_uuid()
+        if not child.reserve_for_web_sponsorship(reservation_uuid):
             raise Gone()
         return self.child_page(child, show_sponsorship_form=True, **kwargs)
 
@@ -182,3 +184,13 @@ class WebsiteChild(http.Controller):
             .sudo()
             .website_hold_child(request.jsonrequest)
         )
+
+    def _get_reservation_uuid(self):
+        reservation_uuid = request.session.get("reservation_uuid")
+        if not reservation_uuid:
+            if request.env.user._is_public():
+                reservation_uuid = str(uuid.uuid4())
+            else:
+                reservation_uuid = request.env.user.partner_id.uuid
+            request.session["reservation_uuid"] = reservation_uuid
+        return reservation_uuid

@@ -42,11 +42,10 @@ class CompassionChild(models.Model):
             child.website_legend = legend_template._render({"child": child})
 
     def _compute_website_image(self):
-        image_size = self.env.context.get("image_size", "200x200")
+        boy_image = "/website_sponsorship/static/src/img/avatar_b.png"
+        girl_image = "/website_sponsorship/static/src/img/avatar_g.png"
         for child in self:
-            child.website_image = request.website.image_url(
-                child, "portrait", size=image_size
-            )
+            child.website_image = boy_image if child.gender == "M" else girl_image
 
     def _default_website_meta(self):
         default_meta = super()._default_website_meta()
@@ -100,17 +99,20 @@ class CompassionChild(models.Model):
             )
         return super().website_publish_button()
 
-    def reserve_for_web_sponsorship(self, session_token):
+    def reserve_for_web_sponsorship(self, reservation_uuid):
         """
         Called by website for avoiding two people requesting the same child.
         Reserve the child for 5 minutes.
         """
         self.ensure_one()
-        if not self.is_available_for_web_sponsorship(session_token):
+        if not self.is_available_for_web_sponsorship(reservation_uuid):
             return False
         now = fields.Datetime.now()
         self.sudo().write(
-            {"website_reservation_date": now, "website_reservation_id": session_token}
+            {
+                "website_reservation_date": now,
+                "website_reservation_id": reservation_uuid,
+            }
         )
         delay = now + relativedelta(minutes=5)
         self.sudo().with_delay(eta=delay).write(

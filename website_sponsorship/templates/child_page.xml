@@ -94,7 +94,7 @@
                         <a href="#sponsorship-form">
                             <img
                 t-att-src="main_object.website_image"
-                class="figure-img rounded-circle"
+                class="w-50 w-md-25 mx-auto"
                 alt="child picture"
                 loading="lazy"
                 data-original-title=""

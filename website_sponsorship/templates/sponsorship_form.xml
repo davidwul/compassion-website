@@ -1,5 +1,14 @@
 <odoo>
     <template id="child_sponsorship_form">
+        <t t-set="public" t-value="env.user._is_public()" />
+        <t t-if="public">
+            <t t-if="contract">
+                <t t-set="partner" t-value="contract.partner_id" />
+            </t>
+            <t t-else="">
+                <t t-set="partner" t-value="request.env['res.partner']" />
+            </t>
+        </t>
         <span
       id="form_values"
       class="hidden"
