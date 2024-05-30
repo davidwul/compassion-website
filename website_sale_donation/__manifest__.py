@@ -17,8 +17,8 @@
     },
     "depends": [
         "website_sale",
-        "sale_automatic_workflow",  # OCA/sale-workflow
         "mass_mailing",
+        "base_automation",
     ],
     "data": [
         "templates/website_cart.xml",
