@@ -17,6 +17,7 @@
     },
     "depends": [
         "website_sale",
+        "sale_automatic_workflow",
         "mass_mailing",
         "base_automation",
     ],
