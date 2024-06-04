@@ -70,7 +70,7 @@ class ProjectController(HomepageController):
         ):
             return request.redirect("/projects")
         sponsorships, donations = self.get_sponsorships_and_donations(
-            participant.sponsorship_ids + participant.csp_sponsorship_ids,
+            participant.sudo().sponsorship_ids + participant.sudo().csp_sponsorship_ids,
             participant.sudo().invoice_line_ids,
         )
         values = {
