@@ -386,6 +386,12 @@ class EventRegistration(models.Model):
                 limit=1,
             )
 
+    def _notify_get_action_link(self, link_type, **kwargs):
+        # Avoids the notifications to point to website url
+        base_url = self.env["ir.config_parameter"].sudo().get_param("web.base.url")
+        link = super()._notify_get_action_link(link_type, **kwargs)
+        return link.replace(self.get_base_url(), base_url)
+
     ##########################################################################
     #                              ORM METHODS                               #
     ##########################################################################
