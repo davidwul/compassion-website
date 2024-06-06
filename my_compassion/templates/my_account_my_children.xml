@@ -125,7 +125,7 @@
                                         <img
                       t-attf-id="child-image-{{child.id}}"
                       class="child-image rounded-circle mb-2"
-                      t-att-src="child.website_image"
+                      t-attf-src="/web/image/compassion.child/#{child.id}/portrait"
                       alt="Child image"
                       style="width: 90%; height: 90%;"
                     />
