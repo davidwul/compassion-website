@@ -7,6 +7,8 @@
 #    The licence is in the file __manifest__.py
 #
 ##############################################################################
+import logging
+
 from dateutil.relativedelta import relativedelta
 
 from odoo import _, api, fields, models
@@ -15,6 +17,8 @@ from odoo.http import request
 
 from odoo.addons.child_compassion.models.compassion_hold import HoldType
 from odoo.addons.http_routing.models.ir_http import slug
+
+_logger = logging.getLogger(__name__)
 
 
 class CompassionChild(models.Model):
@@ -196,5 +200,9 @@ class CompassionChild(models.Model):
             )
         )
         res = hold_wizard.send()
-        child_id = res["domain"][0][2][0]
+        try:
+            child_id = res["domain"][0][2][0]
+        except IndexError:
+            _logger.error("No child found for the given search parameters: %s", str(search_params))
+            raise UserError(_("No child found for the given search parameters."))
         return child_id
