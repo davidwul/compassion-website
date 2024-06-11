@@ -59,15 +59,13 @@ class CompassionChild(models.Model):
         default_meta["default_opengraph"].update(
             {
                 "og:title": title,
-                "og:image": request.website.image_url(self, "portrait"),
+                "og:image": self.website_image,
             }
         )
         default_meta["default_twitter"].update(
             {
                 "twitter:title": title,
-                "twitter:image": request.website.image_url(
-                    self, "portrait", size="300x300"
-                ),
+                "twitter:image": self.website_image,
             }
         )
         default_meta.update(

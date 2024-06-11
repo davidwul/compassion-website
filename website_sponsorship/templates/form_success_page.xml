@@ -17,7 +17,7 @@
               >
                                 <a href="#sponsorship-form">
                                     <img
-                    t-attf-src="data:image/jpeg;base64,#{main_object.portrait}"
+                    t-att-src="main_object.website_image"
                     class="figure-img rounded-circle"
                     alt="child picture"
                     loading="lazy"
