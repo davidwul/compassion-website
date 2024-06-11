@@ -177,7 +177,7 @@ class WebsiteChild(http.Controller):
             },
         )
 
-    @http.route(["/hold_a_child"], type="json", auth="public")
+    @http.route(["/hold_a_child"], type="json", auth="public", sitemap=False, website=False)
     def hold_a_child(self):
         return (
             request.env["compassion.child"]
