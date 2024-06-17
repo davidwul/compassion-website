@@ -409,7 +409,6 @@ class MyAccountController(CustomerPortal):
         partner_profile_info = {
             "child_ref": child.local_id,
             "pname": partner.firstname + " " + partner.lastname,
-            "cname": partner.company_id.name,
             "pstreet": partner.street,
             "pzip": partner.zip,
             "pcity": partner.city,
