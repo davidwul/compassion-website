@@ -15,6 +15,7 @@
         'email_from',
         'partner_phone',
         'description',
+        'categ_id',
         ]" />
     </function>
 </odoo>
