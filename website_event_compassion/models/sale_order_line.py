@@ -8,7 +8,7 @@
 #
 ##############################################################################
 
-from odoo import _, fields, models
+from odoo import _, fields, models, api
 
 
 class SaleOrderLine(models.Model):
@@ -32,13 +32,13 @@ class SaleOrderLine(models.Model):
         return super().get_donation_description(product)
 
     def _prepare_invoice_line(self, **optional_values):
-        # Propagate ambassador and event to invoice line
         res = super()._prepare_invoice_line(**optional_values)
-        analytic = self.registration_id.compassion_event_id.analytic_id
-        res.update(
-            {
-                "user_id": self.registration_id.partner_id.id,
-                "analytic_account_id": analytic.id,
-            }
-        )
+        registration = getattr(self, 'registration_id', False)
+        if registration:
+            res.update(
+                {
+                    "user_id": registration.partner_id.id,
+                    "analytic_account_id": registration.compassion_event_id.analytic_id.id,
+                }
+            )
         return res
