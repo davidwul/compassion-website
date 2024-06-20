@@ -200,7 +200,11 @@ class CompassionChild(models.Model):
         res = hold_wizard.send()
         try:
             child_id = res["domain"][0][2][0]
-        except IndexError:
-            _logger.error("No child found for the given search parameters: %s", str(search_params))
-            raise UserError(_("No child found for the given search parameters."))
+        except IndexError as error:
+            _logger.error(
+                "No child found for the given search parameters: %s", str(search_params)
+            )
+            raise UserError(
+                _("No child found for the given search parameters.")
+            ) from error
         return child_id

@@ -8,7 +8,7 @@
 #
 ##############################################################################
 
-from odoo import fields, models, api
+from odoo import fields, models
 
 
 class SaleOrderLine(models.Model):
@@ -35,13 +35,13 @@ class SaleOrderLine(models.Model):
 
     def _prepare_invoice_line(self, **optional_values):
         res = super(SaleOrderLine, self)._prepare_invoice_line(**optional_values)
-        participant = getattr(self, 'participant_id', False)
+        participant = getattr(self, "participant_id", False)
+        analytic_id = participant.project_id.event_id.analytic_id.id
         if participant:
             res.update(
                 {
                     "user_id": participant.partner_id.id,
-                    "analytic_account_id":
-                        participant.project_id.event_id.analytic_id.id,
+                    "analytic_account_id": analytic_id,
                     "crowdfunding_participant_id": participant.id,
                 }
             )
