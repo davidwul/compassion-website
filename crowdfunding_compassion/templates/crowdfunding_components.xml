@@ -761,13 +761,13 @@
 
                                     <li class="nav-item">
                                         <a
-                      t-if="request.lang == 'fr_CH'"
+                      t-if="request.lang.code == 'fr_CH'"
                       class="nav-link social-link"
                       href="https://www.facebook.com/compassionsuisse/"
                       target="_blank"
                     >Facebook</a>
                                         <a
-                      t-elif="request.lang == 'it_IT'"
+                      t-elif="request.lang.code == 'it_IT'"
                       class="nav-link social-link"
                       href="https://www.facebook.com/compassionsvizzera/"
                       target="_blank"
@@ -790,7 +790,7 @@
 
                                     <li class="nav-item">
                                         <a
-                      t-if="request.lang == 'fr_CH'"
+                      t-if="request.lang.code == 'fr_CH'"
                       class="nav-link social-link"
                       href="https://www.youtube.com/c/compassionsuisse"
                       target="_blank"
@@ -843,21 +843,6 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-12 col-md-4 ">
-                                <i
-                  class="fab fa-facebook-square fa-2x "
-                  aria-hidden="true"
-                />
-                                <i
-                  class="fab fa-instagram fa-2x"
-                  aria-hidden="true"
-                />
-                                <i
-                  class="fa fa-globe fa-2x"
-                  aria-hidden="true"
-                />
-                            </div>
-
                             <div class="col-md-4 ">
                                 <small
                 >© 2024 Compassion Switzerland / all rights reserved</small>
