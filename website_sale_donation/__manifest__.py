@@ -21,6 +21,7 @@
         "base_automation",
     ],
     "data": [
+        "data/base_automation.xml",
         "templates/website_cart.xml",
     ],
 }
