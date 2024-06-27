@@ -121,8 +121,10 @@ class WebsiteChild(http.Controller):
         sitemap=False,
     )
     def child_sponsor_form(self, child, **kwargs):
+        if child.state != "N":
+            raise NotFound()
         reservation_uuid = self._get_reservation_uuid()
-        if not child.reserve_for_web_sponsorship(reservation_uuid):
+        if not child.sudo().reserve_for_web_sponsorship(reservation_uuid):
             raise Gone()
         return self.child_page(child, show_sponsorship_form=True, **kwargs)
 

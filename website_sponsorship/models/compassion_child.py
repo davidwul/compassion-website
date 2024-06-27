@@ -110,14 +110,14 @@ class CompassionChild(models.Model):
         if not self.is_available_for_web_sponsorship(reservation_uuid):
             return False
         now = fields.Datetime.now()
-        self.sudo().write(
+        self.write(
             {
                 "website_reservation_date": now,
                 "website_reservation_id": reservation_uuid,
             }
         )
         delay = now + relativedelta(minutes=5)
-        self.sudo().with_delay(eta=delay).write(
+        self.with_delay(eta=delay).write(
             {"website_reservation_date": False, "website_reservation_id": False}
         )
         return True
