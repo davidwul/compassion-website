@@ -176,6 +176,7 @@ class WebsiteChild(http.Controller):
                 "payment_modes": payment_modes,
                 "origins": origins,
                 "done": kwargs.get("done", not contract.is_first_sponsorship),
+                "face_reveal": kwargs.get("face_reveal"),
             },
         )
 

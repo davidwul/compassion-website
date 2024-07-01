@@ -17,11 +17,12 @@
               >
                                 <a href="#sponsorship-form">
                                     <img
-                    t-att-src="main_object.website_image"
+                    t-att-src="main_object.website_image if not face_reveal else main_object.image_url.replace('media.ci.org/', 'media.ci.org/g_face,c_thumb,w_150,h_150,r_max/')"
                     class="figure-img rounded-circle"
                     alt="child picture"
                     loading="lazy"
                     aria-describedby="tooltip156301"
+                    style="max-width: 250px;"
                   />
                                 </a>
                                 <h1
