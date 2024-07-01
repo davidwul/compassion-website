@@ -17,6 +17,15 @@
           class="oe_highlight"
         />
             </button>
+            <button name="action_cancel" position="after">
+                <button
+          name="create_down_payment"
+          string="Create Down Payment"
+          type="object"
+          attrs="{ 'invisible': [('down_payment_id', '!=', False)] }"
+        />
+            </button>
+
             <!-- Replace state widget by registration stage -->
             <field name="state" position="attributes">
                 <attribute name="invisible">1</attribute>
@@ -78,6 +87,10 @@
                 <field name="profile_name" />
                 <field name="state" readonly="0" />
                 <field name="stage_date" />
+            </field>
+            <field name="sale_order_line_id" position="after">
+                <field name="down_payment_id" groups="base.group_no_one"/>
+                <field name="down_payment_link" groups="base.group_no_one"/>
             </field>
             <xpath expr="//sheet/group">
                 <field name="fundraising" invisible="1" />

@@ -6,7 +6,10 @@
     >Compassion Child : public access for sponsoring</field>
         <field name="model_id" ref="model_compassion_child" />
         <field name="domain_force">[('state', 'in', ['N', 'I'])]</field>
-        <field name="groups" eval="[(4, ref('base.group_public')), (4, ref('base.group_portal'))]" />
+        <field
+      name="groups"
+      eval="[(4, ref('base.group_public')), (4, ref('base.group_portal'))]"
+    />
         <field name="perm_read" eval="True" />
         <field name="perm_write" eval="False" />
         <field name="perm_create" eval="False" />

@@ -39,6 +39,7 @@ class EventRegistration(models.Model):
         readonly=False,
         related="sale_order_line_id.invoice_lines.move_id",
     )
+    down_payment_link = fields.Char(compute="_compute_down_payment_link")
     # Change readonly attribute so that form creation is possible
     event_id = fields.Many2one(
         readonly=False,
@@ -203,6 +204,32 @@ class EventRegistration(models.Model):
     def _compute_is_published(self):
         for registration in self:
             registration.is_published = registration.state in ("open", "done")
+
+    def _compute_down_payment_link(self):
+        for registration in self:
+            if registration.down_payment_id:
+                move = registration.down_payment_id
+                payment_link = (
+                    request.env["payment.link.wizard"]
+                    .sudo()
+                    .create(
+                        {
+                            "res_id": move.id,
+                            "res_model": "account.move",
+                            "amount": move.amount_residual,
+                            "currency_id": move.currency_id.id,
+                            "partner_id": move.partner_id.id,
+                            "amount_max": move.amount_residual,
+                            "description": _("Down payment for %s")
+                            % registration.compassion_event_id.name,
+                        }
+                    )
+                )
+                registration.down_payment_link = (
+                    payment_link.link + f"&return_url=/my/events/{registration.id}"
+                )
+            else:
+                registration.down_payment_link = False
 
     def _default_website_meta(self):
         default_meta = super()._default_website_meta()
@@ -517,6 +544,38 @@ class EventRegistration(models.Model):
                 ("line_ids.user_id", "=", self.partner_id.id),
             ],
         }
+
+    def create_down_payment(self):
+        for registration in self:
+            ticket = registration.event_id.event_ticket_ids[:1]
+            if ticket and not self.down_payment_id:
+                order = self.env["sale.order"].create(
+                    {
+                        "partner_id": registration.partner_id.id,
+                        "order_line": [
+                            (
+                                0,
+                                0,
+                                {
+                                    "product_id": ticket.product_id.id,
+                                    "name": ticket.name,
+                                    "price_unit": ticket.price,
+                                    "product_uom_qty": 1,
+                                    "registration_id": registration.id,
+                                },
+                            )
+                        ],
+                    }
+                )
+                order.order_line[0].event_id = registration.event_id.id
+                registration.write(
+                    {
+                        "sale_order_id": order.id,
+                        "sale_order_line_id": order.order_line[0].id,
+                    }
+                )
+                order.action_confirm()
+        return True
 
     ##########################################################################
     #                       STAGE TRANSITION METHODS                         #

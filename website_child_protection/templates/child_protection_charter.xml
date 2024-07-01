@@ -70,7 +70,9 @@
             data-scroll-background-ratio="1"
           >
                         <div class="container">
-                            <h1 class="text-primary">Child Protection Charter</h1>
+                            <h1
+                class="text-primary"
+              >Child Protection Charter</h1>
                         </div>
                     </section>
                 </div>
