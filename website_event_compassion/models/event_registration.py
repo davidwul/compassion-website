@@ -572,6 +572,7 @@ class EventRegistration(models.Model):
                     {
                         "sale_order_id": order.id,
                         "sale_order_line_id": order.order_line[0].id,
+                        "event_ticket_id": ticket.id,
                     }
                 )
                 order.action_confirm()
