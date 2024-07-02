@@ -211,13 +211,14 @@
     <template id="my_profile_readonly">
         <h3>
             <span>My profile</span>
-            <a class="btn btn-primary mx-auto" href="profile">
+            <a class="btn btn-primary mx-auto" href="profile" t-if="registration.compassion_event_id.website_published">
                 <i class="fa fa-pencil" />
                 <span>Edit</span>
             </a>
             <a
         class="btn btn-primary mx-auto"
         t-attf-href="#{registration.website_id.get_base_url()}#{registration.website_url}"
+        t-if="registration.compassion_event_id.website_published"
       >
                 <i class="fa fa-eye" />
                 <span>View</span>
