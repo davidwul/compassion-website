@@ -20,7 +20,7 @@ odoo.define("website_event_compassion.donation_form", function (require) {
     },
     onFormSubmit: function (el) {
       if (!$("#input_amount").val()) {
-        el.target.preventDefault();
+        el.preventDefault();
         $(".error").hide().removeClass("d-none").fadeIn();
       }
     },
