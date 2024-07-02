@@ -1024,7 +1024,7 @@ msgstr "Konto aktivieren"
 #: code:addons/muskathlon/models/event_compassion.py:0
 #, python-format
 msgid "Advanced"
-msgstr "Erweitert"
+msgstr "Fortgeschritten"
 
 #. module: muskathlon
 #: model:survey.question,title:muskathlon.muskathlon_1_01
