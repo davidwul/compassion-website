@@ -32,10 +32,6 @@ class SaleOrder(models.Model):
         if other_line_vals:
             line_vals.update(other_line_vals)
         order_line.write(line_vals)
-        # We automatically validate the order
-        self.workflow_process_id = self.env.ref(
-            "sale_automatic_workflow.automatic_validation"
-        )
         return True
 
     def _cart_update(
