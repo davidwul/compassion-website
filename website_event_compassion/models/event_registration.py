@@ -435,7 +435,7 @@ class EventRegistration(models.Model):
     def create(self, vals_list):
         record = super().create(vals_list)
         for registration in record:
-            if registration.profile_picture and not registration.partner_id.image_1920:
+            if registration.profile_picture:
                 registration.partner_id.image_1920 = registration.profile_picture
             if not registration.profile_name:
                 registration.profile_name = registration.partner_id.preferred_name
