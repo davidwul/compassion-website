@@ -217,7 +217,7 @@
             </a>
             <a
         class="btn btn-primary mx-auto"
-        t-attf-href="/event/#{slug(event)}/#{slug(registration)}"
+        t-attf-href="#{registration.website_id.get_base_url()}#{registration.website_url}"
       >
                 <i class="fa fa-eye" />
                 <span>View</span>
