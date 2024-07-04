@@ -12,6 +12,7 @@ class RegistrationTaskRel(models.Model):
         task_charter = self.env.ref("muskathlon.task_sign_child_protection")
         task_flight = self.env.ref("muskathlon.task_flight_details")
         task_passport = self.env.ref("muskathlon.task_passport")
+        task_criminal = self.env.ref("muskathlon.task_criminal")
         for task in self:
             if task.task_id == task_musk_medic:
                 survey = (
@@ -30,3 +31,5 @@ class RegistrationTaskRel(models.Model):
                 task.task_url = f"/my/events/{slug(task.registration_id)}/flight"
             elif task.task_id == task_passport:
                 task.task_url = f"/my/events/{slug(task.registration_id)}/passport"
+            elif task.task_id == task_criminal:
+                task.task_url = f"/my/events/{slug(task.registration_id)}/criminal"

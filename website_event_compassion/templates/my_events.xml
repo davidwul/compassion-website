@@ -211,7 +211,11 @@
     <template id="my_profile_readonly">
         <h3>
             <span>My profile</span>
-            <a class="btn btn-primary mx-auto" href="profile" t-if="registration.compassion_event_id.website_published">
+            <a
+        class="btn btn-primary mx-auto"
+        href="profile"
+        t-if="registration.compassion_event_id.website_published"
+      >
                 <i class="fa fa-pencil" />
                 <span>Edit</span>
             </a>
