@@ -698,7 +698,7 @@
                                 </div>
                             </div>
                             <div
-                class="form-group s_website_form_field col-12    "
+                class="form-group s_website_form_field s_website_form_model_required col-12    "
                 data-type="binary"
                 data-name="Field"
                 t-if="event.odoo_event_id.fundraising"
@@ -715,12 +715,16 @@
                       class="s_website_form_label_content"
                     >Profile
                                             picture</span>
+                                        <span
+                      class="s_website_form_mark"
+                    > *</span>
                                     </label>
                                     <div class="col-sm">
                                         <input
                       type="file"
                       class="form-control-file s_website_form_input"
                       name="profile_picture"
+                      required="true"
                       id="o14flcr1033kb"
                     />
                                     </div>
