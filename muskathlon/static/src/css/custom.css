@@ -32,3 +32,9 @@
 .sport_icon.walk {
   height: 38px;
 }
+
+
+.sport_icon_sm {
+  height: 25px;
+  width: 25px;
+}
