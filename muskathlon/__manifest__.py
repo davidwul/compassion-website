@@ -60,6 +60,8 @@
         "templates/muskathlon_page.xml",
         "templates/muskathlon_registration_form.xml",
         "templates/muskathlon_order_material.xml",
+        "templates/muskathlon_participants_list.xml",
+        "templates/muskathlon_participant_page.xml",
         "templates/my_tasks_forms.xml",
         "templates/donation_result.xml",
         "templates/assets.xml",
