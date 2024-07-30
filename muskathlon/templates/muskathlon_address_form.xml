@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="address_muskathlon" inherit_id="website_sale.address_b2b">
+        <xpath expr="//input[@name='vat']/.." position="attributes">
+            <attribute name="t-attf-class" add="hidden" separator=" " />
+        </xpath>
+        <xpath expr="//input[@name='company_name']/.." position="attributes">
+            <attribute name="t-attf-class" remove="col-lg-6" separator=" " />
+            <attribute name="t-attf-class" add="col-lg-12" separator=" " />
+        </xpath>
+    </template>
+</odoo>
