@@ -442,6 +442,7 @@
                           t-attf-src="data:image;base64,#{fund.image_128}"
                           class="d-block mx-auto"
                           t-if="fund.image_128"
+                          width="128px"
                         />
                                                 <img
                           src="/crowdfunding_compassion/static/src/img/icn_children.png"
