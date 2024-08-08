@@ -524,6 +524,7 @@
                   t-attf-src="data:image;base64,#{product.image_128}"
                   class="d-block mx-auto"
                   t-if="product.image_128"
+                  width="128px"
                 />
                                 <h3
                   class="text-primary text-center"
