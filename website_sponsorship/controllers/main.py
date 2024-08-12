@@ -116,7 +116,7 @@ class WebsiteChild(http.Controller):
 
     @http.route(
         [
-            "/child/<model('compassion.child'):child>/sponsor/",
+            "/child/<model('compassion.child'):child>/sponsor",
         ],
         type="http",
         auth="public",
