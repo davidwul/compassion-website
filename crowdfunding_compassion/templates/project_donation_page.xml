@@ -430,7 +430,7 @@
                               name="amount"
                               t-att-value="amount"
                               min="1"
-                                                        />
+                            />
                                                         <h3
                               class="text-primary"
                             >CHF</h3>

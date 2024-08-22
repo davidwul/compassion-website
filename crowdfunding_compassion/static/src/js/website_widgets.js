@@ -35,62 +35,64 @@ odoo.define("crowdfunding_compassion.website_widgets", function (require) {
 
   // Handle donation card selection
   publicWidget.registry.CustomAmountSelection = publicWidget.Widget.extend({
-        selector: '#custom-amount-card',
-        events: {
-            'click': '_checkCustomCard',
-        },
+    selector: "#custom-amount-card",
+    events: {
+      click: "_checkCustomCard",
+    },
 
-        start: function () {
-            this._super.apply(this, arguments);
-            // Attach click event listener to all card options except custom amount card
-            const otherCardsInputs = document.querySelectorAll('input[name="amount"]:not(#custom-amount-card)');
-            otherCardsInputs.forEach(card => {
-                card.addEventListener('click', this._onCardClick.bind(this));
-            });
+    start: function () {
+      this._super.apply(this, arguments);
+      // Attach click event listener to all card options except custom amount card
+      const otherCardsInputs = document.querySelectorAll(
+        'input[name="amount"]:not(#custom-amount-card)'
+      );
+      otherCardsInputs.forEach((card) => {
+        card.addEventListener("click", this._onCardClick.bind(this));
+      });
 
-            // Attach input event listener to custom-amount-field
-            const customAmountField = document.getElementById('custom-amount-field');
-            customAmountField.addEventListener('input', this._onInput.bind(this));
-        },
+      // Attach input event listener to custom-amount-field
+      const customAmountField = document.getElementById("custom-amount-field");
+      customAmountField.addEventListener("input", this._onInput.bind(this));
+    },
 
-        // Check the custom amount card when custom amount field changes
-        _onInput: function () {
-            const customAmountField = document.getElementById('custom-amount-field');
+    // Check the custom amount card when custom amount field changes
+    _onInput: function () {
+      const customAmountField = document.getElementById("custom-amount-field");
 
-            if (customAmountField) {
-                const amount = customAmountField.value.trim();
-                const isAmountNotEmpty = amount !== '';
+      if (customAmountField) {
+        const amount = customAmountField.value.trim();
+        const isAmountNotEmpty = amount !== "";
 
-                if (isAmountNotEmpty) {
-                    this._checkCustomCard();
-                }
-            }
-        },
-
-       // Check the custom amount card and uncheck the others
-       _checkCustomCard: function (event) {
-            const customAmountCard = document.getElementById('custom-amount-card');
-            const otherCardsInputs = document.querySelectorAll('input[name="amount"]:not(#custom-amount-card):not(#custom-amount-field)');
-
-            if (customAmountCard && otherCardsInputs) {
-
-                customAmountCard.checked = true;
-
-                otherCardsInputs.forEach(input => {
-                    input.checked = false;
-                });
-            }
-       },
-
-        // Uncheck the custom amount card when any other card option is clicked
-        _onCardClick: function (event) {
-            const customAmountCard = document.getElementById('custom-amount-card');
-            if (customAmountCard) {
-                customAmountCard.checked = false;
-            }
+        if (isAmountNotEmpty) {
+          this._checkCustomCard();
         }
+      }
+    },
 
-    });
+    // Check the custom amount card and uncheck the others
+    _checkCustomCard: function () {
+      const customAmountCard = document.getElementById("custom-amount-card");
+      const otherCardsInputs = document.querySelectorAll(
+        'input[name="amount"]:not(#custom-amount-card):not(#custom-amount-field)'
+      );
+
+      if (customAmountCard && otherCardsInputs) {
+        customAmountCard.checked = true;
+
+        otherCardsInputs.forEach((input) => {
+          input.checked = false;
+        });
+      }
+    },
+
+    // Uncheck the custom amount card when any other card option is clicked
+    _onCardClick: function () {
+      const customAmountCard = document.getElementById("custom-amount-card");
+      if (customAmountCard) {
+        customAmountCard.checked = false;
+      }
+    },
+  });
 
   // EDIT PROJECT FORM
   publicWidget.registry.EditProjectForm = publicWidget.Widget.extend({
