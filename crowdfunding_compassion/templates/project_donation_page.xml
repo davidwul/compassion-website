@@ -413,7 +413,7 @@
                                                 <label class="h-100 w-100">
                                                     <input
                             type="radio"
-                            name="amount"
+                            name="amount-card"
                             value=""
                             class="card-input-element d-none"
                             id="custom-amount-card"
@@ -427,7 +427,10 @@
                                                         <input
                               type="number"
                               id="custom-amount-field"
-                            />
+                              name="amount"
+                              t-att-value="amount"
+                              min="1"
+                                                        />
                                                         <h3
                               class="text-primary"
                             >CHF</h3>
