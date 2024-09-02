@@ -87,9 +87,14 @@ class DonationController(Controller):
             sale_order = request.website.sale_get_order(force_create=True).sudo()
         product = project.product_id
         quantity = float(amount) / product.standard_price
+        price = product.standard_price
+        if not quantity.is_integer():
+            quantity = 1
+            price = amount
+
         sale_order.add_donation(
             product.id,
-            product.standard_price,
+            price,
             qty=quantity,
             participant_id=participant.id,
             opt_out=post.get("opt_out"),
