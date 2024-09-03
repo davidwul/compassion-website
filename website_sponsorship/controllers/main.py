@@ -136,6 +136,8 @@ class WebsiteChild(http.Controller):
             "/child/<string(length=11):child_ref>-<int:child_id>/"
             "sponsor/confirmation",
             "/child/<int:child_id>/sponsor/confirmation",
+            "/child/<string(length=11):child_ref>-<int:child_id>/confirmation",
+            "/child/<int:child_id>/confirmation",
         ],
         type="http",
         auth="public",
