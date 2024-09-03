@@ -499,7 +499,7 @@ class MyAccountController(CustomerPortal):
         )
 
         sponsorships = partner.sponsorship_ids.filtered(
-            lambda s: s.state not in ["cancelled", "terminated"]
+            lambda s: s.state in ["waiting", "active", "mandate"]
             and partner == s.mapped("partner_id")
         )
         currency = sponsorships.mapped("pricelist_id.currency_id")[:1].name
