@@ -626,7 +626,7 @@ class EventRegistration(models.Model):
                 travel_ticket = travel_ticket.filtered(
                     lambda t, reg=registration: t.start_sale_date
                     or reg.create_date.date() <= reg.create_date <= t.end_sale_date
-                    or reg.create_date
+                    or reg.create_date.date()
                 )[:1]
             room_ticket = registration.event_id.event_ticket_ids.filtered(
                 lambda t: t.product_id.product_tmpl_id == single_room_cost
