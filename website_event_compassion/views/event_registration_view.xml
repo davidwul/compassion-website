@@ -24,6 +24,12 @@
           type="object"
           attrs="{ 'invisible': [('down_payment_id', '!=', False)] }"
         />
+                <button
+          name="create_trip_invoice"
+          string="Create Trip Invoice"
+          type="object"
+          attrs="{ 'invisible': [('trip_invoice_id', '!=', False)] }"
+        />
             </button>
 
             <!-- Replace state widget by registration stage -->
@@ -91,6 +97,11 @@
             <field name="sale_order_line_id" position="after">
                 <field name="down_payment_id" groups="base.group_no_one" />
                 <field name="down_payment_link" groups="base.group_no_one" />
+                <field name="trip_invoice_id" groups="base.group_no_one" />
+                <field name="payment_link" groups="base.group_no_one" />
+            </field>
+            <field name="event_ticket_id" position="after">
+                <field name="single_room" />
             </field>
             <xpath expr="//sheet/group">
                 <field name="fundraising" invisible="1" />

@@ -40,6 +40,12 @@ class EventRegistration(models.Model):
         related="sale_order_line_id.invoice_lines.move_id",
     )
     down_payment_link = fields.Char(compute="_compute_down_payment_link")
+    trip_invoice_id = fields.Many2one(
+        "account.move",
+        "Trip invoice",
+    )
+    payment_link = fields.Char(compute="_compute_payment_link")
+    single_room = fields.Boolean(help="The participant wants a single room")
     # Change readonly attribute so that form creation is possible
     event_id = fields.Many2one(
         readonly=False,
@@ -205,31 +211,51 @@ class EventRegistration(models.Model):
         for registration in self:
             registration.is_published = registration.state in ("open", "done")
 
+    def _create_payment_link(self, move, description):
+        payment_link = (
+            request.env["payment.link.wizard"]
+            .sudo()
+            .create(
+                {
+                    "res_id": move.id,
+                    "res_model": "account.move",
+                    "amount": move.amount_residual,
+                    "currency_id": move.currency_id.id,
+                    "partner_id": move.partner_id.id,
+                    "amount_max": move.amount_residual,
+                    "description": description,
+                }
+            )
+        )
+        return payment_link.link
+
     def _compute_down_payment_link(self):
         for registration in self:
             if registration.down_payment_id:
                 move = registration.down_payment_id
-                payment_link = (
-                    request.env["payment.link.wizard"]
-                    .sudo()
-                    .create(
-                        {
-                            "res_id": move.id,
-                            "res_model": "account.move",
-                            "amount": move.amount_residual,
-                            "currency_id": move.currency_id.id,
-                            "partner_id": move.partner_id.id,
-                            "amount_max": move.amount_residual,
-                            "description": _("Down payment for %s")
-                            % registration.compassion_event_id.name,
-                        }
-                    )
+                description = (
+                    _("Down payment for %s") % registration.compassion_event_id.name
                 )
                 registration.down_payment_link = (
-                    payment_link.link + f"&return_url=/my/events/{registration.id}"
+                    self._create_payment_link(move, description)
+                    + f"&return_url=/my/events/{registration.id}"
                 )
             else:
                 registration.down_payment_link = False
+
+    def _compute_payment_link(self):
+        for registration in self:
+            if registration.trip_invoice_id:
+                move = registration.trip_invoice_id
+                description = (
+                    _("Payment for %s") % registration.compassion_event_id.name
+                )
+                registration.payment_link = (
+                    self._create_payment_link(move, description)
+                    + f"&return_url=/my/events/{registration.id}"
+                )
+            else:
+                registration.payment_link = False
 
     def _default_website_meta(self):
         default_meta = super()._default_website_meta()
@@ -546,8 +572,11 @@ class EventRegistration(models.Model):
         }
 
     def create_down_payment(self):
+        down_payment_product = self.env.ref("event_sale.product_product_event")
         for registration in self:
-            ticket = registration.event_id.event_ticket_ids[:1]
+            ticket = registration.event_id.event_ticket_ids.filtered(
+                lambda t: t.product_id == down_payment_product
+            )
             if ticket and not self.down_payment_id:
                 order = self.env["sale.order"].create(
                     {
@@ -557,7 +586,7 @@ class EventRegistration(models.Model):
                                 0,
                                 0,
                                 {
-                                    "product_id": ticket.product_id.id,
+                                    "product_id": down_payment_product.id,
                                     "name": ticket.name,
                                     "price_unit": ticket.price,
                                     "product_uom_qty": 1,
@@ -576,6 +605,67 @@ class EventRegistration(models.Model):
                     }
                 )
                 order.action_confirm()
+        return True
+
+    def create_trip_invoice(self):
+        travel_cost = self.env.ref(
+            "website_event_compassion.product_template_trip_price"
+        )
+        single_room_cost = self.env.ref(
+            "website_event_compassion.product_template_single_room"
+        )
+        sales_journal = self.env["account.journal"].search(
+            [("type", "=", "sale")], limit=1
+        )
+        for registration in self:
+            travel_ticket = registration.event_id.event_ticket_ids.filtered(
+                lambda t, template=travel_cost: t.product_id.product_tmpl_id == template
+            )
+            if len(travel_ticket) > 1:
+                # Take the price set at the date of registration
+                travel_ticket = travel_ticket.filtered(
+                    lambda t, reg=registration: t.start_sale_date
+                    <= reg.create_date
+                    <= t.end_sale_date
+                )[:1]
+            room_ticket = registration.event_id.event_ticket_ids.filtered(
+                lambda t: t.product_id.product_tmpl_id == single_room_cost
+            )
+            if travel_ticket and not registration.trip_invoice_id:
+                invoice_lines = [
+                    (
+                        0,
+                        0,
+                        {
+                            "product_id": travel_ticket.product_id.id,
+                            "name": travel_ticket.name,
+                            "price_unit": travel_ticket.price,
+                            "quantity": 1,
+                        },
+                    ),
+                ]
+                if registration.single_room and room_ticket:
+                    invoice_lines.append(
+                        (
+                            0,
+                            0,
+                            {
+                                "product_id": room_ticket.product_id.id,
+                                "name": room_ticket.name,
+                                "price_unit": room_ticket.price,
+                                "quantity": 1,
+                            },
+                        ),
+                    )
+                registration.trip_invoice_id = self.env["account.move"].create(
+                    {
+                        "partner_id": registration.partner_id.id,
+                        "move_type": "out_invoice",
+                        "journal_id": sales_journal.id,
+                        "invoice_date": fields.Date.today(),
+                        "invoice_line_ids": invoice_lines,
+                    }
+                )
         return True
 
     ##########################################################################
