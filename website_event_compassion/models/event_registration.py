@@ -668,6 +668,7 @@ class EventRegistration(models.Model):
                         "invoice_line_ids": invoice_lines,
                     }
                 )
+                registration.trip_invoice_id.action_post()
         return True
 
     ##########################################################################
