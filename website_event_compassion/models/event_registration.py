@@ -640,6 +640,7 @@ class EventRegistration(models.Model):
                         0,
                         {
                             "product_id": travel_ticket.product_id.id,
+                            "account_id": travel_ticket.product_id.property_account_income_id.id,
                             "name": travel_ticket.name,
                             "price_unit": travel_ticket.price,
                             "quantity": 1,
@@ -653,6 +654,7 @@ class EventRegistration(models.Model):
                             0,
                             {
                                 "product_id": room_ticket.product_id.id,
+                                "account_id": room_ticket.product_id.property_account_income_id.id,
                                 "name": room_ticket.name,
                                 "price_unit": room_ticket.price,
                                 "quantity": 1,
