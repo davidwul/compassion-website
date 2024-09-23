@@ -32,15 +32,20 @@ HISTORY_LIMIT = 1000
 
 
 def _get_user_children(state=None):
-    """
-    Find all the children for which the connected user has a contract for.
-    There is the possibility to fetch either only active children or only those
-    that are terminated / cancelled. By default, all sponsorships are returned
-
-    :return: a recordset of child.compassion which the connected user sponsors
-    """
     env = request.env
     partner = env.user.partner_id
+    return _get_sponsorships(partner, state).mapped("child_id").sorted("preferred_name")
+
+
+def _get_sponsorships(partner, state=None):
+    """
+    Find all the sponsorships of the given user.
+    There is the possibility to fetch either only active sponsorships or only those
+    that are terminated / cancelled. By default, all sponsorships are returned
+
+    :return: a recordset of recurring.contract of the given user
+    """
+    env = request.env
     end_reason_child_depart = env.ref("sponsorship_compassion.end_reason_depart")
 
     def filter_sponsorships(sponsorship):
@@ -72,8 +77,6 @@ def _get_user_children(state=None):
         partner.get_portal_sponsorships()
         .with_context(allow_during_suspension=True)
         .filtered(filter_sponsorships)
-        .mapped("child_id")
-        .sorted("preferred_name")
     )
 
 
@@ -498,21 +501,16 @@ class MyAccountController(CustomerPortal):
             ]
         )
 
-        sponsorships = partner.sponsorship_ids.filtered(
-            lambda s: s.state in ["waiting", "active", "mandate"]
-            and partner == s.mapped("partner_id")
-        )
-        currency = sponsorships.mapped("pricelist_id.currency_id")[:1].name
+        active_sponsorships = _get_sponsorships(partner, state="active")
+        currency = active_sponsorships.mapped("pricelist_id.currency_id")[:1].name
 
         # Dict of groups mapped to their sponsorships, and total amount
         # {group: (<sponsorships recordset>, total_amount string), ...}
-        sponsorships_by_group = {
-            g: (
-                sponsorships.filtered(lambda s, g=g: s.group_id == g),
-                f"{int(g.total_amount):,d} {currency}",
-            )
-            for g in sponsorships.mapped("group_id")
-        }
+        sponsorships_by_group = {}
+        for g in active_sponsorships.mapped("group_id"):
+            sponsorships = active_sponsorships.filtered(lambda s, g=g: s.group_id == g)
+            total = int(sum(sponsorships.mapped("total_amount")))
+            sponsorships_by_group[g] = (sponsorships, f"{total:,d} {currency}")
 
         values = self._prepare_portal_layout_values()
         pager = request.website.pager(
