@@ -72,6 +72,9 @@ class CrowdfundingProject(models.Model):
         "Supported fund",
         domain=[("activate_for_crowdfunding", "=", True)],
     )
+    product_price = fields.Float(
+        compute="_compute_product_price", store=True, readonly=False
+    )
     product_number_goal = fields.Integer(
         "Product goal", compute="_compute_product_number_goal"
     )
@@ -207,6 +210,11 @@ class CrowdfundingProject(models.Model):
                 else product.crowdfunding_impact_text_passive_plural
             )
 
+    @api.depends("product_id")
+    def _compute_product_price(self):
+        for project in self:
+            project.product_price = project.product_id.standard_price or 1
+
     @api.model
     def create(self, vals):
         res = super().create(vals)
@@ -300,9 +308,7 @@ class CrowdfundingProject(models.Model):
         for project in self:
             price_total = results.get(project.id, 0)
             project.amount_reached = round(price_total)
-            project.product_number_reached = round(
-                price_total / (project.product_id.standard_price or 1)
-            )
+            project.product_number_reached = round(price_total / project.product_price)
 
     def _compute_number_sponsorships_goal(self):
         for project in self:

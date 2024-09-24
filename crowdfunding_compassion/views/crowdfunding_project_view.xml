@@ -132,6 +132,10 @@
                         widget="many2one"
                       />
                                         </h3>
+                                        <label for="product_price" />
+                                        <h3>
+                                            <field name="product_price" />
+                                        </h3>
                                     </div>
                                     <div class="col">
                                         <label for="product_number_reached" />

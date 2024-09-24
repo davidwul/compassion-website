@@ -85,15 +85,14 @@ class DonationController(Controller):
         if sale_order.state != "draft":
             request.session["sale_order_id"] = None
             sale_order = request.website.sale_get_order(force_create=True).sudo()
-        product = project.product_id
-        quantity = float(amount) / product.standard_price
-        price = product.standard_price
+        price = project.product_price
+        quantity = float(amount) / price
         if not quantity.is_integer():
             quantity = 1
             price = amount
 
         sale_order.add_donation(
-            product.id,
+            project.product_id.id,
             price,
             qty=quantity,
             participant_id=participant.id,
