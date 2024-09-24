@@ -634,13 +634,14 @@ class EventRegistration(models.Model):
                 lambda t: t.product_id.product_tmpl_id == single_room_cost
             )
             if travel_ticket and not registration.trip_invoice_id:
+                product = travel_ticket.product_id
                 invoice_lines = [
                     (
                         0,
                         0,
                         {
-                            "product_id": travel_ticket.product_id.id,
-                            "account_id": travel_ticket.product_id.property_account_income_id.id,
+                            "product_id": product.id,
+                            "account_id": product.property_account_income_id.id,
                             "name": travel_ticket.name,
                             "price_unit": travel_ticket.price,
                             "quantity": 1,
@@ -648,13 +649,14 @@ class EventRegistration(models.Model):
                     ),
                 ]
                 if registration.single_room and room_ticket:
+                    product = room_ticket.product_id
                     invoice_lines.append(
                         (
                             0,
                             0,
                             {
-                                "product_id": room_ticket.product_id.id,
-                                "account_id": room_ticket.product_id.property_account_income_id.id,
+                                "product_id": product.id,
+                                "account_id": product.property_account_income_id.id,
                                 "name": room_ticket.name,
                                 "price_unit": room_ticket.price,
                                 "quantity": 1,

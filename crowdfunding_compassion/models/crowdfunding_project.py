@@ -286,7 +286,7 @@ class CrowdfundingProject(models.Model):
         # Compute with SQL query for good performance
         self.env.cr.execute(
             """
-            SELECT p.id, SUM(il.price_total), SUM(il.quantity)
+            SELECT p.id, SUM(il.price_total)
             FROM account_move_line il
             JOIN crowdfunding_participant pa ON pa.id = il.crowdfunding_participant_id
             JOIN crowdfunding_project p ON p.id = pa.project_id
@@ -296,11 +296,13 @@ class CrowdfundingProject(models.Model):
         """,
             [self.ids],
         )
-        results = {r[0]: (r[1], r[2]) for r in self.env.cr.fetchall()}
+        results = {r[0]: r[1] for r in self.env.cr.fetchall()}
         for project in self:
-            res = results.get(project.id, (0, 0))
-            project.amount_reached = round(res[0])
-            project.product_number_reached = round(res[1])
+            price_total = results.get(project.id, 0)
+            project.amount_reached = round(price_total)
+            project.product_number_reached = round(
+                price_total / project.product_id.standard_price
+            )
 
     def _compute_number_sponsorships_goal(self):
         for project in self:

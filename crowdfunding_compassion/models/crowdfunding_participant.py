@@ -121,7 +121,9 @@ class CrowdfundingParticipant(models.Model):
             invl = participant.invoice_line_ids.filtered(
                 lambda line: line.payment_state == "paid"
             )
-            participant.product_number_reached = int(sum(invl.mapped("quantity")))
+            price_total = sum(invl.mapped("price_total"))
+            standard_price = participant.project_id.product_id.standard_price
+            participant.product_number_reached = round(price_total / standard_price)
 
     def _compute_sponsorships(self):
         for participant in self:
