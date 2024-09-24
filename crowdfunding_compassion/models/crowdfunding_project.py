@@ -301,7 +301,7 @@ class CrowdfundingProject(models.Model):
             price_total = results.get(project.id, 0)
             project.amount_reached = round(price_total)
             project.product_number_reached = round(
-                price_total / project.product_id.standard_price
+                price_total / (project.product_id.standard_price or 1)
             )
 
     def _compute_number_sponsorships_goal(self):

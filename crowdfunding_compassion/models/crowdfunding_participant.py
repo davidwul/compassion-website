@@ -122,7 +122,7 @@ class CrowdfundingParticipant(models.Model):
                 lambda line: line.payment_state == "paid"
             )
             price_total = sum(invl.mapped("price_total"))
-            standard_price = participant.project_id.product_id.standard_price
+            standard_price = participant.project_id.product_id.standard_price or 1
             participant.product_number_reached = round(price_total / standard_price)
 
     def _compute_sponsorships(self):
