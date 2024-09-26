@@ -29,6 +29,14 @@ Helper module to manage donations in the e-commerce platform.
 .. contents::
    :local:
 
+Changelog
+=========
+
+14.0.1.1.0
+----------
+
+-  [ADD] Automatically match partner during checkout.
+
 Bug Tracker
 ===========
 

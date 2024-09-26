@@ -3,7 +3,7 @@
 {
     "name": "Website - Sale donation",
     "summary": "Allows to have a product considered as a donation",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.1.0",
     "development_status": "Beta",
     "category": "Website",
     "website": "https://github.com/CompassionCH/compassion-website",
@@ -19,6 +19,7 @@
         "website_sale",
         "mass_mailing",
         "base_automation",
+        "partner_auto_match",
     ],
     "data": [
         "data/base_automation.xml",
