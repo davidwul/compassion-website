@@ -58,5 +58,4 @@
     "demo": [],
     "installable": True,
     "auto_install": False,
-    "post_load": "post_load",
 }
