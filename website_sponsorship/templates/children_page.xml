@@ -5,16 +5,15 @@
             <div id="wrap" name="childpool_page">
                 <div class="oe_structure" />
                 <section
-          class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 o_colored_level"
+          class="s_cover parallax s_parallax_is_fixed text-primary pb96 o_colored_level"
           data-scroll-background-ratio="1"
           data-snippet="s_cover"
           data-name="Cover"
         >
                     <span
-            class="s_parallax_bg oe_img_bg"
-            style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;"
+            class="s_parallax_bg oe_img_bg bg-primary"
           />
-                    <div class="o_we_bg_filter bg-black-50" />
+                    <div class="o_we_bg_filter" />
                     <div class="container s_allow_columns">
                         <h1 style="text-align: center;">
                             <font
